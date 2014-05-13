@@ -326,9 +326,23 @@ namespace Wings.Core.Implementation
         public DataObjectListWithPagination<UserDTOList> GetUsersByPage(Pagination pagination)
         {
 
-            Specification<User> starttime = Specification<User>.Eval(u => pagination.StartTime != null ? u.CreateDate > pagination.StartTime : true);
-            Specification<User> endtime = Specification<User>.Eval(u => pagination.EndTime != null ? u.CreateDate < pagination.EndTime : true);
-            Specification<User> likeword = Specification<User>.Eval(u => (!string.IsNullOrEmpty(pagination.LikeWord) ? u.RealName.Contains(pagination.LikeWord) : true));
+            ISpecification<User> where = Specification<User>.Eval(w => true);
+            if (pagination.StartTime != null)
+            {
+                DateTime time = pagination.StartTime.Value;
+                where = where.And(Specification<User>.Eval(u => u.CreateDate > time));
+            }
+            if (pagination.EndTime != null)
+            {
+                DateTime time = pagination.EndTime.Value;
+                where = where.And(Specification<User>.Eval(u => u.CreateDate < time));
+            }
+            if (!string.IsNullOrEmpty(pagination.LikeWord))
+            {
+                string likeword = pagination.LikeWord;
+                where = where.And(Specification<User>.Eval(u => u.RealName.Contains(likeword)));
+            }
+          
             Expression<Func<User, dynamic>> sortPredicate;
             var property = typeof(User).GetProperty(pagination.sort);
             if (property != null)
@@ -339,7 +353,7 @@ namespace Wings.Core.Implementation
             {
                 sortPredicate = r => r.CreateDate;
             }
-            PagedResult<User> rolepages = userRepository.GetAll(starttime.And(endtime).And(likeword), sortPredicate
+            PagedResult<User> rolepages = userRepository.GetAll(where, sortPredicate
             , pagination.order.ToLower() == "desc" ? SortOrder.Descending : SortOrder.Ascending, pagination.page, pagination.rows);
             DataObjectListWithPagination<UserDTOList> result = new DataObjectListWithPagination<UserDTOList>();
             if (rolepages == null)
@@ -673,9 +687,23 @@ namespace Wings.Core.Implementation
         }
         public DataObjectListWithPagination<RoleDTOList> GetRolesByPage(Pagination pagination)
         {
-            Specification<Role> starttime = Specification<Role>.Eval(u => pagination.StartTime != null ? u.CreateDate > pagination.StartTime : true);
-            Specification<Role> endtime = Specification<Role>.Eval(u => pagination.EndTime != null ? u.CreateDate < pagination.EndTime : true);
-            Specification<Role> likeword = Specification<Role>.Eval(u => (!string.IsNullOrEmpty(pagination.LikeWord) ? u.Name.Contains(pagination.LikeWord) : true));
+            ISpecification<Role> where = Specification<Role>.Eval(w => true);
+            if (pagination.StartTime != null)
+            {
+                DateTime time = pagination.StartTime.Value;
+                where = where.And(Specification<Role>.Eval(u => u.CreateDate > time));
+            }
+            if (pagination.EndTime != null)
+            {
+                DateTime time = pagination.EndTime.Value;
+                where = where.And(Specification<Role>.Eval(u => u.CreateDate < time));
+            }
+            if (!string.IsNullOrEmpty(pagination.LikeWord))
+            {
+                string likeword = pagination.LikeWord;
+                where = where.And(Specification<Role>.Eval(u => u.Name.Contains(likeword)));
+            }
+          
             Expression<Func<Role, dynamic>> sortPredicate;
             var property = typeof(Role).GetProperty(pagination.sort);
             if (property != null)
@@ -686,7 +714,7 @@ namespace Wings.Core.Implementation
             {
                 sortPredicate = r => r.CreateDate;
             }
-            PagedResult<Role> rolepages = roleRepository.GetAll(starttime.And(endtime).And(likeword), sortPredicate
+            PagedResult<Role> rolepages = roleRepository.GetAll(where, sortPredicate
             , pagination.order.ToLower() == "desc" ? SortOrder.Descending : SortOrder.Ascending, pagination.page, pagination.rows);
             DataObjectListWithPagination<RoleDTOList> result = new DataObjectListWithPagination<RoleDTOList>();
             if (rolepages == null)

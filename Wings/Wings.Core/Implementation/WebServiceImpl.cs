@@ -68,14 +68,23 @@ namespace Wings.Core.Implementation
         }
         public DataObjects.DataObjectListWithPagination<DataObjects.WebDTOList> GetWebsByPage(DataObjects.Pagination pagination)
         {
-            Specification<Web> starttime = Specification<Web>.Eval(u => pagination.StartTime != null ? u.CreateDate > pagination.StartTime : true);
-            Specification<Web> endtime = Specification<Web>.Eval(u => pagination.EndTime != null ? u.CreateDate < pagination.EndTime : true);
-            Specification<Web> likeword = Specification<Web>.Eval(u => (!string.IsNullOrEmpty(pagination.LikeWord) ? u.Name.Contains(pagination.LikeWord) : true));
-
-            //Specification<Web> starttime = Specification<Web>.Eval(u => true);
-            //Specification<Web> endtime = Specification<Web>.Eval(u => true);
-            //Specification<Web> likeword = Specification<Web>.Eval(u => u.Name.Contains("1"));
-
+            ISpecification<Web> where = Specification<Web>.Eval(w => true);
+            if (pagination.StartTime != null)
+            {
+                DateTime time = pagination.StartTime.Value;
+                where = where.And(Specification<Web>.Eval(u => u.CreateDate > time));
+            }
+            if (pagination.EndTime != null)
+            {
+                DateTime time = pagination.EndTime.Value;
+                where = where.And(Specification<Web>.Eval(u => u.CreateDate < time));
+            }
+            if (!string.IsNullOrEmpty(pagination.LikeWord))
+            {
+                string likeword = pagination.LikeWord;
+                where = where.And(Specification<Web>.Eval(u => u.Name.Contains(likeword)));
+            }
+          
             Expression<Func<Web, dynamic>> sortPredicate;
             var property = typeof(Role).GetProperty(pagination.sort);
             if (property != null)
@@ -87,8 +96,8 @@ namespace Wings.Core.Implementation
                 sortPredicate = r => r.CreateDate;
             }
             SortOrder order = pagination.order.ToLower() == "desc" ? SortOrder.Descending : SortOrder.Ascending;
-            PagedResult<Web> rolepages = webRepository.GetAll(starttime.And(endtime).And(likeword), sortPredicate
-            ,order, pagination.page, pagination.rows);
+            PagedResult<Web> rolepages = webRepository.GetAll(where, sortPredicate
+            , order, pagination.page, pagination.rows);
             DataObjectListWithPagination<WebDTOList> result = new DataObjectListWithPagination<WebDTOList>();
             if (rolepages == null)
             {
