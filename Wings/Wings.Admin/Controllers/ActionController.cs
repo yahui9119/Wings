@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Wings.Contracts;
 using Wings.DataObjects.Custom;
+using Wings.Framework;
 using Wings.Framework.Communication;
 using Wings.Framework.Plugin;
 using Wings.Framework.Plugin.Contracts;
@@ -27,6 +28,8 @@ namespace Wings.Admin.Controllers
         public ActionResult Tree(string id)
         {
             Guid temp = Guid.Empty;
+            List<Tree> trees = new List<Tree>();
+            string errormsg = string.Empty;
             if (Guid.TryParse(id, out temp))
             {
                 List<Permission> plist = null;
@@ -39,10 +42,11 @@ namespace Wings.Admin.Controllers
                     }
                     catch (Exception ex)
                     {
+                        errormsg = ex.Message;
                     }
 
                 }
-                List<Tree> trees = new List<Tree>();
+
                 Func<Permission, Tree> PermissionToTree = p =>
                 {
                     Tree t = new Tree();
@@ -73,9 +77,10 @@ namespace Wings.Admin.Controllers
                     }
 
                 }
-                return Json(trees);
+
             }
-            return Json(null);
+            //Log.OperaInstance.SaveMessage(1, string.Format("操作：{0}；结果：{1}；信息：{2}", "获取ActionTrees", trees.Count > 0, errormsg));
+            return Json(trees);
         }
     }
 }

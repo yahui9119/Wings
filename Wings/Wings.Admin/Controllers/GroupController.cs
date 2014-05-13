@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using Wings.Contracts;
 using Wings.DataObjects;
 using Wings.DataObjects.Custom;
+using Wings.Framework;
 using Wings.Framework.Communication;
 using Wings.Framework.Plugin;
 
@@ -19,7 +20,7 @@ namespace Wings.Admin.Controllers
         [Description("[分组管理【主页】]")]
         public ActionResult Index()
         {
-
+            //Log.OperaInstance.SaveMessage(1, string.Format("操作：{0}；结果：{1}；信息：{2}", "访问分组管理主页",true, ""));
             return View();
         }
         [HttpPost]
@@ -27,12 +28,14 @@ namespace Wings.Admin.Controllers
         public ActionResult GetDataGrid(Pagination p)
         {
             GroupDTOList groupdata = new GroupDTOList();
+            
             using (ServiceProxy<IUserService> proxy = new ServiceProxy<IUserService>())
             {
                 groupdata = proxy.Channel.GetAllGroups();
             }
             groupdata.ForEach(g => g.ChildGroup = null);
             var result = new DataGrid() { total = groupdata.Count, rows = groupdata };
+            //Log.OperaInstance.SaveMessage(1, string.Format("操作：{0}；结果：{1}；信息：{2}", "获取分组数据表", true, ""));
             return Json(result);
         }
         [HttpPost]
@@ -46,6 +49,7 @@ namespace Wings.Admin.Controllers
                groupdtolist= proxy.Channel.GetGroupParentID(null);
                
             }
+            //Log.OperaInstance.SaveMessage(1, string.Format("操作：{0}；结果：{1}；信息：{2}", "获取分组树形列表", true, ""));
             return Json(groupdtolist.ToTree());
         }
 
@@ -69,6 +73,7 @@ namespace Wings.Admin.Controllers
                     result.message = "添加部门成功";
                 }
             }
+            //Log.OperaInstance.SaveMessage(1, string.Format("操作：{0}；结果：{1}；信息：{2}", "分组添加", true, ""));
             return Json(result);
         }
         [HttpPost]
@@ -89,6 +94,7 @@ namespace Wings.Admin.Controllers
                     result.message = "修改部门成功";
                 }
             }
+            //Log.OperaInstance.SaveMessage(1, string.Format("操作：{0}；结果：{1}；信息：{2}", "分组编辑", true, ""));
             return Json(result);
         }
         [HttpPost]
@@ -100,6 +106,7 @@ namespace Wings.Admin.Controllers
             {
                 groupdto = proxy.Channel.GetGroupByID(ID);
             }
+            //Log.OperaInstance.SaveMessage(1, string.Format("操作：{0}；结果：{1}；信息：{2}", "获取单个分组", true, ""));
             return Json(groupdto);
         }
         [HttpPost]
@@ -144,6 +151,7 @@ namespace Wings.Admin.Controllers
                 }
 
             }
+            //Log.OperaInstance.SaveMessage(1, string.Format("操作：{0}；结果：{1}；信息：{2}", "删除分组（禁用）", true, ""));
             return Json(result);
         }
     }

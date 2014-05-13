@@ -8,3 +8,8 @@ G:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\bin\Debug\Wings.Core.Test.pdb
 G:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\obj\Debug\Wings.Core.Test.csprojResolveAssemblyReference.cache
 G:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\obj\Debug\Wings.Core.Test.dll
 G:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\obj\Debug\Wings.Core.Test.pdb
+G:\GitHub\Wings\Wings\Wings.Core.Test\bin\Debug\Wings.Core.Test.dll
+G:\GitHub\Wings\Wings\Wings.Core.Test\bin\Debug\Wings.Core.Test.pdb
+G:\GitHub\Wings\Wings\Wings.Core.Test\obj\Debug\Wings.Core.Test.csprojResolveAssemblyReference.cache
+G:\GitHub\Wings\Wings\Wings.Core.Test\obj\Debug\Wings.Core.Test.dll
+G:\GitHub\Wings\Wings\Wings.Core.Test\obj\Debug\Wings.Core.Test.pdb

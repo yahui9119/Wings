@@ -27,26 +27,31 @@ namespace Wings.Framework.Plugin.UI
         {
             //权限拦截是否忽略
             bool IsIgnored = false;
+            string message = string.Empty;
             if (filterContext == null)
             {
                 throw new ArgumentNullException("filterContext");
             }
             //判断当前用户是否是管理员
-            var userinfo= WebSetting.GetUser();
+            var userinfo = WebSetting.GetUser();
             if (userinfo != null && userinfo.ID == WingsConfigurationReader.Instance.WebAdminID)
             {
+                message = "当前用户是超级管理员！";
                 IsIgnored = true;
             }
             //是否登录和允许匿名访问 即无权限控制
             if (filterContext.ActionDescriptor.IsDefined(typeof(AnonymousAttribute), false))
             {
+                message = "匿名使用页面，无权限控制！";
                 IsIgnored = true;
 
             }
             if (!filterContext.HttpContext.User.Identity.IsAuthenticated && !IsIgnored)
             {
+                message = "用户未登录，转跳登录！";
 
                 {
+
                     FormsAuthentication.RedirectToLoginPage();
                 }
             }
@@ -56,6 +61,7 @@ namespace Wings.Framework.Plugin.UI
                 {
                     if (filterContext.ActionDescriptor.IsDefined(typeof(LoginAllowViewAttribute), false))
                     {
+                        message = "登录即可允许页面！";
                         IsIgnored = true;
                     }
                     else
@@ -80,7 +86,7 @@ namespace Wings.Framework.Plugin.UI
                                         }
                                         else
                                         {
-                                            return p.Action.ToLower() == action.ToLower() && p.Controller.ToLower() == controller.ToLower() && p.IsPost == ispost;    
+                                            return p.Action.ToLower() == action.ToLower() && p.Controller.ToLower() == controller.ToLower() && p.IsPost == ispost;
                                         }
                                     }
                                     );
@@ -88,6 +94,7 @@ namespace Wings.Framework.Plugin.UI
                                 IsIgnored = result != null;
                             }
                         }
+                        message = IsIgnored ? "权限之内页面！" : "不具有权限页面！";
                     }
                 }
 
@@ -97,6 +104,14 @@ namespace Wings.Framework.Plugin.UI
                 filterContext.Result = new JsonResult() { Data = new { success = false, message = "抱歉 您不具有此页面的访问权限,如有疑问请联系管理员！" }, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
 
             }
+            object[] Descriptions = filterContext.ActionDescriptor.GetCustomAttributes(typeof(System.ComponentModel.DescriptionAttribute), false);
+            string OperaName = string.Empty;
+            if (Descriptions != null && Descriptions.Count() > 0)
+            {
+                OperaName = ((System.ComponentModel.DescriptionAttribute)(Descriptions[0])).Description;
+            }
+            string paras = Newtonsoft.Json.JsonConvert.SerializeObject(filterContext.ActionParameters);
+            Log.OperaInstance.SaveMessage(IsIgnored ? 1 : 2, string.Format("权限判断：{0}；参数：{1}；信息：{2}", OperaName, paras, message));
             base.OnActionExecuting(filterContext);
         }
     }

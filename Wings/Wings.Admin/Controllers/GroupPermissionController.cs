@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Wings.Contracts;
 using Wings.DataObjects.Custom;
+using Wings.Framework;
 using Wings.Framework.Communication;
 using Wings.Framework.Plugin;
 
@@ -18,6 +19,7 @@ namespace Wings.Admin.Controllers
         [Description("分组权限管理【主页】")]
         public ActionResult Index()
         {
+            //Log.OperaInstance.SaveMessage(1, string.Format("操作：{0}；结果：{1}；信息：{2}", "访问分组权限管理主页", true, ""));
             return View();
         }
         [HttpPost]
@@ -56,6 +58,7 @@ namespace Wings.Admin.Controllers
                 }
 
             }
+           
             return Json(result);
 
         }
