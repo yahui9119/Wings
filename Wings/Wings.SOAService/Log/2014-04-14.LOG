@@ -1,0 +1,40 @@
+时间:2014-04-14 16:55:36,982 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [20] 
+ 日志内容:System.InvalidOperationException: 附加类型“Wings.Domain.Model.Module”的实体失败，因为相同类型的其他实体已具有相同的主键值。在使用 "Attach" 方法或者将实体的状态设置为 "Unchanged" 或 "Modified" 时如果图形中的任何实体具有冲突键值，则可能会发生上述行为。这可能是因为某些实体是新的并且尚未接收数据库生成的键值。在此情况下，使用 "Add" 方法或者 "Added" 实体状态跟踪该图形，然后将非新实体的状态相应设置为 "Unchanged" 或 "Modified"。
+   在 System.Data.Entity.Core.Objects.ObjectContext.VerifyRootForAdd(Boolean doAttach, String entitySetName, IEntityWrapper wrappedEntity, EntityEntry existingEntry, EntitySet& entitySet, Boolean& isNoOperation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClassa.<Attach>b__9()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   在 System.Data.Entity.Internal.InternalEntityEntry.set_State(EntityState value)
+   在 System.Data.Entity.Infrastructure.DbEntityEntry`1.set_State(EntityState value)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.RegisterModified[TAggregateRoot](TAggregateRoot obj) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 25
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoUpdate(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 170
+   在 Wings.Domain.Repositories.Repository`1.Update(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 449
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 193
+   在 DynamicModule.ns.Wrapped_IWebService_bdb471bc9f0d4d82a2b7459131c75a06.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-14 16:59:32,051 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [28] 
+ 日志内容:System.InvalidOperationException: 附加类型“Wings.Domain.Model.Module”的实体失败，因为相同类型的其他实体已具有相同的主键值。在使用 "Attach" 方法或者将实体的状态设置为 "Unchanged" 或 "Modified" 时如果图形中的任何实体具有冲突键值，则可能会发生上述行为。这可能是因为某些实体是新的并且尚未接收数据库生成的键值。在此情况下，使用 "Add" 方法或者 "Added" 实体状态跟踪该图形，然后将非新实体的状态相应设置为 "Unchanged" 或 "Modified"。
+   在 System.Data.Entity.Core.Objects.ObjectContext.VerifyRootForAdd(Boolean doAttach, String entitySetName, IEntityWrapper wrappedEntity, EntityEntry existingEntry, EntitySet& entitySet, Boolean& isNoOperation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClassa.<Attach>b__9()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   在 System.Data.Entity.Internal.InternalEntityEntry.set_State(EntityState value)
+   在 System.Data.Entity.Infrastructure.DbEntityEntry`1.set_State(EntityState value)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.RegisterModified[TAggregateRoot](TAggregateRoot obj) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 25
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoUpdate(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 170
+   在 Wings.Domain.Repositories.Repository`1.Update(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 449
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 193
+   在 DynamicModule.ns.Wrapped_IWebService_ea8eca99cc084dfcb9190444eb88c70c.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+

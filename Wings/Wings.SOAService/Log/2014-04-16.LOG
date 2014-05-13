@@ -1,0 +1,1095 @@
+时间:2014-04-16 10:47:14,229 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [6] 
+ 日志内容:AutoMapper.AutoMapperMappingException: 
+
+Mapping types:
+Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 -> List`1
+System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 -> System.Collections.Generic.List`1[[Wings.DataObjects.ModuleDTO, Wings.DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+RoleDTO.Users.Users.Users0[0].Roles.Roles.Roles1[1].Modules.Modules
+
+Source value:
+System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 列名 'ControllerName' 无效。
+列名 'ActionName' 无效。
+列名 'IsPost' 无效。
+列名 'Target' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.Execute(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80.get_Modules()
+   在 lambda_method(Closure , Object )
+   在 AutoMapper.Impl.PropertyGetter.GetValue(Object source)
+   在 AutoMapper.Impl.MemberGetter.Resolve(ResolutionResult source)
+   在 AutoMapper.PropertyMap.<ResolveValue>b__6(ResolutionResult current, IValueResolver resolver)
+   在 System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   在 AutoMapper.PropertyMap.ResolveValue(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.EnumerableMapperBase`1.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.CollectionMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.EnumerableMapperBase`1.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.CollectionMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.MappingEngine.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   在 AutoMapper.MappingEngine.Map[TSource,TDestination](TSource source)
+   在 AutoMapper.Mapper.Map[TSource,TDestination](TSource source)
+   在 Wings.Core.Implementation.UserServiceImpl.<>c__DisplayClass5c.<GetAllRoles>b__5b(Role r) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 583
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Wings.Core.Implementation.UserServiceImpl.GetAllRoles() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 581
+   在 DynamicModule.ns.Wrapped_IUserService_23aa979690af44c3994c6e4c8b874eaa.<GetAllRoles_DelegateImplementation>__18(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 10:47:14,229 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [13] 
+ 日志内容:AutoMapper.AutoMapperMappingException: 
+
+Mapping types:
+Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 -> List`1
+System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 -> System.Collections.Generic.List`1[[Wings.DataObjects.ModuleDTO, Wings.DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+WebDTO.Users.Users.Users0[0].Roles.Roles.Roles0[0].Modules.Modules
+
+Source value:
+System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 列名 'ControllerName' 无效。
+列名 'ActionName' 无效。
+列名 'IsPost' 无效。
+列名 'Target' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.Execute(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80.get_Modules()
+   在 lambda_method(Closure , Object )
+   在 AutoMapper.Impl.PropertyGetter.GetValue(Object source)
+   在 AutoMapper.Impl.MemberGetter.Resolve(ResolutionResult source)
+   在 AutoMapper.PropertyMap.<ResolveValue>b__6(ResolutionResult current, IValueResolver resolver)
+   在 System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   在 AutoMapper.PropertyMap.ResolveValue(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.EnumerableMapperBase`1.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.CollectionMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.EnumerableMapperBase`1.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.CollectionMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.MappingEngine.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   在 AutoMapper.MappingEngine.Map[TSource,TDestination](TSource source)
+   在 AutoMapper.Mapper.Map[TSource,TDestination](TSource source)
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllWebs() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 164
+   在 DynamicModule.ns.Wrapped_IWebService_f21e18d536ac43a686c6fb5dfa91bfa5.<GetAllWebs_DelegateImplementation>__6(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 10:47:14,229 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [15] 
+ 日志内容:AutoMapper.AutoMapperMappingException: 
+
+Mapping types:
+Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 -> List`1
+System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 -> System.Collections.Generic.List`1[[Wings.DataObjects.ModuleDTO, Wings.DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+UserDTO.Roles.Roles.Roles0[0].Modules.Modules
+
+Source value:
+System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 列名 'ControllerName' 无效。
+列名 'ActionName' 无效。
+列名 'IsPost' 无效。
+列名 'Target' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.Execute(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80.get_Modules()
+   在 lambda_method(Closure , Object )
+   在 AutoMapper.Impl.PropertyGetter.GetValue(Object source)
+   在 AutoMapper.Impl.MemberGetter.Resolve(ResolutionResult source)
+   在 AutoMapper.PropertyMap.<ResolveValue>b__6(ResolutionResult current, IValueResolver resolver)
+   在 System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   在 AutoMapper.PropertyMap.ResolveValue(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.EnumerableMapperBase`1.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.CollectionMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.MappingEngine.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   在 AutoMapper.MappingEngine.Map[TSource,TDestination](TSource source)
+   在 AutoMapper.Mapper.Map[TSource,TDestination](TSource source)
+   在 Wings.Core.Implementation.UserServiceImpl.<>c__DisplayClass28.<GetUsersByPage>b__26(User u) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 325
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 323
+   在 DynamicModule.ns.Wrapped_IUserService_23aa979690af44c3994c6e4c8b874eaa.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 10:50:41,792 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [13] 
+ 日志内容:AutoMapper.AutoMapperMappingException: 
+
+Mapping types:
+Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 -> List`1
+System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 -> System.Collections.Generic.List`1[[Wings.DataObjects.ModuleDTO, Wings.DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+UserDTO.Roles.Roles.Roles0[0].Modules.Modules
+
+Source value:
+System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 列名 'ControllerName' 无效。
+列名 'ActionName' 无效。
+列名 'IsPost' 无效。
+列名 'Target' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.Execute(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80.get_Modules()
+   在 lambda_method(Closure , Object )
+   在 AutoMapper.Impl.PropertyGetter.GetValue(Object source)
+   在 AutoMapper.Impl.MemberGetter.Resolve(ResolutionResult source)
+   在 AutoMapper.PropertyMap.<ResolveValue>b__6(ResolutionResult current, IValueResolver resolver)
+   在 System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   在 AutoMapper.PropertyMap.ResolveValue(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.EnumerableMapperBase`1.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.CollectionMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.MappingEngine.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   在 AutoMapper.MappingEngine.Map[TSource,TDestination](TSource source)
+   在 AutoMapper.Mapper.Map[TSource,TDestination](TSource source)
+   在 Wings.Core.Implementation.UserServiceImpl.<>c__DisplayClass28.<GetUsersByPage>b__26(User u) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 325
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 323
+   在 DynamicModule.ns.Wrapped_IUserService_23aa979690af44c3994c6e4c8b874eaa.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 10:50:42,514 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [13] 
+ 日志内容:AutoMapper.AutoMapperMappingException: 
+
+Mapping types:
+Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 -> List`1
+System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 -> System.Collections.Generic.List`1[[Wings.DataObjects.ModuleDTO, Wings.DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+UserDTO.Roles.Roles.Roles0[0].Modules.Modules
+
+Source value:
+System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80 ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 列名 'ControllerName' 无效。
+列名 'ActionName' 无效。
+列名 'IsPost' 无效。
+列名 'Target' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.Execute(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.Role_ACB038106B1744C2EF816F814BE4B67114067C7E5C2C2E50484457BDEFFACF80.get_Modules()
+   在 lambda_method(Closure , Object )
+   在 AutoMapper.Impl.PropertyGetter.GetValue(Object source)
+   在 AutoMapper.Impl.MemberGetter.Resolve(ResolutionResult source)
+   在 AutoMapper.PropertyMap.<ResolveValue>b__6(ResolutionResult current, IValueResolver resolver)
+   在 System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   在 AutoMapper.PropertyMap.ResolveValue(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.EnumerableMapperBase`1.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.CollectionMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.MappingEngine.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   在 AutoMapper.MappingEngine.Map[TSource,TDestination](TSource source)
+   在 AutoMapper.Mapper.Map[TSource,TDestination](TSource source)
+   在 Wings.Core.Implementation.UserServiceImpl.<>c__DisplayClass28.<GetUsersByPage>b__26(User u) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 325
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 323
+   在 DynamicModule.ns.Wrapped_IUserService_23aa979690af44c3994c6e4c8b874eaa.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 11:13:04,311 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [7] 
+ 日志内容:System.Data.Entity.Validation.DbEntityValidationException: 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.DoCommit()
+   在 Wings.Domain.Repositories.RepositoryContext.Commit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\RepositoryContext.cs:行号 172
+   在 Wings.Core.Implementation.WebServiceImpl.CreateModule(Guid webid, ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 185
+   在 DynamicModule.ns.Wrapped_IWebService_7b09a0b9253a4b69b713fbac89496caa.<CreateModule_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 14:36:19,257 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [23] 
+ 日志内容:System.TimeoutException: 发送到 http://arthurw/Temporary_Listen_Addresses/7bf3b41e-0da0-457a-a33a-4f78a3059cf3/a57cff79-9ca0-48a6-b022-4de510b04b3d 的请求操作在配置的超时(00:00:59.9659788)内未收到回复。分配给此操作的时间可能已经是更长超时的一部分。这可能由于服务仍在处理操作或服务无法发送回复消息。请考虑增加操作超时(将通道/代理转换为 IContextChannel 并设置 OperationTimeout 属性)并确保服务能够连接到客户端。
+
+Server stack trace: 
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.SyncDuplexRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_e6a19dcef9654657887610d2e9e2dceb.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 14:44:45,210 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [47] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 无法将通信对象 System.ServiceModel.Channels.ServiceChannel 用于通信，因为它已经被中止。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_e6a19dcef9654657887610d2e9e2dceb.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:49,673 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:51,548 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:52,131 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [49] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:52,496 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [49] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:52,771 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [49] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:53,002 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [49] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:53,227 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [49] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:53,433 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [49] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:53,688 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [49] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:53,937 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:54,179 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:54,419 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:54,658 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:54,903 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:05:55,137 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_fa3f87c88f094483a928824df4c4bffe.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:08:58,241 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [20] 
+ 日志内容:System.TimeoutException: 发送到 http://arthurw/Temporary_Listen_Addresses/ec48bf88-48cc-4a10-9667-baed1a004cd9/85fcaf74-c3cd-4b60-9e17-8357d0235575 的请求操作在配置的超时(00:00:59.9509680)内未收到回复。分配给此操作的时间可能已经是更长超时的一部分。这可能由于服务仍在处理操作或服务无法发送回复消息。请考虑增加操作超时(将通道/代理转换为 IContextChannel 并设置 OperationTimeout 属性)并确保服务能够连接到客户端。
+
+Server stack trace: 
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.SyncDuplexRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_6bb37f52616f44c8b84549437a0b6c5c.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:29:39,400 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [20] 
+ 日志内容:System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。 ---> System.Data.Entity.Core.OptimisticConcurrencyException: 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.DoCommit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 50
+   在 Wings.Domain.Repositories.RepositoryContext.Commit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\RepositoryContext.cs:行号 172
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 200
+   在 DynamicModule.ns.Wrapped_IWebService_83c55b33a3f542e8bf0fd66bcd58fd3a.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:37:48,108 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [10] 
+ 日志内容:System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。 ---> System.Data.Entity.Core.OptimisticConcurrencyException: 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.DoCommit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 50
+   在 Wings.Domain.Repositories.RepositoryContext.Commit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\RepositoryContext.cs:行号 172
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 200
+   在 DynamicModule.ns.Wrapped_IWebService_03fbdeabdb094d26b7d4bb0200782f01.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:39:45,604 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [10] 
+ 日志内容:System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。 ---> System.Data.Entity.Core.OptimisticConcurrencyException: 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.DoCommit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 50
+   在 Wings.Domain.Repositories.RepositoryContext.Commit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\RepositoryContext.cs:行号 172
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 200
+   在 DynamicModule.ns.Wrapped_IWebService_03fbdeabdb094d26b7d4bb0200782f01.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:47:03,059 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [44] 
+ 日志内容:System.ServiceModel.CommunicationException: 服务器未提供有意义的回复；这可能是由协定不匹配、会话过早关闭或内部服务器错误引起的。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_03fbdeabdb094d26b7d4bb0200782f01.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:47:18,850 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_03fbdeabdb094d26b7d4bb0200782f01.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:47:45,428 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [26] 
+ 日志内容:System.ServiceModel.CommunicationObjectAbortedException: 由于会话通道等待接收消息时超时，因此无法完成操作“GetAllPermission”。要增加超时，请在配置文件绑定上设置 receiveTimeout 属性或直接在 Binding 上设置 ReceiveTimeout 属性。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 156
+   在 DynamicModule.ns.Wrapped_IWebService_03fbdeabdb094d26b7d4bb0200782f01.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:47:52,949 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [26] 
+ 日志内容:System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。 ---> System.Data.Entity.Core.OptimisticConcurrencyException: 存储区更新、插入或删除语句影响到了意外的行数(0)。实体在加载后可能被修改或删除。刷新 ObjectStateManager 项。
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   在 System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   在 System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   在 System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.DoCommit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 50
+   在 Wings.Domain.Repositories.RepositoryContext.Commit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\RepositoryContext.cs:行号 172
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 200
+   在 DynamicModule.ns.Wrapped_IWebService_03fbdeabdb094d26b7d4bb0200782f01.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:48:53,376 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [25] 
+ 日志内容:System.InvalidOperationException: 附加类型“Wings.Domain.Model.Module”的实体失败，因为相同类型的其他实体已具有相同的主键值。在使用 "Attach" 方法或者将实体的状态设置为 "Unchanged" 或 "Modified" 时如果图形中的任何实体具有冲突键值，则可能会发生上述行为。这可能是因为某些实体是新的并且尚未接收数据库生成的键值。在此情况下，使用 "Add" 方法或者 "Added" 实体状态跟踪该图形，然后将非新实体的状态相应设置为 "Unchanged" 或 "Modified"。
+   在 System.Data.Entity.Core.Objects.ObjectContext.VerifyRootForAdd(Boolean doAttach, String entitySetName, IEntityWrapper wrappedEntity, EntityEntry existingEntry, EntitySet& entitySet, Boolean& isNoOperation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClassa.<Attach>b__9()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   在 System.Data.Entity.Internal.InternalEntityEntry.set_State(EntityState value)
+   在 System.Data.Entity.Infrastructure.DbEntityEntry`1.set_State(EntityState value)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.RegisterModified[TAggregateRoot](TAggregateRoot obj) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 25
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoUpdate(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 170
+   在 Wings.Domain.Repositories.Repository`1.Update(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 449
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 213
+   在 DynamicModule.ns.Wrapped_IWebService_f8ecde6551254edd99a9668ac5ea05f4.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:49:44,308 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [25] 
+ 日志内容:System.InvalidOperationException: 附加类型“Wings.Domain.Model.Module”的实体失败，因为相同类型的其他实体已具有相同的主键值。在使用 "Attach" 方法或者将实体的状态设置为 "Unchanged" 或 "Modified" 时如果图形中的任何实体具有冲突键值，则可能会发生上述行为。这可能是因为某些实体是新的并且尚未接收数据库生成的键值。在此情况下，使用 "Add" 方法或者 "Added" 实体状态跟踪该图形，然后将非新实体的状态相应设置为 "Unchanged" 或 "Modified"。
+   在 System.Data.Entity.Core.Objects.ObjectContext.VerifyRootForAdd(Boolean doAttach, String entitySetName, IEntityWrapper wrappedEntity, EntityEntry existingEntry, EntitySet& entitySet, Boolean& isNoOperation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClassa.<Attach>b__9()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   在 System.Data.Entity.Internal.InternalEntityEntry.set_State(EntityState value)
+   在 System.Data.Entity.Infrastructure.DbEntityEntry`1.set_State(EntityState value)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.RegisterModified[TAggregateRoot](TAggregateRoot obj) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 25
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoUpdate(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 170
+   在 Wings.Domain.Repositories.Repository`1.Update(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 449
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 213
+   在 DynamicModule.ns.Wrapped_IWebService_f8ecde6551254edd99a9668ac5ea05f4.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:51:23,348 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [6] 
+ 日志内容:System.InvalidOperationException: 附加类型“Wings.Domain.Model.Module”的实体失败，因为相同类型的其他实体已具有相同的主键值。在使用 "Attach" 方法或者将实体的状态设置为 "Unchanged" 或 "Modified" 时如果图形中的任何实体具有冲突键值，则可能会发生上述行为。这可能是因为某些实体是新的并且尚未接收数据库生成的键值。在此情况下，使用 "Add" 方法或者 "Added" 实体状态跟踪该图形，然后将非新实体的状态相应设置为 "Unchanged" 或 "Modified"。
+   在 System.Data.Entity.Core.Objects.ObjectContext.VerifyRootForAdd(Boolean doAttach, String entitySetName, IEntityWrapper wrappedEntity, EntityEntry existingEntry, EntitySet& entitySet, Boolean& isNoOperation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClassa.<Attach>b__9()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   在 System.Data.Entity.Internal.InternalEntityEntry.set_State(EntityState value)
+   在 System.Data.Entity.Infrastructure.DbEntityEntry`1.set_State(EntityState value)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.RegisterModified[TAggregateRoot](TAggregateRoot obj) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 25
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoUpdate(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 170
+   在 Wings.Domain.Repositories.Repository`1.Update(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 449
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 213
+   在 DynamicModule.ns.Wrapped_IWebService_fae8d6ce9c2d41dd8562926d3958c1b2.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:52:42,440 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [6] 
+ 日志内容:System.InvalidOperationException: 附加类型“Wings.Domain.Model.Module”的实体失败，因为相同类型的其他实体已具有相同的主键值。在使用 "Attach" 方法或者将实体的状态设置为 "Unchanged" 或 "Modified" 时如果图形中的任何实体具有冲突键值，则可能会发生上述行为。这可能是因为某些实体是新的并且尚未接收数据库生成的键值。在此情况下，使用 "Add" 方法或者 "Added" 实体状态跟踪该图形，然后将非新实体的状态相应设置为 "Unchanged" 或 "Modified"。
+   在 System.Data.Entity.Core.Objects.ObjectContext.VerifyRootForAdd(Boolean doAttach, String entitySetName, IEntityWrapper wrappedEntity, EntityEntry existingEntry, EntitySet& entitySet, Boolean& isNoOperation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClassa.<Attach>b__9()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   在 System.Data.Entity.Internal.InternalEntityEntry.set_State(EntityState value)
+   在 System.Data.Entity.Infrastructure.DbEntityEntry`1.set_State(EntityState value)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.RegisterModified[TAggregateRoot](TAggregateRoot obj) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 25
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoUpdate(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 170
+   在 Wings.Domain.Repositories.Repository`1.Update(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 449
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 213
+   在 DynamicModule.ns.Wrapped_IWebService_fae8d6ce9c2d41dd8562926d3958c1b2.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-16 15:52:58,417 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [6] 
+ 日志内容:System.InvalidOperationException: 附加类型“Wings.Domain.Model.Module”的实体失败，因为相同类型的其他实体已具有相同的主键值。在使用 "Attach" 方法或者将实体的状态设置为 "Unchanged" 或 "Modified" 时如果图形中的任何实体具有冲突键值，则可能会发生上述行为。这可能是因为某些实体是新的并且尚未接收数据库生成的键值。在此情况下，使用 "Add" 方法或者 "Added" 实体状态跟踪该图形，然后将非新实体的状态相应设置为 "Unchanged" 或 "Modified"。
+   在 System.Data.Entity.Core.Objects.ObjectContext.VerifyRootForAdd(Boolean doAttach, String entitySetName, IEntityWrapper wrappedEntity, EntityEntry existingEntry, EntitySet& entitySet, Boolean& isNoOperation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClassa.<Attach>b__9()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   在 System.Data.Entity.Internal.InternalEntityEntry.set_State(EntityState value)
+   在 System.Data.Entity.Infrastructure.DbEntityEntry`1.set_State(EntityState value)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.RegisterModified[TAggregateRoot](TAggregateRoot obj) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 25
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoUpdate(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 170
+   在 Wings.Domain.Repositories.Repository`1.Update(TAggregateRoot aggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 449
+   在 Wings.Core.Implementation.WebServiceImpl.EditModule(ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 213
+   在 DynamicModule.ns.Wrapped_IWebService_fae8d6ce9c2d41dd8562926d3958c1b2.<EditModule_DelegateImplementation>__8(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+

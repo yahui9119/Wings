@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MongoDB_BSon_AND_Driver</id>
+    <version>1.0.0</version>
+    <title>Mongo DB BSON and DRIVER</title>
+    <authors>abc</authors>
+    <owners>abc</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is not my package, I am adding it as nuget package for mongo db lovers</description>
+    <summary>This is not my package, I am adding it as nuget package for mongo db lovers</summary>
+  </metadata>
+</package>

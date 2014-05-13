@@ -1,0 +1,100 @@
+时间:2014-04-25 23:21:13,751 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [24] 
+ 日志内容:System.TimeoutException: 发送到 http://arthur/Temporary_Listen_Addresses/68b2dbc8-dbea-4c7c-9360-937de42dab88/fc75ea27-b2d9-4b60-9853-7fd565ce8613 的请求操作在配置的超时(00:00:59.4055682)内未收到回复。分配给此操作的时间可能已经是更长超时的一部分。这可能由于服务仍在处理操作或服务无法发送回复消息。请考虑增加操作超时(将通道/代理转换为 IContextChannel 并设置 OperationTimeout 属性)并确保服务能够连接到客户端。
+
+Server stack trace: 
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.SyncDuplexRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 159
+   在 DynamicModule.ns.Wrapped_IWebService_6a6bdc09394b4c42b247404762b50755.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-25 23:22:30,764 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [24] 
+ 日志内容:System.TimeoutException: 消息无法在分配的超时 00:01:00 内传输。可靠通道的传输窗口中没有可用空间。分配给此操作的时间可能已经是更长超时的一部分。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   在 System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   在 System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   在 System.ServiceModel.Channels.ReliableDuplexSessionChannel.OnSend(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.DuplexChannel.Send(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 159
+   在 DynamicModule.ns.Wrapped_IWebService_6a6bdc09394b4c42b247404762b50755.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-25 23:24:09,520 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [24] 
+ 日志内容:System.TimeoutException: 消息无法在分配的超时 00:01:00 内传输。可靠通道的传输窗口中没有可用空间。分配给此操作的时间可能已经是更长超时的一部分。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   在 System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   在 System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   在 System.ServiceModel.Channels.ReliableDuplexSessionChannel.OnSend(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.DuplexChannel.Send(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 159
+   在 DynamicModule.ns.Wrapped_IWebService_6a6bdc09394b4c42b247404762b50755.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-25 23:25:30,714 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [24] 
+ 日志内容:System.TimeoutException: 消息无法在分配的超时 00:01:00 内传输。可靠通道的传输窗口中没有可用空间。分配给此操作的时间可能已经是更长超时的一部分。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   在 System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   在 System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   在 System.ServiceModel.Channels.ReliableDuplexSessionChannel.OnSend(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.DuplexChannel.Send(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginServiceCallBack.GetAllPermission()
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllAction(Guid WebID) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 159
+   在 DynamicModule.ns.Wrapped_IWebService_6a6bdc09394b4c42b247404762b50755.<GetAllAction_DelegateImplementation>__13(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+

@@ -1,0 +1,20 @@
+时间:2014-04-09 16:09:45,461 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [36] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.CreateModule(Guid webid, ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 171
+   在 DynamicModule.ns.Wrapped_IWebService_124c41e54ad342f889583265209b143d.<CreateModule_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-09 16:24:05,442 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [36] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.CreateModule(Guid webid, ModuleDTO moduledto) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 171
+   在 DynamicModule.ns.Wrapped_IWebService_b285da697d504489994a859334e3c0bf.<CreateModule_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+

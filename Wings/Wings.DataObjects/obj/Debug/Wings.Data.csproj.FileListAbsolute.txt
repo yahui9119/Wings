@@ -1,0 +1,5 @@
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.Data\bin\Debug\Wings.Data.dll
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.Data\bin\Debug\Wings.Data.pdb
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.Data\obj\Debug\Wings.Data.dll
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.Data\obj\Debug\Wings.Data.pdb
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.Data\obj\Debug\Wings.Data.csprojResolveAssemblyReference.cache

@@ -1,0 +1,468 @@
+﻿@{
+    Layout = null;
+    string _Versions = "1";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="@Url.Content("~/Content/images/favicon.ico")" />
+    <title>通用权限管理系统</title>
+    <link href="@Url.Content("~/Content/easyui/themes/default/easyui.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/icons.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/home.css")" rel="stylesheet" type="text/css" />
+</head>
+<body class="easyui-layout">
+    <div id="system-north" data-options="region:'north',border:'false'" style="overflow: hidden; border-width: 0px;">
+        <div id="system-menu-top">
+            <div class="left">
+                <img alt="Wings" src="/Content/images/logo.png" />
+            </div>
+            @*   <div id="topMenu" class="right">
+                <ul>
+                    <li>
+                        <a href="javascript:;" title="个人办公"><span>个人办公<i class="b-icon-chevron-down b-icon-white"></i></span></a>
+                        <div class="layer">
+                            <ul>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的桌面</a>
+                                    <a href="javascript:;">待办工作</a>
+                                    <a href="javascript:;">待阅消息</a>
+                                    <a href="javascript:;">电子邮件</a>
+                                    <a href="javascript:;">日程信息</a>
+                                    <a href="javascript:;">快捷导航</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">任务管理</a>
+                                    <a href="javascript:;">我的任务</a>
+                                    <a href="javascript:;">工作安排</a>
+                                    <a href="javascript:;">工作报告</a>
+                                    <a href="javascript:;">工作日志</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">电子邮件</a>
+                                    <a href="javascript:;">收件箱</a>
+                                    <a href="javascript:;">发件箱</a>
+                                    <a href="javascript:;">草稿箱</a>
+                                    <a href="javascript:;">垃圾箱</a>
+                                    <a href="javascript:;">邮箱设置</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">日程管理</a>
+                                    <a href="javascript:;">日程分类</a>
+                                    <a href="javascript:;">日程安排</a>
+                                    <a href="javascript:;">日程共享</a>
+                                    <a href="javascript:;">下属日程</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的考勤</a>
+                                    <a href="javascript:;">外出申请</a>
+                                    <a href="javascript:;">假期申请</a>
+                                    <a href="javascript:;">加班申请</a>
+                                    <a href="javascript:;">考勤查询</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">通讯录</a>
+                                    <a href="javascript:;">内部</a>
+                                    <a href="javascript:;">外部</a>
+                                    <a href="javascript:;">个人</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的网盘</a>
+                                    <a href="javascript:;">文档分类</a>
+                                    <a href="javascript:;">我的文档</a>
+                                    <a href="javascript:;">文档共享</a>
+                                    <a href="javascript:;">回收站</a>
+                                </li>
+                                <li style="border-bottom-style: solid;">
+                                    <a class="bold" href="javascript:;">即时通讯</a>
+                                    <a href="javascript:;">在线消息</a>
+                                    <a href="javascript:;">离线消息</a>
+                                    <a href="javascript:;">文件传输</a>
+                                    <a href="javascript:;">图片传输</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="信息中心"><span>信息中心<i class="b-icon-chevron-down b-icon-white"></i></span></a>
+                        <div class="layer">
+                            <ul>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的桌面</a>
+                                    <a href="javascript:;">待办工作</a>
+                                    <a href="javascript:;">待阅消息</a>
+                                    <a href="javascript:;">电子邮件</a>
+                                    <a href="javascript:;">日程信息</a>
+                                    <a href="javascript:;">快捷导航</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">任务管理</a>
+                                    <a href="javascript:;">我的任务</a>
+                                    <a href="javascript:;">工作安排</a>
+                                    <a href="javascript:;">工作报告</a>
+                                    <a href="javascript:;">工作日志</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">电子邮件</a>
+                                    <a href="javascript:;">收件箱</a>
+                                    <a href="javascript:;">发件箱</a>
+                                    <a href="javascript:;">草稿箱</a>
+                                    <a href="javascript:;">垃圾箱</a>
+                                    <a href="javascript:;">邮箱设置</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">日程管理</a>
+                                    <a href="javascript:;">日程分类</a>
+                                    <a href="javascript:;">日程安排</a>
+                                    <a href="javascript:;">日程共享</a>
+                                    <a href="javascript:;">下属日程</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的考勤</a>
+                                    <a href="javascript:;">外出申请</a>
+                                    <a href="javascript:;">假期申请</a>
+                                    <a href="javascript:;">加班申请</a>
+                                    <a href="javascript:;">考勤查询</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">通讯录</a>
+                                    <a href="javascript:;">内部</a>
+                                    <a href="javascript:;">外部</a>
+                                    <a href="javascript:;">个人</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的网盘</a>
+                                    <a href="javascript:;">文档分类</a>
+                                    <a href="javascript:;">我的文档</a>
+                                    <a href="javascript:;">文档共享</a>
+                                    <a href="javascript:;">回收站</a>
+                                </li>
+                                <li style="border-bottom-style: solid;">
+                                    <a class="bold" href="javascript:;">即时通讯</a>
+                                    <a href="javascript:;">在线消息</a>
+                                    <a href="javascript:;">离线消息</a>
+                                    <a href="javascript:;">文件传输</a>
+                                    <a href="javascript:;">图片传输</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="文档知识库"><span>文档知识库<i class="b-icon-chevron-down b-icon-white"></i></span></a>
+                        <div class="layer">
+                            <ul>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的桌面</a>
+                                    <a href="javascript:;">待办工作</a>
+                                    <a href="javascript:;">待阅消息</a>
+                                    <a href="javascript:;">电子邮件</a>
+                                    <a href="javascript:;">日程信息</a>
+                                    <a href="javascript:;">快捷导航</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">任务管理</a>
+                                    <a href="javascript:;">我的任务</a>
+                                    <a href="javascript:;">工作安排</a>
+                                    <a href="javascript:;">工作报告</a>
+                                    <a href="javascript:;">工作日志</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">电子邮件</a>
+                                    <a href="javascript:;">收件箱</a>
+                                    <a href="javascript:;">发件箱</a>
+                                    <a href="javascript:;">草稿箱</a>
+                                    <a href="javascript:;">垃圾箱</a>
+                                    <a href="javascript:;">邮箱设置</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">日程管理</a>
+                                    <a href="javascript:;">日程分类</a>
+                                    <a href="javascript:;">日程安排</a>
+                                    <a href="javascript:;">日程共享</a>
+                                    <a href="javascript:;">下属日程</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的考勤</a>
+                                    <a href="javascript:;">外出申请</a>
+                                    <a href="javascript:;">假期申请</a>
+                                    <a href="javascript:;">加班申请</a>
+                                    <a href="javascript:;">考勤查询</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">通讯录</a>
+                                    <a href="javascript:;">内部</a>
+                                    <a href="javascript:;">外部</a>
+                                    <a href="javascript:;">个人</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的网盘</a>
+                                    <a href="javascript:;">文档分类</a>
+                                    <a href="javascript:;">我的文档</a>
+                                    <a href="javascript:;">文档共享</a>
+                                    <a href="javascript:;">回收站</a>
+                                </li>
+                                <li style="border-bottom-style: solid;">
+                                    <a class="bold" href="javascript:;">即时通讯</a>
+                                    <a href="javascript:;">在线消息</a>
+                                    <a href="javascript:;">离线消息</a>
+                                    <a href="javascript:;">文件传输</a>
+                                    <a href="javascript:;">图片传输</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="系统管理"><span>综合行政<i class="b-icon-chevron-down b-icon-white"></i></span></a>
+                        <div class="layer">
+                            <ul>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的桌面</a>
+                                    <a href="javascript:;">待办工作</a>
+                                    <a href="javascript:;">待阅消息</a>
+                                    <a href="javascript:;">电子邮件</a>
+                                    <a href="javascript:;">日程信息</a>
+                                    <a href="javascript:;">快捷导航</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">任务管理</a>
+                                    <a href="javascript:;">我的任务</a>
+                                    <a href="javascript:;">工作安排</a>
+                                    <a href="javascript:;">工作报告</a>
+                                    <a href="javascript:;">工作日志</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">电子邮件</a>
+                                    <a href="javascript:;">收件箱</a>
+                                    <a href="javascript:;">发件箱</a>
+                                    <a href="javascript:;">草稿箱</a>
+                                    <a href="javascript:;">垃圾箱</a>
+                                    <a href="javascript:;">邮箱设置</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">日程管理</a>
+                                    <a href="javascript:;">日程分类</a>
+                                    <a href="javascript:;">日程安排</a>
+                                    <a href="javascript:;">日程共享</a>
+                                    <a href="javascript:;">下属日程</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的考勤</a>
+                                    <a href="javascript:;">外出申请</a>
+                                    <a href="javascript:;">假期申请</a>
+                                    <a href="javascript:;">加班申请</a>
+                                    <a href="javascript:;">考勤查询</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">通讯录</a>
+                                    <a href="javascript:;">内部</a>
+                                    <a href="javascript:;">外部</a>
+                                    <a href="javascript:;">个人</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的网盘</a>
+                                    <a href="javascript:;">文档分类</a>
+                                    <a href="javascript:;">我的文档</a>
+                                    <a href="javascript:;">文档共享</a>
+                                    <a href="javascript:;">回收站</a>
+                                </li>
+                                <li style="border-bottom-style: solid;">
+                                    <a class="bold" href="javascript:;">即时通讯</a>
+                                    <a href="javascript:;">在线消息</a>
+                                    <a href="javascript:;">离线消息</a>
+                                    <a href="javascript:;">文件传输</a>
+                                    <a href="javascript:;">图片传输</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="系统管理"><span>系统管理<i class="b-icon-chevron-down b-icon-white"></i></span></a>
+                        <div class="layer">
+                            <ul>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的桌面</a>
+                                    <a href="javascript:;">待办工作</a>
+                                    <a href="javascript:;">待阅消息</a>
+                                    <a href="javascript:;">电子邮件</a>
+                                    <a href="javascript:;">日程信息</a>
+                                    <a href="javascript:;">快捷导航</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">任务管理</a>
+                                    <a href="javascript:;">我的任务</a>
+                                    <a href="javascript:;">工作安排</a>
+                                    <a href="javascript:;">工作报告</a>
+                                    <a href="javascript:;">工作日志</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">电子邮件</a>
+                                    <a href="javascript:;">收件箱</a>
+                                    <a href="javascript:;">发件箱</a>
+                                    <a href="javascript:;">草稿箱</a>
+                                    <a href="javascript:;">垃圾箱</a>
+                                    <a href="javascript:;">邮箱设置</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">日程管理</a>
+                                    <a href="javascript:;">日程分类</a>
+                                    <a href="javascript:;">日程安排</a>
+                                    <a href="javascript:;">日程共享</a>
+                                    <a href="javascript:;">下属日程</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的考勤</a>
+                                    <a href="javascript:;">外出申请</a>
+                                    <a href="javascript:;">假期申请</a>
+                                    <a href="javascript:;">加班申请</a>
+                                    <a href="javascript:;">考勤查询</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">通讯录</a>
+                                    <a href="javascript:;">内部</a>
+                                    <a href="javascript:;">外部</a>
+                                    <a href="javascript:;">个人</a>
+                                </li>
+                                <li>
+                                    <a class="bold" href="javascript:;">我的网盘</a>
+                                    <a href="javascript:;">文档分类</a>
+                                    <a href="javascript:;">我的文档</a>
+                                    <a href="javascript:;">文档共享</a>
+                                    <a href="javascript:;">回收站</a>
+                                </li>
+                                <li style="border-bottom-style: solid;">
+                                    <a class="bold" href="javascript:;">即时通讯</a>
+                                    <a href="javascript:;">在线消息</a>
+                                    <a href="javascript:;">离线消息</a>
+                                    <a href="javascript:;">文件传输</a>
+                                    <a href="javascript:;">图片传输</a>
+                                    <a href="javascript:;">菜单管理</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>*@
+        </div>
+        <div id="system-info-bar">
+            <div class="left">
+                <a id="test" href="/Account" target="sysMain" title="进入个人中心"><strong>@User.Identity.Name</strong></a> 您好，欢迎光临。
+            <i class="b-icon-time"></i><span id="nowDate"></span>
+            </div>
+            <div class="right">
+                <a id="personal-state" href="javascript:;" target="_self" title="状态签名"><i class="b-icon-user"></i>状态签名</a> |
+            <a id="personal-memo" href="javascript:;" target="_self" title="个人便笺"><i class="b-icon-edit"></i>个人便笺</a> | 
+            <a id="logging-out" href="/Account/LogOut" target="_self" title="安全退出"><i class="b-icon-off"></i>安全退出</a>
+            </div>
+        </div>
+    </div>
+    <div id="system-south" data-options="region:'south',border:'false'">
+        <a href="http://www.gwkm.com" target="_blank" title="Wings">Wings</a>
+        Copyright © 2012-<script type="text/javascript">document.write(new Date().getFullYear());</script>
+        <span>www.gwkm.com All Rights Reserved.</span>
+    </div>
+    <div id="system-west" data-options="region:'west',title:'导航菜单',split:'true',iconCls:'t-icon t-icon-nav'">
+        <div id="leftMenu" class="easyui-accordion" border="false" fit="true">
+
+            <div data-options="title:'系统设置',iconCls:'t-icon t-icon-1-5'" style="padding: 10px;">
+                <ul class="easyui-tree">
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a style="cursor: pointer;" rel="/Web" title="站点管理">站点管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a style="cursor: pointer;" rel="/Module" title="菜单管理">菜单管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a style="cursor: pointer;" rel="/Group" title="部门管理">部门管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a style="cursor: pointer;" rel="/Role" title="角色管理">角色管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a style="cursor: pointer;" rel="/User" title="用户管理">用户管理</a>
+                    </li>
+                     <li iconcls="t-icon t-icon-11-3">
+                        <a style="cursor: pointer;" rel="/RolePermission" title="角色授权">角色授权</a>
+                    </li>
+                     <li iconcls="t-icon t-icon-11-3">
+                        <a style="cursor: pointer;" rel="/GroupPermission" title="部门授权">部门授权</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a style="cursor: pointer;" rel="/UserPermission" title="用户特殊权限">用户特殊授权</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div data-options="title:'个人中心',iconCls:'t-icon t-icon-5-24'" style="padding: 10px;">
+                <ul class="easyui-tree">
+                    <li iconcls="t-icon t-icon-10-3">
+                        <span>我的信箱</span>
+                        <ul>
+                            <li iconcls="t-icon t-icon-11-3">
+                                <a style="cursor: pointer;" rel="aaa" title="发送消息">发送消息</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li iconcls="t-icon t-icon-10-3">
+                        <span>手机短信</span>
+                        <ul>
+                            <li iconcls="t-icon t-icon-11-3">
+                                <a style="cursor: pointer;" rel="http://www.baidu.com" title="发送短信">发送短信</a>
+                            </li>
+                            <li iconcls="t-icon t-icon-11-3">
+                                <a style="cursor: pointer;" rel="http://www.baidu.com" title="已发短信">已发短信</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li iconcls="t-icon t-icon-10-3">
+                        <span>工作日程</span>
+                        <ul>
+                        </ul>
+                    </li>
+                    <li iconcls="t-icon t-icon-10-3">
+                        <span>我的HR</span>
+                        <ul>
+                        </ul>
+                    </li>
+                    <li iconcls="t-icon t-icon-10-3">
+                        <span>个人设置</span>
+                        <ul>
+                            <li iconcls="t-icon t-icon-4-21">
+                                <a style="cursor: pointer;" rel="/Account" title="个人信息">个人信息</a>
+                            </li>
+                            <li iconcls="t-icon t-icon-19-11">
+                                <a style="cursor: pointer;" rel="/Account/ChangePassword" title="修改密码">修改密码</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="system-center" region="center">
+        <div id="tabs" fit="true" class="easyui-tabs" border="false">
+            <div title="我的首页" style="padding: 10px;" iconcls="t-icon t-icon-5-14">
+                <iframe name="sysMain" scrolling="yes" frameborder="0" src="/Home/Main" style="width: 100%; height: 100%;"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="gwkm-tab-menu" class="easyui-menu">
+        <div iconcls="icon-reload" id="refresh">刷新</div>
+        <div class="menu-sep"></div>
+        <div id="close">关闭</div>
+        <div id="close-all">全部关闭</div>
+        <div id="close-other">除此之外全部关闭</div>
+        <div class="menu-sep"></div>
+        <div id="close-right">当前页右侧全部关闭</div>
+        <div id="close-left">当前页左侧全部关闭</div>
+        <div class="menu-sep"></div>
+        <div iconcls="icon-undo" id="exit">退出</div>
+    </div>
+    <script src="@Url.Content("~/Content/jquery.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/easyui/jquery.easyui.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/easyui/locale/easyui-lang-zh_CN.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/javascript/home.js?v=" + @_Versions)" type="text/javascript"></script>
+</body>
+</html>

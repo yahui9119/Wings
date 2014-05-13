@@ -1,0 +1,52 @@
+时间:2014-05-12 09:27:51,424 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第119行
+ [22] 
+ 日志内容:【事件751bb45c-8e8f-4320-b5e2-704b6880e07e】用户在线[开始]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+
+时间:2014-05-12 09:27:51,664 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第119行
+ [22] 
+ 日志内容:【事件751bb45c-8e8f-4320-b5e2-704b6880e07e】更新用户在线状态为True
+-----------------------------------------
+
+时间:2014-05-12 09:27:51,838 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第119行
+ [22] 
+ 日志内容:【事件751bb45c-8e8f-4320-b5e2-704b6880e07e】用户在线[结束]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+
+时间:2014-05-12 18:05:24,473 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第119行
+ [19] 
+ 日志内容:【事件b04e3f14-aed4-4a5e-87b7-ada4fca7dacf】用户在线[开始]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+
+时间:2014-05-12 18:05:24,581 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第119行
+ [19] 
+ 日志内容:【事件b04e3f14-aed4-4a5e-87b7-ada4fca7dacf】更新用户在线状态为True
+-----------------------------------------
+
+时间:2014-05-12 18:05:24,722 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第119行
+ [19] 
+ 日志内容:【事件b04e3f14-aed4-4a5e-87b7-ada4fca7dacf】用户在线[结束]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+

@@ -1,0 +1,90 @@
+﻿@model Wings.Admin.Models.LoginModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>欢迎登录</title>
+    <link href="@Url.Content("~/Content/css/login.css")" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1></h1>
+            <ul class="nav">
+            </ul>
+        </div>
+        <div id="content">
+            <div class="left_main">
+                <h2>渠道信息</h2>
+                <ul class="news" id="qdkb_html" style="color: #FFFFFF;">
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;欢迎使用渡口网站管理系统!</li>
+                </ul>
+                <div class="help_center">
+                    <h3><a href="###" target="_blank">帮助中心</a></h3>
+                    <p><strong>提供专业的技术问题解答</strong></p>
+                </div>
+                <div class="bbs">
+                    <h3><a href="##" target="_blank">技术支持</a></h3>
+                    <p><strong>联系方式:</strong></p>
+                </div>
+            </div>
+            @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+            {
+                @Html.AntiForgeryToken()
+                <fieldset>
+                    <legend>用户登录</legend>
+                    <dl class="setting">
+                        <dt>
+                            @Html.LabelFor(m => m.Account)
+                        </dt>
+                        <dd>
+                            <span class="text_input">
+                                @Html.TextBoxFor(m => m.Account, new { @class = "" })
+                            </span>
+                            @Html.ValidationMessageFor(m => m.Account)
+                        </dd>
+                        <dt>
+                            @Html.LabelFor(m => m.Password)
+                        </dt>
+                        <dd>
+                            <span class="text_input">
+                                @Html.PasswordFor(m => m.Password)
+                            </span>
+                            @Html.ValidationMessageFor(m => m.Password)
+                        </dd>
+                        <dt>
+                            @Html.LabelFor(m => m.CheckCode)
+                        </dt>
+                        <dd>
+                            <span class="short_input">
+                                @Html.TextBoxFor(m => m.CheckCode)
+                            </span>
+                            <span class="yzm">
+                                <img id="vdimgck" align="absmiddle" style="cursor: pointer;" onclick="this.src='@Url.Action("GetVerifyCode")'+'?'+Date()" src="@Url.Action("GetVerifyCode")" alt="看不清？点击更换" /></span>
+                            @Html.ValidationMessageFor(m => m.CheckCode)
+                        </dd>
+
+                        <dt>
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+                        </dt>
+                        <dd>
+                            <input type="submit" value="" class="login_btn" />
+                        </dd>
+                        <dd>
+                             @Html.ValidationSummary(true)
+                        </dd>
+                    </dl>
+
+                </fieldset>
+                
+            }
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

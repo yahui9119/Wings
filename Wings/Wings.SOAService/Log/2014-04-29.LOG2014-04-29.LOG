@@ -1,0 +1,50 @@
+时间:2014-04-29 16:19:57,749 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [51] 
+ 日志内容:System.NotSupportedException: Contains requires that the serializer specified for Name support items by implementing MongoDB.Bson.Serialization.IBsonArraySerializer and returning a non-null result. MongoDB.Bson.Serialization.Serializers.StringSerializer is the current serializer.
+   在 MongoDB.Driver.Linq.Utils.BsonSerializationInfoHelper.GetItemSerializationInfo(String methodName, BsonSerializationInfo serializationInfo)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildContainsQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildMethodCallQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 168
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 88
+   在 DynamicModule.ns.Wrapped_IWebService_58482aca750940028d028754af10be68.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-29 16:20:01,829 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [50] 
+ 日志内容:System.NotSupportedException: Contains requires that the serializer specified for Name support items by implementing MongoDB.Bson.Serialization.IBsonArraySerializer and returning a non-null result. MongoDB.Bson.Serialization.Serializers.StringSerializer is the current serializer.
+   在 MongoDB.Driver.Linq.Utils.BsonSerializationInfoHelper.GetItemSerializationInfo(String methodName, BsonSerializationInfo serializationInfo)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildContainsQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildMethodCallQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 168
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 88
+   在 DynamicModule.ns.Wrapped_IWebService_58482aca750940028d028754af10be68.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+

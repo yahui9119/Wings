@@ -1,0 +1,192 @@
+﻿<div data-options="region:'west',title:'选择站点',split:true" style="width: 125px;">
+    <input id="webtree" type="text" style="width: 120px" />
+    <div class="easyui-panel" title="选择角色" iconcls="icon-search" collapsible="true" style="padding: 5px; width: 120px; height: 250px; border:0">
+        <ul id="roletree"></ul>
+
+    </div>
+
+</div>
+<div data-options="region:'center'" style="padding: 0px;">
+    @*使用类似于query的方式实现*@
+    @*查看子菜单*@
+    <div id="treegrid"></div>
+    <div id="toolbar" class="z-toolbar" style="background: #f4f4f4;">
+        <a id="btnauthorize" href="javascript:;" class="easyui-linkbutton" title="授权" data-options="iconCls:'icon-add',plain:true">授权</a>
+
+        <a href="javascript:;" class="easyui-splitbutton" title="展开" data-options="menu:'#dropdown',iconCls:'icon-collapse',plain:true">展开</a>
+        <a id="btnReload" href="javascript:;" class="easyui-linkbutton" title="刷新" data-options="iconCls:'icon-reload',plain:'true'">刷新</a>
+    </div>
+    <div id="dropdown">
+        <div id="btnCollapseAll" data-options="iconCls:'t-icon t-icon-12-18'">全部折叠</div>
+        <div id="btnExpandAll" data-options="iconCls:'t-icon t-icon-13-18'">全部展开</div>
+    </div>
+
+    @*@Html.Partial("_AddEdit")*@
+</div>
+@section JS{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $treeGrid = $('#treegrid');
+
+            $("#webtree").combotree(
+                {
+                    url: "@Url.ActionWithPermission("Tree", "Web")",
+                    onSelect: function (node) {
+                        $treeGrid.treegrid('reload', webtreeselect());
+                    }
+                });
+            $("#roletree").tree(
+               {
+                   url: "@Url.ActionWithPermission("Tree", "Role")",
+                   onSelect: function (node) {
+                       $treeGrid.treegrid('reload', webtreeselect());
+                   }
+               });
+            var _rowData;
+            function webtreeselect() {
+                var node = $("#webtree").combotree('tree').tree("getSelected");
+                var webid = 0;
+                if (node) {
+                    return {
+                        webid: node.id
+                    }
+                }
+                return {
+                    webid: webid
+                }
+            }
+            function roletreeselect() {
+                var node = $("#roletree").tree("getSelected");
+                var roleid = 0;
+                if (node) {
+                    return {
+                        roleid: node.id
+                    }
+                }
+                return {
+                    roleid: roleid
+                }
+            }
+            $treeGrid.treegrid({
+                state: 'open',
+                idField: 'ID',
+                treeField: 'Name',
+                url: '@Url.Action("GetDataGrid", "Module")',
+                border: false,
+                fitColumns: false,
+                title: '选择菜单',
+                iconCls: 't-icon t-icon-15-4',
+                rownumbers: true,
+                animate: true,
+                fit: true,
+                fixed: false,
+                singleSelect: false,
+                toolbar: '#toolbar',
+                columns: [[
+                    { field: 'ID', checkbox: true, align: 'center', width: 20 },
+                    { title: '菜单名称', field: 'Name', width: '200', align: 'left' },
+                    { title: '排序', field: 'Index', width: '50', align: 'center' },
+                      {
+                          title: '图标', field: 'ICON', width: '50', align: 'center', formatter: function (value) {
+                              return '<a  style="width: 18px; height: 18px;" class="t-icon ' + value + '"></a>';
+                          }
+                      },
+                    {
+                        title: '显示', field: 'Status', width: '50', align: 'center',
+                        formatter: function (value) {
+                            return Common.formatBoolean(value == 1);
+                        }
+                    },
+                    {
+                        title: '添加时间', field: 'CreateDate', width: '100', align: 'center',
+                        formatter: function (value) {
+                            return Common.formatDate(value);
+                        }
+                    },
+                    {
+                        title: '更新时间', field: 'EditDate', width: '100', align: 'center',
+                        formatter: function (value) {
+                            return Common.formatDate(value);
+                        }
+                    },
+                    { title: '描述', field: 'Description', width: '220', align: 'center' }
+                ]],
+                onLoadSuccess: function (data) {
+                    var roleid = roletreeselect().roleid;
+                    var webid = webtreeselect().webid;
+                    $.post("@Url.ActionWithPermission("GetPermission", "RolePermission")", {
+                        webid: webid,
+                        roleid: roleid
+                    }, function (r) {
+                        if (r.success) {
+                            var data = r.data
+                            
+                            $.each(data, function (i, v) {
+                                $('input[value=' + v + ']').click();
+                            })
+
+                        }
+                    })
+                }
+            });
+
+            //全部折叠
+            $('#btnCollapseAll,#treegrid-collapseAll').on('click', function () {
+                $treeGrid.treegrid('collapseAll');
+            });
+            //全部展开
+            $('#btnExpandAll,#treegrid-expandAll').on('click', function () {
+                $treeGrid.treegrid('expandAll');
+            });
+            //刷新
+            $('#btnReload,#treegrid-reload').on('click', function () {
+                $treeGrid.treegrid('load', webtreeselect());
+            });
+            $('#btnauthorize').on("click", function () {
+                var selecteds = $treeGrid.treegrid('getSelections');
+                var message = "是否要授权给选择的角色？"
+                if (Common.isEmptyObject(selecteds)) {
+                    message = "是否要清空选择的角色的授权?";
+                }
+                //else 
+                {
+                    var roleid = roletreeselect().roleid;
+                    var webid = webtreeselect().webid;
+
+                    if (!roleid) {
+                        $.messager.alert('提示', "请先选择!");
+                        return;
+                    }
+                    if (!webid) {
+                        $.messager.alert('提示', "请先选择站点!");
+                        return;
+                    }
+                    $.messager.confirm('确认', message, function (r) {
+                        if (!r) {
+                            return;
+                        }
+                        var moduleids = [];
+                        $.each(selecteds, function (i, v) {
+                            moduleids.push(v.ID);
+                        });
+                        $.post('@Url.Action("Authorization", "RolePermission")', {
+                            moduleids: moduleids.join(','),
+                            webid: webid,
+                            roleid: roleid
+                        },
+                            function (data) {
+                                if (data.success) {
+                                    $.messager.alert('提示', data.message, 'info');
+                                    $treeGrid.treegrid('load');
+                                    $treeGrid.treegrid('clearSelections');
+                                } else {
+                                    $.messager.alert('错误', data.message, 'error');
+                                }
+                            });
+                    });
+                }
+                return false;
+            });
+        });
+    </script>
+}

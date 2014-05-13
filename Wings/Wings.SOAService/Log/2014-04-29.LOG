@@ -1,0 +1,250 @@
+时间:2014-04-29 15:40:57,091 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [22] 
+ 日志内容:System.ArgumentException: Unsupported where clause: <ConditionalExpression>.
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 167
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 82
+   在 DynamicModule.ns.Wrapped_IWebService_0c5674e825bd4487bf2e9cb30704fdad.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-29 15:46:21,118 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [28] 
+ 日志内容:System.ArgumentException: Unsupported where clause: <ConditionalExpression>.
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 167
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 82
+   在 DynamicModule.ns.Wrapped_IWebService_0c5674e825bd4487bf2e9cb30704fdad.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-29 15:48:29,182 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [48] 
+ 日志内容:System.ArgumentException: Unsupported where clause: <ConditionalExpression>.
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 167
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 82
+   在 DynamicModule.ns.Wrapped_IWebService_0c5674e825bd4487bf2e9cb30704fdad.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-29 15:51:00,240 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [48] 
+ 日志内容:System.ArgumentException: Unsupported where clause: <ConditionalExpression>.
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 167
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 82
+   在 DynamicModule.ns.Wrapped_IWebService_0c5674e825bd4487bf2e9cb30704fdad.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-29 15:51:57,148 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [44] 
+ 日志内容:System.ArgumentException: Unsupported where clause: <ConditionalExpression>.
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 167
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 82
+   在 DynamicModule.ns.Wrapped_IWebService_0c5674e825bd4487bf2e9cb30704fdad.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-29 15:52:19,446 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [49] 
+ 日志内容:System.ArgumentException: Unsupported where clause: <ConditionalExpression>.
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 167
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 82
+   在 DynamicModule.ns.Wrapped_IWebService_0c5674e825bd4487bf2e9cb30704fdad.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-29 15:55:26,254 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [66] 
+ 日志内容:System.ArgumentException: Unsupported where clause: <ConditionalExpression>.
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 167
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 82
+   在 DynamicModule.ns.Wrapped_IWebService_0c5674e825bd4487bf2e9cb30704fdad.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-29 16:04:38,404 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [13] 
+ 日志内容:System.ArgumentException: Unsupported where clause: <ConditionalExpression>.
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 167
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 82
+   在 DynamicModule.ns.Wrapped_IWebService_38058e024d394791803c5afc809f9660.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-29 16:11:54,163 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [17] 
+ 日志内容:System.ArgumentException: Unsupported where clause: <ConditionalExpression>.
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 168
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 83
+   在 DynamicModule.ns.Wrapped_IWebService_922f3cee2e35400cbde87af9d1d6c02f.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-29 17:13:45,829 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第83行
+ [14] 
+ 日志内容:System.ArgumentException: Unsupported where clause: <ConditionalExpression>.
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndAlsoQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildAndQuery(BinaryExpression binaryExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 168
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 81
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 g:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 88
+   在 DynamicModule.ns.Wrapped_IWebService_fafeb760db844f08b141a882e2d2af43.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+

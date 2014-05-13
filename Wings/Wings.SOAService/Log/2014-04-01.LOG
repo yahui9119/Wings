@@ -1,0 +1,849 @@
+时间:2014-04-01 09:05:55,553 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [5] 
+ 日志内容:System.ArgumentNullException: 值不能为 null。
+参数名: ID
+   在 Wings.Core.CoreService.PerformUpdateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Func`2 idFieldFunc, Action`2 fieldUpdateAction) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 139
+   在 Wings.Core.Implementation.UserServiceImpl.EidtUser(UserDTOList user) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 131
+   在 DynamicModule.ns.Wrapped_IUserService_a0e0595dd188443eabc9aa6534544dbf.<EidtUser_DelegateImplementation>__3(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 09:06:15,733 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [5] 
+ 日志内容:System.ArgumentNullException: 值不能为 null。
+参数名: ID
+   在 Wings.Core.CoreService.PerformUpdateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Func`2 idFieldFunc, Action`2 fieldUpdateAction) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 139
+   在 Wings.Core.Implementation.UserServiceImpl.EidtUser(UserDTOList user) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 131
+   在 DynamicModule.ns.Wrapped_IUserService_a0e0595dd188443eabc9aa6534544dbf.<EidtUser_DelegateImplementation>__3(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:18:57,948 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.InvalidCastException: 无法将类型为“System.Collections.Generic.List`1[Wings.DataObjects.GroupDTO]”的对象强制转换为类型“Wings.DataObjects.GroupDTOList”。
+   在 Wings.DataObjects.GroupDTOList.ToViewModel(List`1 groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 54
+   在 Wings.DataObjects.GroupDTOList.ToViewModel(List`1 groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 50
+   在 Wings.Core.Implementation.UserServiceImpl.CreateGroup(GroupDTOList groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 622
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<CreateGroup_DelegateImplementation>__20(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:19:23,521 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.InvalidCastException: 无法将类型为“System.Collections.Generic.List`1[Wings.DataObjects.GroupDTO]”的对象强制转换为类型“Wings.DataObjects.GroupDTOList”。
+   在 Wings.DataObjects.GroupDTOList.ToViewModel(List`1 groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 54
+   在 Wings.DataObjects.GroupDTOList.ToViewModel(List`1 groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 50
+   在 Wings.Core.Implementation.UserServiceImpl.CreateGroup(GroupDTOList groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 622
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<CreateGroup_DelegateImplementation>__20(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:19:59,644 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.InvalidCastException: 无法将类型为“System.Collections.Generic.List`1[Wings.DataObjects.GroupDTO]”的对象强制转换为类型“Wings.DataObjects.GroupDTOList”。
+   在 Wings.DataObjects.GroupDTOList.ToViewModel(List`1 groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 54
+   在 Wings.DataObjects.GroupDTOList.ToViewModel(List`1 groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 50
+   在 Wings.Core.Implementation.UserServiceImpl.CreateGroup(GroupDTOList groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 622
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<CreateGroup_DelegateImplementation>__20(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:21:11,024 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.ArgumentException: 没有为类型“Wings.Domain.Model.User”定义实例属性“Name”
+   在 System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.InvokeSortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 66
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.SortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 23
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 126
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 314
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:21:12,254 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.ArgumentException: 没有为类型“Wings.Domain.Model.User”定义实例属性“Name”
+   在 System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.InvokeSortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 66
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.SortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 23
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 126
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 314
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:21:12,830 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.ArgumentException: 没有为类型“Wings.Domain.Model.User”定义实例属性“Name”
+   在 System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.InvokeSortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 66
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.SortByDescending[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 29
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 131
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 314
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:21:13,334 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.ArgumentException: 没有为类型“Wings.Domain.Model.User”定义实例属性“Name”
+   在 System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.InvokeSortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 66
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.SortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 23
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 126
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 314
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:21:13,830 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.ArgumentException: 没有为类型“Wings.Domain.Model.User”定义实例属性“Name”
+   在 System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.InvokeSortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 66
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.SortByDescending[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 29
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 131
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 314
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:21:14,360 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.ArgumentException: 没有为类型“Wings.Domain.Model.User”定义实例属性“Name”
+   在 System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.InvokeSortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 66
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.SortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 23
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 126
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 314
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:21:14,808 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.ArgumentException: 没有为类型“Wings.Domain.Model.User”定义实例属性“Name”
+   在 System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.InvokeSortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 66
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.SortByDescending[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 29
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 131
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 314
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:21:15,340 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [14] 
+ 日志内容:System.ArgumentException: 没有为类型“Wings.Domain.Model.User”定义实例属性“Name”
+   在 System.Linq.Expressions.Expression.Property(Expression expression, String propertyName)
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.InvokeSortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 66
+   在 Wings.Domain.Repositories.EntityFramework.SortByExtension.SortBy[TAggregateRoot](IQueryable`1 query, Expression`1 sortPredicate) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\SortByExtension.cs:行号 23
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 126
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 314
+   在 DynamicModule.ns.Wrapped_IUserService_2a0f5a2b1abe4d3692970fbbb9a2368c.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:24:58,644 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [15] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.DataObjects.GroupDTOList.ToViewModel(List`1 groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 55
+   在 Wings.DataObjects.GroupDTOList.ToViewModel(List`1 groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 50
+   在 Wings.Core.Implementation.UserServiceImpl.CreateGroup(GroupDTOList groups) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 622
+   在 DynamicModule.ns.Wrapped_IUserService_29a8de48bf674c0192c571ad37692445.<CreateGroup_DelegateImplementation>__20(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:41:24,398 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [18] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_00a0d6b73bd74fdfa2926813fb776ad7.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:41:31,992 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [18] 
+ 日志内容:System.Data.Entity.Validation.DbEntityValidationException: 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.DoCommit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 50
+   在 Wings.Domain.Repositories.RepositoryContext.Commit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\RepositoryContext.cs:行号 172
+   在 Wings.Core.CoreService.PerformCreateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Action`1 processDto, Action`1 processAggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 100
+   在 Wings.Core.Implementation.WebServiceImpl.CreateWeb(WebDTOList webdtos) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 129
+   在 DynamicModule.ns.Wrapped_IWebService_00a0d6b73bd74fdfa2926813fb776ad7.<CreateWeb_DelegateImplementation>__0(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:41:50,369 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [18] 
+ 日志内容:System.Data.Entity.Validation.DbEntityValidationException: 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.DoCommit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 50
+   在 Wings.Domain.Repositories.RepositoryContext.Commit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\RepositoryContext.cs:行号 172
+   在 Wings.Core.CoreService.PerformCreateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Action`1 processDto, Action`1 processAggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 100
+   在 Wings.Core.Implementation.WebServiceImpl.CreateWeb(WebDTOList webdtos) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 129
+   在 DynamicModule.ns.Wrapped_IWebService_00a0d6b73bd74fdfa2926813fb776ad7.<CreateWeb_DelegateImplementation>__0(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:42:11,358 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [18] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_00a0d6b73bd74fdfa2926813fb776ad7.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:42:37,187 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [18] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_00a0d6b73bd74fdfa2926813fb776ad7.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:44:45,974 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [5] 
+ 日志内容:System.Data.Entity.Validation.DbEntityValidationException: 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.DoCommit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 50
+   在 Wings.Domain.Repositories.RepositoryContext.Commit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\RepositoryContext.cs:行号 172
+   在 Wings.Core.CoreService.PerformCreateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Action`1 processDto, Action`1 processAggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 100
+   在 Wings.Core.Implementation.WebServiceImpl.CreateWeb(WebDTOList webdtos) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 129
+   在 DynamicModule.ns.Wrapped_IWebService_9f4e4f2d830e4d018218186dc82d62fb.<CreateWeb_DelegateImplementation>__0(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:44:45,975 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.Data.Entity.Validation.DbEntityValidationException: 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.DoCommit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 50
+   在 Wings.Domain.Repositories.RepositoryContext.Commit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\RepositoryContext.cs:行号 172
+   在 Wings.Core.CoreService.PerformCreateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Action`1 processDto, Action`1 processAggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 100
+   在 Wings.Core.Implementation.WebServiceImpl.CreateWeb(WebDTOList webdtos) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 129
+   在 DynamicModule.ns.Wrapped_IWebService_9f4e4f2d830e4d018218186dc82d62fb.<CreateWeb_DelegateImplementation>__0(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:45:09,147 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.Data.Entity.Validation.DbEntityValidationException: 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepositoryContext.DoCommit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs:行号 50
+   在 Wings.Domain.Repositories.RepositoryContext.Commit() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\RepositoryContext.cs:行号 172
+   在 Wings.Core.CoreService.PerformCreateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Action`1 processDto, Action`1 processAggregateRoot) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 100
+   在 Wings.Core.Implementation.WebServiceImpl.CreateWeb(WebDTOList webdtos) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 129
+   在 DynamicModule.ns.Wrapped_IWebService_9f4e4f2d830e4d018218186dc82d62fb.<CreateWeb_DelegateImplementation>__0(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:46:23,854 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_9f4e4f2d830e4d018218186dc82d62fb.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:46:51,913 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.InvalidOperationException: 序列不包含任何元素
+   在 System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetByKey(Guid key) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 68
+   在 Wings.Domain.Repositories.Repository`1.GetByKey(Guid key) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 364
+   在 Wings.Core.CoreService.PerformUpdateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Func`2 idFieldFunc, Action`2 fieldUpdateAction) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 141
+   在 Wings.Core.Implementation.UserServiceImpl.DeleteRole(IDList roleid) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 789
+   在 DynamicModule.ns.Wrapped_IUserService_c5487e16b04544228ddbf3b393915e51.<DeleteRole_DelegateImplementation>__12(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:46:55,224 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.InvalidOperationException: 序列不包含任何元素
+   在 System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetByKey(Guid key) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 68
+   在 Wings.Domain.Repositories.Repository`1.GetByKey(Guid key) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 364
+   在 Wings.Core.CoreService.PerformUpdateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Func`2 idFieldFunc, Action`2 fieldUpdateAction) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 141
+   在 Wings.Core.Implementation.UserServiceImpl.DeleteRole(IDList roleid) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 789
+   在 DynamicModule.ns.Wrapped_IUserService_c5487e16b04544228ddbf3b393915e51.<DeleteRole_DelegateImplementation>__12(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 10:47:03,572 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.InvalidOperationException: 序列不包含任何元素
+   在 System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetByKey(Guid key) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 68
+   在 Wings.Domain.Repositories.Repository`1.GetByKey(Guid key) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 364
+   在 Wings.Core.CoreService.PerformUpdateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Func`2 idFieldFunc, Action`2 fieldUpdateAction) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 141
+   在 Wings.Core.Implementation.UserServiceImpl.DeleteRole(IDList roleid) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 789
+   在 DynamicModule.ns.Wrapped_IUserService_c5487e16b04544228ddbf3b393915e51.<DeleteRole_DelegateImplementation>__12(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:41:19,665 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_0776ddfec1604ba0bd79c69571f92552.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:41:24,480 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_0776ddfec1604ba0bd79c69571f92552.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:41:25,511 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_0776ddfec1604ba0bd79c69571f92552.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:41:26,126 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_0776ddfec1604ba0bd79c69571f92552.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:41:26,550 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_0776ddfec1604ba0bd79c69571f92552.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:41:26,803 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_0776ddfec1604ba0bd79c69571f92552.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:41:27,009 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_0776ddfec1604ba0bd79c69571f92552.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:41:27,208 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_0776ddfec1604ba0bd79c69571f92552.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:41:33,045 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 71
+   在 DynamicModule.ns.Wrapped_IWebService_0776ddfec1604ba0bd79c69571f92552.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:48:34,085 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [23] 
+ 日志内容:System.MissingMethodException: 找不到方法:“System.Collections.Generic.List`1<Wings.Domain.Model.Action> Wings.Domain.Model.Action.get_ChildAction()”。
+   在 Wings.Domain.Repositories.EntityFramework.ModelConfig.ActionConfig..ctor()
+   在 Wings.Domain.Repositories.EntityFramework.WingsDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\WingsDbContext.cs:行号 59
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 117
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 80
+   在 DynamicModule.ns.Wrapped_IWebService_f8e0bdc67c5f4caf9326ff09b44120f8.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:51:16,686 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [23] 
+ 日志内容:System.MissingMethodException: 找不到方法:“System.Collections.Generic.List`1<Wings.Domain.Model.Action> Wings.Domain.Model.Action.get_ChildAction()”。
+   在 Wings.Domain.Repositories.EntityFramework.ModelConfig.ActionConfig..ctor()
+   在 Wings.Domain.Repositories.EntityFramework.WingsDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\WingsDbContext.cs:行号 59
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 117
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 80
+   在 DynamicModule.ns.Wrapped_IWebService_f8e0bdc67c5f4caf9326ff09b44120f8.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:51:17,341 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [23] 
+ 日志内容:System.MissingMethodException: 找不到方法:“System.Collections.Generic.List`1<Wings.Domain.Model.Action> Wings.Domain.Model.Action.get_ChildAction()”。
+   在 Wings.Domain.Repositories.EntityFramework.ModelConfig.ActionConfig..ctor()
+   在 Wings.Domain.Repositories.EntityFramework.WingsDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\WingsDbContext.cs:行号 59
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 117
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 80
+   在 DynamicModule.ns.Wrapped_IWebService_f8e0bdc67c5f4caf9326ff09b44120f8.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:56:58,506 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [23] 
+ 日志内容:System.MissingMethodException: 找不到方法:“System.Collections.Generic.List`1<Wings.Domain.Model.Action> Wings.Domain.Model.Action.get_ChildAction()”。
+   在 Wings.Domain.Repositories.EntityFramework.ModelConfig.ActionConfig..ctor()
+   在 Wings.Domain.Repositories.EntityFramework.WingsDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\WingsDbContext.cs:行号 59
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 93
+   在 Wings.Domain.Repositories.Repository`1.DoFindAll(ISpecification`1 specification) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 213
+   在 Wings.Domain.Repositories.Repository`1.FindAll(ISpecification`1 specification) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 487
+   在 Wings.Core.Implementation.UserServiceImpl.GetGroupParentID(Nullable`1 id) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 660
+   在 DynamicModule.ns.Wrapped_IUserService_70dbd0f59d5b45579396712ce6526698.<GetGroupParentID_DelegateImplementation>__23(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:56:58,507 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [19] 
+ 日志内容:System.MissingMethodException: 找不到方法:“System.Collections.Generic.List`1<Wings.Domain.Model.Action> Wings.Domain.Model.Action.get_ChildAction()”。
+   在 Wings.Domain.Repositories.EntityFramework.ModelConfig.ActionConfig..ctor()
+   在 Wings.Domain.Repositories.EntityFramework.WingsDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\WingsDbContext.cs:行号 59
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 93
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 73
+   在 Wings.Domain.Repositories.Repository`1.DoGetAll() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 52
+   在 Wings.Domain.Repositories.Repository`1.GetAll() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 372
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllWebs() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 198
+   在 DynamicModule.ns.Wrapped_IWebService_f8e0bdc67c5f4caf9326ff09b44120f8.<GetAllWebs_DelegateImplementation>__6(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:56:58,507 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [17] 
+ 日志内容:System.MissingMethodException: 找不到方法:“System.Collections.Generic.List`1<Wings.Domain.Model.Action> Wings.Domain.Model.Action.get_ChildAction()”。
+   在 Wings.Domain.Repositories.EntityFramework.ModelConfig.ActionConfig..ctor()
+   在 Wings.Domain.Repositories.EntityFramework.WingsDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\WingsDbContext.cs:行号 59
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 93
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 73
+   在 Wings.Domain.Repositories.Repository`1.DoGetAll() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 52
+   在 Wings.Domain.Repositories.Repository`1.GetAll() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 372
+   在 Wings.Core.Implementation.UserServiceImpl.GetAllRoles() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 580
+   在 DynamicModule.ns.Wrapped_IUserService_70dbd0f59d5b45579396712ce6526698.<GetAllRoles_DelegateImplementation>__18(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 11:56:58,888 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [17] 
+ 日志内容:System.MissingMethodException: 找不到方法:“System.Collections.Generic.List`1<Wings.Domain.Model.Action> Wings.Domain.Model.Action.get_ChildAction()”。
+   在 Wings.Domain.Repositories.EntityFramework.ModelConfig.ActionConfig..ctor()
+   在 Wings.Domain.Repositories.EntityFramework.WingsDbContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\WingsDbContext.cs:行号 59
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 117
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 314
+   在 DynamicModule.ns.Wrapped_IUserService_70dbd0f59d5b45579396712ce6526698.<GetUsersByPage_DelegateImplementation>__7(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 12:45:14,196 
+级别:ERROR 
+类名:Wings.Logger
+文件: 第0行
+ [17] 
+ 日志内容:AutoMapper.AutoMapperMappingException: 
+
+Mapping types:
+Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF -> List`1
+System.Data.Entity.DynamicProxies.Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF -> System.Collections.Generic.List`1[[Wings.DataObjects.ActionDTO, Wings.DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+WebDTO.Actions.Actions
+
+Source value:
+System.Data.Entity.DynamicProxies.Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 列名 'ViewActionID' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.Execute(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF.get_Actions()
+   在 lambda_method(Closure , Object )
+   在 AutoMapper.Impl.PropertyGetter.GetValue(Object source)
+   在 AutoMapper.Impl.MemberGetter.Resolve(ResolutionResult source)
+   在 AutoMapper.PropertyMap.<ResolveValue>b__6(ResolutionResult current, IValueResolver resolver)
+   在 System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   在 AutoMapper.PropertyMap.ResolveValue(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.MappingEngine.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   在 AutoMapper.MappingEngine.Map[TSource,TDestination](TSource source)
+   在 AutoMapper.Mapper.Map[TSource,TDestination](TSource source)
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllWebs() 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 201
+   在 DynamicModule.ns.Wrapped_IWebService_8f21e865663949438ebd688ae0fd08c0.<GetAllWebs_DelegateImplementation>__6(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 13:09:05,292 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [17] 
+ 日志内容:AutoMapper.AutoMapperMappingException: 
+
+Mapping types:
+Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF -> List`1
+System.Data.Entity.DynamicProxies.Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF -> System.Collections.Generic.List`1[[Wings.DataObjects.ActionDTO, Wings.DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+WebDTO.Actions.Actions
+
+Source value:
+System.Data.Entity.DynamicProxies.Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 列名 'ViewActionID' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.Execute(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF.get_Actions()
+   在 lambda_method(Closure , Object )
+   在 AutoMapper.Impl.PropertyGetter.GetValue(Object source)
+   在 AutoMapper.Impl.MemberGetter.Resolve(ResolutionResult source)
+   在 AutoMapper.PropertyMap.<ResolveValue>b__6(ResolutionResult current, IValueResolver resolver)
+   在 System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   在 AutoMapper.PropertyMap.ResolveValue(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.MappingEngine.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   在 AutoMapper.MappingEngine.Map[TSource,TDestination](TSource source)
+   在 AutoMapper.Mapper.Map[TSource,TDestination](TSource source)
+   在 Wings.Core.Implementation.WebServiceImpl.<>c__DisplayClass7.<GetWebsByPage>b__5(Web u) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 91
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 89
+   在 DynamicModule.ns.Wrapped_IWebService_fd8e2c60ca1742d6b85aac7cb495fabb.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-04-01 13:14:51,204 
+级别:ERROR 
+类名:Wings.Logger
+文件:d:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [6] 
+ 日志内容:AutoMapper.AutoMapperMappingException: 
+
+Mapping types:
+Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF -> List`1
+System.Data.Entity.DynamicProxies.Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF -> System.Collections.Generic.List`1[[Wings.DataObjects.ActionDTO, Wings.DataObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+WebDTO.Actions.Actions
+
+Source value:
+System.Data.Entity.DynamicProxies.Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF ---> System.Data.Entity.Core.EntityCommandExecutionException: 执行命令定义时出错。有关详细信息，请参阅内部异常。 ---> System.Data.SqlClient.SqlException: 列名 'ViewActionID' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.Execute(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.Load()
+   在 System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   在 System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   在 System.Data.Entity.DynamicProxies.Web_58E8494C923F208F252A7F96EB1512A47E301FCA0DEBE62A9516B855E65D8EEF.get_Actions()
+   在 lambda_method(Closure , Object )
+   在 AutoMapper.Impl.PropertyGetter.GetValue(Object source)
+   在 AutoMapper.Impl.MemberGetter.Resolve(ResolutionResult source)
+   在 AutoMapper.PropertyMap.<ResolveValue>b__6(ResolutionResult current, IValueResolver resolver)
+   在 System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   在 AutoMapper.PropertyMap.ResolveValue(ResolutionContext context)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.MapPropertyValue(ResolutionContext context, IMappingEngineRunner mapper, Object mappedObject, PropertyMap propertyMap)
+   在 AutoMapper.Mappers.TypeMapObjectMapperRegistry.PropertyMapMappingStrategy.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.Mappers.TypeMapMapper.Map(ResolutionContext context, IMappingEngineRunner mapper)
+   在 AutoMapper.MappingEngine.AutoMapper.IMappingEngineRunner.Map(ResolutionContext context)
+   在 AutoMapper.MappingEngine.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   在 AutoMapper.MappingEngine.Map[TSource,TDestination](TSource source)
+   在 AutoMapper.Mapper.Map[TSource,TDestination](TSource source)
+   在 Wings.Core.Implementation.WebServiceImpl.<>c__DisplayClass7.<GetWebsByPage>b__5(Web u) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 91
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Wings.Core.Implementation.WebServiceImpl.GetWebsByPage(Pagination pagination) 位置 d:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\WebServiceImpl.cs:行号 89
+   在 DynamicModule.ns.Wrapped_IWebService_8643f4a289844e179c7408fde765ad6f.<GetWebsByPage_DelegateImplementation>__5(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+

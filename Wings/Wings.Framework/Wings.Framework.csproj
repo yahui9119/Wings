@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1C7EFE6-96F5-419E-AF73-117B844962EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wings.Framework</RootNamespace>
+    <AssemblyName>Wings.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IBatisNet.DataAccess">
+      <HintPath>..\libs\IBatisNet\DataAccess\IBatisNet.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataMapper">
+      <HintPath>..\libs\IBatisNet\DataMapper\IBatisNet.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\libs\log4net.2.0.0\lib\net40-client\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationServer.Caching.Client">
+      <HintPath>..\libs\AppfabricCaching\Microsoft.ApplicationServer.Caching.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationServer.Caching.Core">
+      <HintPath>..\libs\AppfabricCaching\Microsoft.ApplicationServer.Caching.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>..\packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\packages\Unity.Interception.3.0.1304.0\lib\Net45\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\packages\Unity.Interception.3.0.1304.0\lib\Net45\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsFabric.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\AppfabricCaching\Microsoft.WindowsFabric.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsFabric.Data.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\AppfabricCaching\Microsoft.WindowsFabric.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\AppfabricCacheProvider.cs" />
+    <Compile Include="Caching\CacheManager.cs" />
+    <Compile Include="Caching\CachingAttribute.cs" />
+    <Compile Include="Caching\CachingMethod.cs" />
+    <Compile Include="Caching\EntLibCacheProvider.cs" />
+    <Compile Include="Caching\ICacheProvider.cs" />
+    <Compile Include="Communication\ChannelFactoryManager.cs" />
+    <Compile Include="Communication\ServiceProxy.cs" />
+    <Compile Include="Config\WingsConfigurationReader.cs" />
+    <Compile Include="Config\WingsConfigurationSection1.csd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WingsConfigurationSection.csd</DependentUpon>
+    </Compile>
+    <Compile Include="Config\WingsConfigurationWrite.cs" />
+    <Compile Include="Events\ActionDelegatedEventHandler.cs" />
+    <Compile Include="Events\Bus\EventBus.cs" />
+    <Compile Include="Events\Bus\IBus.cs" />
+    <Compile Include="Events\Bus\IEventBus.cs" />
+    <Compile Include="Events\Bus\MSMQBusOptions.cs" />
+    <Compile Include="Events\Bus\MSMQEventBus.cs" />
+    <Compile Include="Events\EventAggregator.cs" />
+    <Compile Include="Events\HandlesAsynchronouslyAttribute.cs" />
+    <Compile Include="Events\IEvent.cs" />
+    <Compile Include="Events\IEventAggregator.cs" />
+    <Compile Include="Events\IEventHandler.cs" />
+    <Compile Include="IBatisNet\MyBatisNet.cs" />
+    <Compile Include="Infrastructure\DisposableObject.cs" />
+    <Compile Include="Infrastructure\ICoreServiceContract.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="InterceptionBehaviors\CachingBehavior.cs" />
+    <Compile Include="InterceptionBehaviors\ExceptionLoggingBehavior.cs" />
+    <Compile Include="Log\ILog.cs" />
+    <Compile Include="Log\Log.cs" />
+    <Compile Include="Infrastructure\PagedResult.cs" />
+    <Compile Include="Log\LogMessage.cs" />
+    <Compile Include="Log\PatternConverter\CustomLayout.cs" />
+    <Compile Include="Log\PatternConverter\UserIDPatternConverter.cs" />
+    <Compile Include="Log\PatternConverter\UserNamePatternConverter.cs" />
+    <Compile Include="Log\PatternConverter\WebIDPatternConverter.cs" />
+    <Compile Include="Log\PatternConverter\WebNamePatternConverter.cs" />
+    <Compile Include="Plugin\Contracts\ConfiguredString.cs" />
+    <Compile Include="Plugin\Contracts\IPluginService.cs" />
+    <Compile Include="Plugin\Contracts\IPluginServiceCallBack.cs" />
+    <Compile Include="Plugin\Contracts\Permission.cs" />
+    <Compile Include="Plugin\Contracts\UserInfo.cs" />
+    <Compile Include="Plugin\Controls\CheckBoxList.cs" />
+    <Compile Include="Plugin\Controls\MVCLinkExtensions.cs" />
+    <Compile Include="Plugin\Controls\HtmlPrefixScope.cs" />
+    <Compile Include="Plugin\Controls\IPagedList.cs" />
+    <Compile Include="Plugin\Controls\MvcPager\PagerBuilder.cs" />
+    <Compile Include="Plugin\Controls\MvcPager\PagerHelper.cs" />
+    <Compile Include="Plugin\Controls\MvcPager\PagerItem.cs" />
+    <Compile Include="Plugin\Controls\MvcPager\PagerOptions.cs" />
+    <Compile Include="Plugin\Controls\MVCUrlHelperExtensions.cs" />
+    <Compile Include="Plugin\Controls\RadioBoxList.cs" />
+    <Compile Include="Plugin\Controls\SeoPager.cs" />
+    <Compile Include="Plugin\Services\PluginServiceCallBack.cs" />
+    <Compile Include="Plugin\Utils\ChannelManager.cs" />
+    <Compile Include="Plugin\Web\WebSetting.cs" />
+    <Compile Include="Plugin\Web\WingsMembershipProvider.cs" />
+    <Compile Include="Plugin\WingsController.cs" />
+    <Compile Include="Routes\CustomRouting.cs" />
+    <Compile Include="Plugin\IPlugin.cs" />
+    <Compile Include="Plugin\IPluginsManger.cs" />
+    <Compile Include="Plugin\PluginsManger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Routes\RoutesRegister.cs" />
+    <Compile Include="Infrastructure\ServiceLocator.cs" />
+    <Compile Include="Transactions\DistributedTransactionCoordinator.cs" />
+    <Compile Include="Transactions\ITransactionCoordinator.cs" />
+    <Compile Include="Transactions\SuppressedTransactionCoordinator.cs" />
+    <Compile Include="Transactions\TransactionCoordinator.cs" />
+    <Compile Include="Transactions\TransactionCoordinatorFactory.cs" />
+    <Compile Include="Plugin\UI\AnonymousAttribute.cs" />
+    <Compile Include="Plugin\UI\DefaultPageAttribute.cs" />
+    <Compile Include="Plugin\UI\ExceFilterAttribute.cs" />
+    <Compile Include="Plugin\UI\LoginAllowViewAttribute.cs" />
+    <Compile Include="Plugin\UI\PermissionFilterAttribute.cs" />
+    <Compile Include="UnityExtensions\GlobalSuppressions.cs" />
+    <Compile Include="UnityExtensions\UnityBehaviorExtensionElement.cs" />
+    <Compile Include="UnityExtensions\UnityCallContextInitializer.cs" />
+    <Compile Include="UnityExtensions\UnityContextChannelExtension.cs" />
+    <Compile Include="UnityExtensions\UnityContextChannelLifetimeManager.cs" />
+    <Compile Include="UnityExtensions\UnityInstanceContextExtension.cs" />
+    <Compile Include="UnityExtensions\UnityInstanceContextInitializer.cs" />
+    <Compile Include="UnityExtensions\UnityInstanceContextLifetimeManager.cs" />
+    <Compile Include="UnityExtensions\UnityInstanceProvider.cs" />
+    <Compile Include="UnityExtensions\UnityOperationContextExtension.cs" />
+    <Compile Include="UnityExtensions\UnityOperationContextLifetimeManager.cs" />
+    <Compile Include="UnityExtensions\UnityOperationContextMessageInspector.cs" />
+    <Compile Include="UnityExtensions\UnityServiceBehavior.cs" />
+    <Compile Include="UnityExtensions\UnityServiceHostBaseExtension.cs" />
+    <Compile Include="UnityExtensions\UnityServiceHostBaseLifetimeManager.cs" />
+    <Compile Include="UnityExtensions\UnityWcfExtension.cs" />
+    <Compile Include="UnityExtensions\UnityWcfLifetimeManager.cs" />
+    <Compile Include="Utils\Email.cs" />
+    <Compile Include="Utils\Text.cs" />
+    <Compile Include="Utils\ValidateCode\AnimatedGifEncoder.cs" />
+    <Compile Include="Utils\ValidateCode\CodeEncoder.cs" />
+    <Compile Include="Utils\ValidateCode\GifDecoder.cs" />
+    <Compile Include="Utils\ValidateCode\NeuQuant.cs" />
+    <Compile Include="Utils\ValidateCode\VerificationCode.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Config\WingsConfigurationSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>WingsConfigurationSection1.csd.cs</LastGenOutput>
+    </None>
+    <None Include="Config\WingsConfigurationSection.csd.config">
+      <DependentUpon>WingsConfigurationSection.csd</DependentUpon>
+    </None>
+    <None Include="Config\WingsConfigurationSection.csd.diagram">
+      <DependentUpon>WingsConfigurationSection.csd</DependentUpon>
+    </None>
+    <None Include="Config\WingsConfigurationSection.csd.xsd">
+      <DependentUpon>WingsConfigurationSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

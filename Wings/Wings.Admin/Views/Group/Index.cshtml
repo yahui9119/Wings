@@ -1,0 +1,204 @@
+﻿@{
+    ViewBag.Title = "组织管理";
+}
+<div id="treegrid"></div>
+<div id="toolbar" class="z-toolbar" style="background: #f4f4f4;">
+    <a id="btnAdd" href="javascript:;" class="easyui-linkbutton" title="新增" data-options="iconCls:'icon-add',plain:true">新增</a>
+    <a id="btnDelete" href="javascript:;" class="easyui-linkbutton" title="删除" data-options="iconCls:'icon-remove',plain:true">删除</a>
+    <a id="btnEdit" href="javascript:;" class="easyui-linkbutton" title="编辑" data-options="iconCls:'icon-edit',plain:true">编辑</a>
+    <a href="javascript:;" class="easyui-splitbutton" title="展开" data-options="menu:'#dropdown',iconCls:'icon-collapse',plain:true">展开</a>
+    <a id="btnReload" href="javascript:;" class="easyui-linkbutton" title="刷新" data-options="iconCls:'icon-reload',plain:'true'">刷新</a>
+</div>
+<div id="dropdown">
+    <div id="btnCollapseAll" data-options="iconCls:'t-icon t-icon-12-18'">全部折叠</div>
+    <div id="btnExpandAll" data-options="iconCls:'t-icon t-icon-13-18'">全部展开</div>
+</div>
+<div id="treegrid-menu" class="easyui-menu">
+    <div id="treegrid-add" data-options="iconCls:'icon-add'" title="新增">新增</div>
+    <div id="treegrid-delete" data-options="iconCls:'icon-remove'" title="删除">删除</div>
+    <div id="treegrid-edit" data-options="iconCls:'icon-edit'" title="编辑">编辑</div>
+    <div id="treegrid-expand" data-options="iconCls:'icon-collapse'" title="展开">
+        <span>展开</span>
+        <div style="width: 150px;">
+            <div id="treegrid-collapseAll" data-options="iconCls:'t-icon t-icon-12-18'">全部折叠</div>
+            <div id="treegrid-expandAll" data-options="iconCls:'t-icon t-icon-13-18'">全部展开</div>
+        </div>
+    </div>
+    <div class="menu-sep"></div>
+    <div id="treegrid-reload" data-options="iconCls:'icon-reload'" title="刷新">刷新</div>
+</div>
+@Html.Partial("_AddEdit")
+@section JS{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var _rowData;
+            $treeGrid = $('#treegrid');
+            $treeGrid.treegrid({
+                state: 'open',
+                idField: 'ID',
+                treeField: 'Name',
+                url: '@Url.Action("GetDataGrid", "Group")',
+                border: false,
+                fitColumns: false,
+                title: '组织管理',
+                iconCls: 't-icon t-icon-15-4',
+                rownumbers: true,
+                animate: true,
+                fit: true,
+                fixed: false,
+                singleSelect: true,
+                toolbar: '#toolbar',
+                columns: [[
+                    { field: 'ID', checkbox: true, align: 'center', width: 20 },
+                    { title: '部门名称', field: 'Name', width: '200', align: 'left' },
+                    { title: '排序', field: 'Index', width: '50', align: 'center' },
+                    {
+                        title: '显示', field: 'Status', width: '50', align: 'center',
+                        formatter: function (value) {
+                            return Common.formatBoolean(value == 1);
+                        }
+                    },
+                    {
+                        title: '添加时间', field: 'CreateDate', width: '100', align: 'center',
+                        formatter: function (value) {
+                            return Common.formatDate(value);
+                        }
+                    },
+                    {
+                        title: '更新时间', field: 'EditDate', width: '100', align: 'center',
+                        formatter: function (value) {
+                            return Common.formatDate(value);
+                        }
+                    },
+                    { title: '描述', field: 'Description', width: '220', align: 'center' }
+                ]],
+                onContextMenu: onRowContextMenu
+            });
+            //新增
+            $('#btnAdd,#treegrid-add').on('click', function () {
+                $('#frmAddEdit')[0].reset();
+                $('#_ID').val('0');
+                $('#_ParentID').combotree({ url: '@Url.Action("Tree", "Group")' }).combotree('setValue', 0);
+                $('#AddEdit').window({
+                    iconCls: 'icon-add',
+                    title: '添加部门'
+                }).window('open');
+            });
+            //新增菜单
+            $('#treegrid-edit').on('click', function () {
+                Edit(_rowData['ID']);
+            });
+            $('#btnEdit').on('click', function () {
+                var selecteds = $treeGrid.treegrid('getSelections');
+                if (Common.isEmptyObject(selecteds)) {
+                    $.messager.alert('提示', '请选中一条数据编辑！', 'warning');
+                } else if (selecteds.length > 1) {
+                    $.messager.alert('提示', '请只选中一条数据编辑！', 'warning');
+                } else {
+                    Edit(selecteds[0].ID);
+                }
+            });
+            //全部折叠
+            $('#btnCollapseAll,#treegrid-collapseAll').on('click', function () {
+                $treeGrid.treegrid('collapseAll');
+            });
+            //全部展开
+            $('#btnExpandAll,#treegrid-expandAll').on('click', function () {
+                $treeGrid.treegrid('expandAll');
+            });
+            //刷新
+            $('#btnReload,#treegrid-reload').on('click', function () {
+                $treeGrid.treegrid('load');
+            });
+            //添加右击菜单内容
+            function onRowContextMenu(e, row) {
+                e.preventDefault();
+                _rowData = row;
+                $('#treegrid-menu').menu('show', {
+                    left: e.pageX,
+                    top: e.pageY
+                });
+            }
+            //编辑
+            function Edit(id) {
+                $('#_ParentID').combotree({ url: '@Url.Action("Tree", "Group")' }).combotree('setValue', 0);
+
+                $.post('@Url.Action("Get", "Group")/' + id, function (data) {
+                    $('#frmAddEdit').form('load', data);
+                    var isDisplay = data.IsDisplay ? 'True' : 'False';
+                    $('#_IsDisplay').val(isDisplay);
+                });
+                $('#AddEdit').window({
+                    iconCls: 'icon-edit',
+                    title: '编辑部门'
+                }).window('open');
+            }
+            //重置表单
+            $('#btnRest').on('click', function () {
+                $('#frmAddEdit')[0].reset();
+            });
+            $('#btnDelete').on("click", function () {
+                var selected = $treeGrid.treegrid('getSelected');
+                if (Common.isEmptyObject(selected)) {
+                    $.messager.alert('提示', '至少选择一条数据删除！', 'warning');
+                } else {
+                    $.messager.confirm('确认', '是否删除选中的数据？', function (r) {
+                       
+                        $.post('@Url.Action("Delete", "Group")', { idList: selected.ID },
+                            function (data) {
+                                if (data.success) {
+                                    $.messager.alert('提示', data.message, 'info');
+                                    $treeGrid.treegrid('load');
+                                    $treeGrid.treegrid('clearSelections');
+                                } else {
+                                    $.messager.alert('错误', data.message, 'error');
+                                }
+                            });
+                    });
+                }
+                return false;
+            });
+            $("#treegrid-delete").on("click", function () {
+                $.messager.confirm('确认', '是否删除此条数据？', function (r) {
+                    if (r) {
+                        $.post('@Url.Action("Delete", "Group")', { idList: rowData["ID"] },
+                function (data) {
+                    if (data.success) {
+                        $.messager.alert('提示', data.message, 'info');
+                        $dg.datagrid('reload');
+                        $dg.datagrid('clearSelections');
+                    } else {
+                        $.messager.alert('错误', data.message, 'error');
+                    }
+                });
+                    }
+                  });
+            });
+            $('#btnOK').on('click', function () {
+                var add = "@Url.Action("Add", "Group")";
+                var edit = "@Url.Action("Edit", "Group")";
+                var action = $('#_ID').val() == '0' ? add : edit;
+                if ($('#frmAddEdit').form('validate')) {
+                    $.ajax({
+                        type: 'post',
+                        data: $('#frmAddEdit').serialize(),
+                        url: action,
+                        success: function (data) {
+                            if (data.success) {
+                                $.messager.alert('提示', data.message, 'info', function () {
+                                    $('#AddEdit').window('close');
+                                });
+                                $treeGrid.treegrid('load');
+                            } else {
+                                $.messager.alert('错误', data.message, 'error');
+                            }
+                        },
+                        error: function () {
+                            $.messager.alert('提示', '数据提交失败', 'info');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}

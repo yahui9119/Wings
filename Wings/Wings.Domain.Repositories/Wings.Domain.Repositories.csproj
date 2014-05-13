@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AD11A78-5884-4B1D-B838-23D3ECA1DFD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wings.Domain.Repositories</RootNamespace>
+    <AssemblyName>Wings.Domain.Repositories</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\MongoDB_BSon_AND_Driver.1.0.0\lib\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\MongoDB_BSon_AND_Driver.1.0.0\lib\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityFramework\BaseRepository\EntityFrameworkRepository.cs" />
+    <Compile Include="EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs" />
+    <Compile Include="EntityFramework\BaseRepository\IEntityFrameworkRepositoryContext.cs" />
+    <Compile Include="EntityFramework\GroupRepository.cs" />
+    <Compile Include="EntityFramework\ModelConfig\BaseConfig.cs" />
+    <Compile Include="EntityFramework\ModelConfig\GroupConfig.cs" />
+    <Compile Include="EntityFramework\ModelConfig\ModuleConfig.cs" />
+    <Compile Include="EntityFramework\ModelConfig\RoleConfig.cs" />
+    <Compile Include="EntityFramework\ModelConfig\UserConfig.cs" />
+    <Compile Include="EntityFramework\ModelConfig\UserOnlineConfig.cs" />
+    <Compile Include="EntityFramework\ModelConfig\WebConfig.cs" />
+    <Compile Include="EntityFramework\BaseRepository\SortByExtension.cs" />
+    <Compile Include="EntityFramework\ModuleRepository.cs" />
+    <Compile Include="EntityFramework\RoleRepository.cs" />
+    <Compile Include="EntityFramework\UserOnlineRepository.cs" />
+    <Compile Include="EntityFramework\UserRepository.cs" />
+    <Compile Include="EntityFramework\BaseRepository\WingsDbContext.cs" />
+    <Compile Include="EntityFramework\BaseRepository\WingsDbContextInitailizer.cs" />
+    <Compile Include="EntityFramework\WebRepository.cs" />
+    <Compile Include="MongoDB\BaseRepository\GuidIDGeneratorConvention.cs" />
+    <Compile Include="MongoDB\BaseRepository\IMongoDBRepositoryContext.cs" />
+    <Compile Include="MongoDB\BaseRepository\IMongoDBRepositoryContextSettings.cs" />
+    <Compile Include="MongoDB\ModelConfig\MongoDBBootstrapper.cs" />
+    <Compile Include="MongoDB\BaseRepository\MongoDBRepository.cs" />
+    <Compile Include="MongoDB\BaseRepository\MongoDBRepositoryContext.cs" />
+    <Compile Include="MongoDB\BaseRepository\MongoDBRepositoryContextSettings.cs" />
+    <Compile Include="MongoDB\BaseRepository\UserLocalDateTimeConvention.cs" />
+    <Compile Include="MongoDB\GroupRepository.cs" />
+    <Compile Include="MongoDB\ModuleRepository.cs" />
+    <Compile Include="MongoDB\RoleRepository.cs" />
+    <Compile Include="MongoDB\UserOnlineRepository.cs" />
+    <Compile Include="MongoDB\UserRepository.cs" />
+    <Compile Include="MongoDB\WebRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Specifications\UserEmailEqualsSpecification.cs" />
+    <Compile Include="Specifications\UserNameEqualsSpecification.cs" />
+    <Compile Include="Specifications\UserPasswordEqualsSpecification.cs" />
+    <Compile Include="Specifications\WebDomainEqualsSpecification.cs" />
+    <Compile Include="Specifications\WebNameEqualsSpecification.cs" />
+    <Compile Include="Specifications\WebStringEqualsSpecification.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wings.Domain\Wings.Domain.csproj">
+      <Project>{6e9c05d0-4dc6-4c41-b328-11896f9f3372}</Project>
+      <Name>Wings.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wings.Framework\Wings.Framework.csproj">
+      <Project>{f1c7efe6-96f5-419e-af73-117b844962ee}</Project>
+      <Name>Wings.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

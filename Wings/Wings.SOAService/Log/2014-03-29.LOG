@@ -1,0 +1,267 @@
+时间:2014-03-29 14:52:18,831 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [10] 
+ 日志内容:System.Data.Entity.Core.EntityException: 基础提供程序在 Open 上失败。 ---> System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Wings"。登录失败。
+用户 'ARTHUR\Yahui' 登录失败。
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__38(DbConnection t, DbConnectionInterceptionContext c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 107
+   在 Wings.Domain.Repositories.Repository`1.DoFindAll(ISpecification`1 specification) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 213
+   在 Wings.Domain.Repositories.Repository`1.FindAll(ISpecification`1 specification) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 487
+   在 Wings.Core.Implementation.UserServiceImpl.GetGroupParentID(Nullable`1 id) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 538
+   在 DynamicModule.ns.Wrapped_IUserService_2db27a7fe5004f9b96df13eba9755d52.<GetGroupParentID_DelegateImplementation>__23(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 14:52:18,831 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [13] 
+ 日志内容:System.Data.Entity.Core.EntityException: 基础提供程序在 Open 上失败。 ---> System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Wings"。登录失败。
+用户 'ARTHUR\Yahui' 登录失败。
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__38(DbConnection t, DbConnectionInterceptionContext c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 107
+   在 Wings.Domain.Repositories.Repository`1.DoFindAll() 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 178
+   在 Wings.Domain.Repositories.Repository`1.FindAll() 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 466
+   在 Wings.Core.Implementation.UserServiceImpl.GetAllGroups() 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 608
+   在 DynamicModule.ns.Wrapped_IUserService_2db27a7fe5004f9b96df13eba9755d52.<GetAllGroups_DelegateImplementation>__25(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 14:59:31,831 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [13] 
+ 日志内容:System.Data.Entity.Core.EntityException: 基础提供程序在 Open 上失败。 ---> System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "Wings"。登录失败。
+用户 'ARTHUR\Yahui' 登录失败。
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__38(DbConnection t, DbConnectionInterceptionContext c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Wings.Domain.Repositories.EntityFramework.EntityFrameworkRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain.Repositories\EntityFramework\BaseRepository\EntityFrameworkRepository.cs:行号 107
+   在 Wings.Domain.Repositories.Repository`1.DoFindAll() 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 178
+   在 Wings.Domain.Repositories.Repository`1.FindAll() 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Domain\Repositories\Repository.cs:行号 466
+   在 Wings.Core.Implementation.UserServiceImpl.GetAllGroups() 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 608
+   在 DynamicModule.ns.Wrapped_IUserService_2db27a7fe5004f9b96df13eba9755d52.<GetAllGroups_DelegateImplementation>__25(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 15:34:35,853 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [31] 
+ 日志内容:System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid..ctor(String g)
+   在 Wings.Core.CoreService.IsEmptyGuidString(String s) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 55
+   在 Wings.Core.CoreService.PerformUpdateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Func`2 idFieldFunc, Action`2 fieldUpdateAction) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 138
+   在 Wings.Core.Implementation.UserServiceImpl.CreateGroup(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 485
+   在 DynamicModule.ns.Wrapped_IUserService_3734190d70764a98bc125c67d85f30ac.<CreateGroup_DelegateImplementation>__20(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 15:36:43,867 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [13] 
+ 日志内容:System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid..ctor(String g)
+   在 Wings.Core.CoreService.IsEmptyGuidString(String s) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 55
+   在 Wings.Core.CoreService.PerformUpdateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Func`2 idFieldFunc, Action`2 fieldUpdateAction) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 138
+   在 Wings.Core.Implementation.UserServiceImpl.CreateGroup(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 485
+   在 DynamicModule.ns.Wrapped_IUserService_fd774906cf12465d85a7d40d3a9d05e5.<CreateGroup_DelegateImplementation>__20(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 15:37:35,018 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [13] 
+ 日志内容:System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid..ctor(String g)
+   在 Wings.Core.CoreService.IsEmptyGuidString(String s) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 55
+   在 Wings.Core.CoreService.PerformUpdateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Func`2 idFieldFunc, Action`2 fieldUpdateAction) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 138
+   在 Wings.Core.Implementation.UserServiceImpl.CreateGroup(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 485
+   在 DynamicModule.ns.Wrapped_IUserService_fd774906cf12465d85a7d40d3a9d05e5.<CreateGroup_DelegateImplementation>__20(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 15:38:42,008 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [13] 
+ 日志内容:System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid..ctor(String g)
+   在 Wings.Core.CoreService.IsEmptyGuidString(String s) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 55
+   在 Wings.Core.CoreService.PerformUpdateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Func`2 idFieldFunc, Action`2 fieldUpdateAction) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 138
+   在 Wings.Core.Implementation.UserServiceImpl.CreateGroup(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 485
+   在 DynamicModule.ns.Wrapped_IUserService_fd774906cf12465d85a7d40d3a9d05e5.<CreateGroup_DelegateImplementation>__20(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 15:39:59,813 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [13] 
+ 日志内容:System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid..ctor(String g)
+   在 Wings.Core.CoreService.IsEmptyGuidString(String s) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 55
+   在 Wings.Core.CoreService.PerformUpdateObjects[TDataObjectList,TDataObject,TAggregateRoot](TDataObjectList dataTransferObjects, IRepository`1 repository, Func`2 idFieldFunc, Action`2 fieldUpdateAction) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\CoreService.cs:行号 138
+   在 Wings.Core.Implementation.UserServiceImpl.CreateGroup(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 485
+   在 DynamicModule.ns.Wrapped_IUserService_fd774906cf12465d85a7d40d3a9d05e5.<CreateGroup_DelegateImplementation>__20(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 15:47:45,914 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [22] 
+ 日志内容:System.InvalidCastException: 无法将类型为“System.Collections.Generic.List`1[Wings.DataObjects.GroupDTO]”的对象强制转换为类型“Wings.DataObjects.GroupDTOList”。
+   在 Wings.DataObjects.GroupDTOList.<>c__DisplayClass5.<Trim>b__3(GroupDTO g) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 70
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Wings.DataObjects.GroupDTOList.Trim(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 55
+   在 Wings.DataObjects.GroupDTOList.Trim(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 51
+   在 Wings.Core.Implementation.UserServiceImpl.EditGroup(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 494
+   在 DynamicModule.ns.Wrapped_IUserService_dfd61b786dae4703b781b1da67c1b38b.<EditGroup_DelegateImplementation>__21(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 15:47:49,402 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [22] 
+ 日志内容:System.InvalidCastException: 无法将类型为“System.Collections.Generic.List`1[Wings.DataObjects.GroupDTO]”的对象强制转换为类型“Wings.DataObjects.GroupDTOList”。
+   在 Wings.DataObjects.GroupDTOList.<>c__DisplayClass5.<Trim>b__3(GroupDTO g) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 70
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Wings.DataObjects.GroupDTOList.Trim(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 55
+   在 Wings.DataObjects.GroupDTOList.Trim(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 51
+   在 Wings.Core.Implementation.UserServiceImpl.EditGroup(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 494
+   在 DynamicModule.ns.Wrapped_IUserService_dfd61b786dae4703b781b1da67c1b38b.<EditGroup_DelegateImplementation>__21(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 15:48:05,398 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [22] 
+ 日志内容:System.InvalidCastException: 无法将类型为“System.Collections.Generic.List`1[Wings.DataObjects.GroupDTO]”的对象强制转换为类型“Wings.DataObjects.GroupDTOList”。
+   在 Wings.DataObjects.GroupDTOList.<>c__DisplayClass5.<Trim>b__3(GroupDTO g) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 70
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Wings.DataObjects.GroupDTOList.Trim(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 55
+   在 Wings.DataObjects.GroupDTOList.Trim(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 51
+   在 Wings.Core.Implementation.UserServiceImpl.EditGroup(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 494
+   在 DynamicModule.ns.Wrapped_IUserService_dfd61b786dae4703b781b1da67c1b38b.<EditGroup_DelegateImplementation>__21(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-03-29 15:49:23,867 
+级别:ERROR 
+类名:Wings.Logger
+文件:e:\GitHub\WingsCMS\0\WingsCMS\Wings.Framework\Log\Log.cs 第60行
+ [11] 
+ 日志内容:System.InvalidCastException: 无法将类型为“System.Collections.Generic.List`1[Wings.DataObjects.GroupDTO]”的对象强制转换为类型“Wings.DataObjects.GroupDTOList”。
+   在 Wings.DataObjects.GroupDTOList.<>c__DisplayClass5.<Trim>b__3(GroupDTO g) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 70
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Wings.DataObjects.GroupDTOList.Trim(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 55
+   在 Wings.DataObjects.GroupDTOList.Trim(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\GroupDTO.cs:行号 51
+   在 Wings.Core.Implementation.UserServiceImpl.EditGroup(GroupDTOList groups) 位置 e:\GitHub\WingsCMS\0\WingsCMS\Wings.Core\Implementation\UserServiceImpl.cs:行号 494
+   在 DynamicModule.ns.Wrapped_IUserService_54147070b96148e8869d679c4a56f085.<EditGroup_DelegateImplementation>__21(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+

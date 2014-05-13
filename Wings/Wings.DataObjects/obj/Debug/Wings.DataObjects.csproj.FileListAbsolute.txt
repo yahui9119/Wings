@@ -1,0 +1,10 @@
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\bin\Debug\Wings.DataObjects.dll
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\bin\Debug\Wings.DataObjects.pdb
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\obj\Debug\Wings.DataObjects.csprojResolveAssemblyReference.cache
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\obj\Debug\Wings.DataObjects.dll
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\obj\Debug\Wings.DataObjects.pdb
+G:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\bin\Debug\Wings.DataObjects.dll
+G:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\bin\Debug\Wings.DataObjects.pdb
+G:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\obj\Debug\Wings.DataObjects.csprojResolveAssemblyReference.cache
+G:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\obj\Debug\Wings.DataObjects.dll
+G:\GitHub\WingsCMS\0\WingsCMS\Wings.DataObjects\obj\Debug\Wings.DataObjects.pdb

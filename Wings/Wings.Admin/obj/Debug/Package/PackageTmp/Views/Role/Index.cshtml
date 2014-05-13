@@ -1,0 +1,252 @@
+﻿@{
+    ViewBag.Title = "角色管理";
+            //RoleGroupsBLL _RoleGroupsBLL = new RoleGroupsBLL();
+            //IList<SelectListItem> _GroupList = _RoleGroupsBLL.GetRoleGroupList(true);
+}
+<div id="system-iframe-north" data-options="region:'north'" style="overflow-y: hidden; padding: 5px 0px 0px 5px; border-width: 0px;">
+    <div class="input-prepend inline">
+        <span class="add-on">角色名称</span>
+        <input id="LikeWord" type="text" maxlength="50" class="span2" placeholder="角色名称" />
+    </div>
+    <div class="input-prepend inline">
+        <span class="add-on">添加时间</span>
+        <input id="StartTime" type="text" class="easyui-datetimebox" style="width:139px" placeholder="开始时间" />
+        <span>-</span>
+        <input id="EndTime" type="text" class="easyui-datetimebox" style="width:139px" placeholder="结束时间" />
+    </div>
+
+    <div class="input-append inline">
+        <a id="btnQuery" class="btn btn-small" href="javascript:;" style="text-decoration: none;"><i class="b-icon-search"></i>查询</a>
+    </div>
+
+</div>
+<div id="system-iframe-center" data-options="region:'center'" style="overflow-y: hidden; border-width: 0px;">
+    <div id="datagrid"></div>
+    <div id="toolbar" class="z-toolbar" style="background: #f4f4f4;">
+        @Html.ActionLink("添加", "Add", "Role", new { }, new { id = "btnAdd", @class = "easyui-linkbutton", data_options = "iconCls:'icon-add',plain:'true'" })
+        @Html.ActionLink("编辑", "Edit", "Role", new { }, new { id = "btnEdit", @class = "easyui-linkbutton", data_options = "iconCls:'icon-edit',plain:'true'" })
+        @Html.ActionLink("删除", "Delete", "Role", new { }, new { id = "btnDelete", @class = "easyui-linkbutton", data_options = "iconCls:'icon-remove',plain:'true'" })
+        <a id="btnRefresh" href="javascript:;" class="easyui-linkbutton" title="刷新" data-options="iconCls:'icon-reload',plain:'true'">刷新</a>
+    </div>
+</div>
+<div id="datagrid-menu" class="easyui-menu">
+    <div id="datagrid-add" data-options="iconCls:'icon-add'" title="新增">新增</div>
+    <div id="datagrid-edit" data-options="iconCls:'icon-edit'" title="编辑">编辑</div>
+    <div id="datagrid-delete" data-options="iconCls:'icon-remove'" title="删除">删除</div>
+    <div class="menu-sep"></div>
+    <div id="datagrid-reload" data-options="iconCls:'icon-reload'" title="刷新">刷新</div>
+</div>
+@Html.Partial("_AddEdit")
+@section JS
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var rowData, $dg = $('#datagrid');
+            //datagrid首次加载数据
+            $dg.datagrid({
+                loadMsg: '数据加载中，请稍后……',
+                method: 'post',
+                url: '@Url.Action("GetDataGrid", "Role")',
+                sortName: 'Sort',
+                sortOrder: 'desc',
+                pageList: [5, 10, 20, 30, 40, 50, 100, 200, 500],
+                pageSize: 20,
+                toolbar: '#toolbar',
+                columns: [[
+                    { field: 'ID', checkbox: true, width: 20, align: 'center' },
+                    { field: 'Name', title: '角色名称', width: 120, align: 'center', sortable: true },
+
+                    { field: 'Status', title: '状态', width: 60, align: 'center', sortable: true, formatter: function (value) { return Common.formatBoolean(value==1); } },
+                    //{ field: 'AddUserName', title: '添加人', width: 100, align: 'center', sortable: true },
+                    { field: 'CreateDate', title: '添加时间', width: 80, align: 'center', sortable: true, formatter: function (value) { return Common.formatDate(value); } },
+                    { field: 'EditDate', title: '更新时间', width: 80, align: 'center', sortable: true, formatter: function (value) { if (value == null) { return '--'; } return Common.formatDate(value); } },
+                    { field: 'Description', title: '角色组描述', width: 300, align: 'center', sortable: true, formatter: function (value) { if (value == null) { return '--'; } return value; } }
+
+                ]],
+                fit: true,
+                pagination: true,
+                rownumbers: true,
+                singleSelect: false,
+                onRowContextMenu: onRowContextMenu
+            });
+            //添加右击菜单内容
+            function onRowContextMenu(e, rowIndex, row) {
+                e.preventDefault();
+                rowData = row;
+                $('#datagrid-menu').menu('show', {
+                    left: e.pageX,
+                    top: e.pageY
+                });
+            }
+            //查询数据
+            $('#btnQuery').on('click', function () {
+                var parm = {
+                    LikeWord: $('#LikeWord').val(),
+                    StartTime: $('#StartTime').datetimebox('getValue'),
+                    EndTime: $('#EndTime').datetimebox('getValue')
+                };
+                $dg.datagrid('load', parm);
+                $dg.datagrid('clearSelections');
+                return false;
+            });
+            //刷新
+            $('#btnRefresh').on('click', function () {
+                $dg.datagrid('reload');
+            });
+            //多选删除
+            $("#btnDelete").on("click", function () {
+                var selecteds = $dg.datagrid('getSelections');
+                if (Common.isEmptyObject(selecteds)) {
+                    $.messager.alert('提示', '至少选择一条数据删除！', 'warning');
+                } else {
+                    $.messager.confirm('确认', '是否删除选中的数据？', function (r) {
+                        var buffer = new StringBuffer();
+                        for (var i = 0; i < selecteds.length; i++) {
+                            buffer.append(selecteds[i].ID);
+                        }
+                        var idList = buffer.toString(",");
+                        $.post('@Url.Action("Delete", "Role")', { idList: idList },
+                            function (data) {
+                                if (data.success) {
+                                    $.messager.alert('提示', data.message, 'info');
+                                    $dg.datagrid('load');
+                                    $dg.datagrid('clearSelections');
+                                } else {
+                                    $.messager.alert('错误', data.message, 'error');
+                                }
+                            });
+                    });
+                }
+                return false;
+            });
+            //编辑
+            $("#btnEdit").on("click", function () {
+                var selecteds = $dg.datagrid('getSelections');
+                if (Common.isEmptyObject(selecteds)) {
+                    $.messager.alert('提示', '请选中一条数据编辑！', 'warning');
+                } else if (selecteds.length > 1) {
+                    $.messager.alert('提示', '请只选中一条数据编辑！', 'warning');
+                } else {
+                    Edit(selecteds[0].ID);
+                }
+                return false;
+            });
+            //添加
+            $('#datagrid-add,#btnAdd').on('click', function () {
+                $('#frmAddEdit')[0].reset();
+                $('#_ID').val('0');
+                $('#AddEdit').window({
+                    iconCls: 'icon-add',
+                    title: '添加角色'
+                }).window('open');
+                return false;
+            });
+            //单个删除
+            $('#datagrid-delete').on('click', function () {
+                $.messager.confirm('确认', '是否删除此条数据？', function (r) {
+                    if (r) {
+                        $.post('@Url.Action("Delete", "Role")', { idList: rowData["ID"] },
+                function (data) {
+                    if (data.success) {
+                        $.messager.alert('提示', data.message, 'info');
+                        $dg.datagrid('reload');
+                        $dg.datagrid('clearSelections');
+                    } else {
+                        $.messager.alert('错误', data.message, 'error');
+                    }
+                });
+                }
+                });
+            });
+            //编辑
+            $('#datagrid-edit').on('click', function () {
+                Edit(rowData["ID"]);
+            });
+            //刷新
+            $('#datagrid-reload').on('click', function () {
+                $dg.datagrid('reload');
+            });
+
+            ////高级查询
+            //$('#btnHighQuery').on('click', function () {
+            //    $('#HighSearch').window('open');
+            //});
+            //$('#btnHighSearch').on('click', function () {
+            //    var addDateStart = $("#hs_AddDateStart").datebox('getValue') == null ? "" : $("#hs_AddDateStart").datebox('getValue');
+            //    var addDateEnd = $("#hs_AddDateEnd").datebox('getValue') == null ? "" : $("#hs_AddDateEnd").datebox('getValue');
+            //    var lastUpdateStart = $("#hs_LastUpdateStart").datebox('getValue') == null ? "" : $("#hs_LastUpdateStart").datebox('getValue');
+            //    var lastUpdateEnd = $("#hs_LastUpdateEnd").datebox('getValue') == null ? "" : $("#hs_LastUpdateEnd").datebox('getValue');
+            //    if (addDateStart != "" && addDateEnd != "" && Common.compareDate(addDateStart, addDateEnd)) {
+            //        $.messager.alert('警告', "发布时间开始日期不能大于结束日期！", "warning");
+            //        return false;
+            //    }
+            //    if (lastUpdateStart != "" && lastUpdateEnd != "" && Common.compareDate(lastUpdateStart, lastUpdateEnd)) {
+            //        $.messager.alert('警告', "修改时间开始日期不能大于结束日期！", "warning");
+            //        return false;
+            //    }
+            //    var parm = {
+            //        RoleName: $('#hs_RoleName').val(),
+            //        GroupID: $('#hs_GroupID').val(),
+            //        Description: $('#hs_Description').val(),
+            //        IsDisplay: $('#hs_IsDisplay').val(),
+            //        AddUserName: $('#hs_AddUserName').val(),
+            //        UpdateUserName: $('#hs_UpdateUserName').val(),
+            //        AddDateStart: addDateStart,
+            //        AddDateEnd: addDateEnd,
+            //        LastUpdateStart: lastUpdateStart,
+            //        LastUpdateEnd: lastUpdateEnd
+            //    };
+            //    $dg.datagrid('load', parm);
+            //    $dg.datagrid('clearSelections');
+            //    return false;
+            //});
+            //重置表单
+            $('#btnSearchRest').on('click', function () {
+                $('#frmSearch')[0].reset();
+            });
+            //编辑
+            function Edit(id) {
+                $.post('@Url.Action("Get", "Role")/' + id, function (data) {
+                    $('#frmAddEdit').form('load', data);
+                    var isDisplay = data.IsDisplay ? 'True' : 'False';
+                    $('#_IsDisplay').val(isDisplay);
+                });
+                $('#AddEdit').window({
+                    iconCls: 'icon-edit',
+                    title: '编辑角色'
+                }).window('open');
+            }
+            //重置表单
+            $('#btnRest').on('click', function () {
+                $('#frmAddEdit')[0].reset();
+            });
+            $('#btnOK').on('click', function () {
+
+                var add = "@Url.Action("add", "role")";
+                var edit = "@Url.Action("edit", "role")";
+                var action = $('#_ID').val() == '0' ? add : edit;
+                if ($('#frmAddEdit').form('validate')) {
+                    $.ajax({
+                        type: 'post',
+                        data: $('#frmAddEdit').serialize(),
+                        url: action,
+                        success: function (data) {
+                            if (data.success) {
+                                $.messager.alert('提示', data.message, 'info', function () {
+                                    $('#AddEdit').window('close');
+                                });
+                                $dg.datagrid('reload');
+                                $dg.datagrid('clearSelections');
+                            } else {
+                                $.messager.alert('错误', data.message, 'error');
+                            }
+                        },
+                        error: function () {
+                            $.messager.alert('提示', '数据提交失败', 'info');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}

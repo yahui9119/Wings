@@ -1,0 +1,71 @@
+﻿/*一般共用*/
+body {font-size:12px;}
+.form-horizontal .control-group{margin-bottom:5px;}
+.form-horizontal .control-label{ font-size:11.9px;width:70px;}
+.form-horizontal .controls {margin-left:80px;}
+label,input,button,select,textarea{font-size:11.9px;font-weight: normal;line-height: 20px;}
+.form-horizontal .controls>input{padding:2px 10px;font-size:11.9px;}
+.form-horizontal .controls > textarea {padding:2px 10px;font-size:11.9px;}
+.form-horizontal .controls>select{padding:2px 10px; height:26px; line-height:26px;font-size:11.9px;}
+.input-prepend>input{padding:2px 10px;font-size:11.9px;}
+.input-prepend>select{padding:2px 10px; height:26px;line-height:26px;font-size:11.9px;}
+.margin15{margin:15px;}
+/*我的首页*/
+#index-main{margin:10px 0px;}
+#index-main .left{float:left;font-size:12px;width:auto;}
+#index-main .right{float:left;width:300px;}
+#index-main .right > div ul{margin-bottom:0px;}
+#index-main .left > div{float:left;margin-right:13px;}
+#index-main .left ul{list-style:none;padding:0px;margin:0px;}
+#index-main .left ul>li{height:25px;line-height:25px;border-bottom:dashed 1px #ccc;}
+#index-main .left ul>li a{margin-right:15px;}
+#index-main .left ul>li span{color:#999;float:right;}
+#index-main .left ul>li span.user{margin-right:3px;}
+#index-main .left ul>li span.date{color:Red;}
+#index-main .left .accordion-inner{padding:5px 12px;}
+#index-main .left .accordion-inner>a i{margin-right:3px;}
+#index-main .left .accordion-inner>a{margin-top:7px;display:block;}
+#index-main .left .accordion-toggle{padding:5px 12px;}
+/*ICON图标下拉选择框*/
+#select-icon-list{width:650px;border:solid 1px #ccc;position:absolute;display:none;background-color:#fff;}
+#select-icon-list>div.header{width:650px;height:25px;line-height:25px;background-image:url(/Content/images/top-bg.gif); border-bottom:solid 1px #ccc;text-align:right;}
+#select-icon-list > div.header a {margin-right:10px;}
+#select-icon-list > div.icon-list{width:650px;height:auto;margin-left:2px;}
+#select-icon-list a{width:18px;height:18px;}
+#select-icon-single {width:18px;height:18px;}
+body>div.alert{ margin:15px;}
+/*上传图片*/
+#upload .file-box{ position:relative;width:370px} 
+#upload .file{ position:absolute;top:0;right:80px; height:26px; filter:alpha(opacity:0);opacity: 0;width:300px }
+#editEmpower{margin: 5px}
+#editEmpower .accordion-toggle {padding: 3px 12px;}
+#editEmpower .accordion-inner {padding: 7px 15px;}
+#editEmpower .alert {margin-bottom: 0px;padding: 4px 35px 4px 14px;} 
+/*在线状态*/
+.stateselect-icon {float: left;margin: 2px 0 0 0px;width: 14px;height: 14px;overflow: hidden;background-image:url("/Content/images/icons/ptlogin.png"); background-repeat:no-repeat;}
+.online {background-position:0px 0px;}/*我在线上*/
+.away {background-position: -18px 0px;}/*离开*/
+.busy {background-position: -36px 0px;}/*忙碌*/
+.hidden {background-position: -54px 0px;display:inline; visibility:inherit;}/*隐身*/
+.callme {background-position:-72px 0px;}/*Q我吧*/
+.offline {background-position:-90px 0px;}/*离线*/
+.silent {background-position: -108px 0px;}/*请勿打扰*/
+/*在线用户*/
+#online .tab-content {border:solid 1px #ccc;border-top-width:0px;height:550px; min-height:550px; max-height:550px;}
+#online .tab-content > div.tab-pane {margin:0 auto;padding:5px 0px;padding-bottom:0px;}
+#online .user-inline > div.left {float:left;margin-left:3px;position:relative;}
+#online .user-inline > div.left > div.position {bottom:3px; left:26px; position:absolute;}
+#online .user-inline > div.left a > img {width:40px;height:40px;min-height:40px;min-width:40px;display:block;padding:2px;}
+#online .user-inline > div.left p {margin-bottom:0px;}
+#online .user-inline> div.left > div.muted > a{padding-left:16px;}
+#online .line {height:3px; border-bottom:dashed 1px #ccc;width:100%;clear:both;margin-bottom:3px;}
+#online .send-email {background-image: url("/Content/images/icons/send-email.png");width:16px;height:16px;}
+#online .accordion-heading .accordion-toggle {display: block;padding: 3px 3px;}
+#online .accordion-group {margin-bottom: 2px;border: 0px solid #e5e5e5;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;}
+#online .accordion-inner {padding: 9px 5px;border-width:0px;}
+#online .accordion-heading {border-bottom: 0;border: 1px solid #e5e5e5;}
+#online .accordion-heading .pleft20 {padding-left:20px;}
+/*系统配置文件设置*/
+#Configuration .form-horizontal .control-label {width: 120px;}
+#Configuration .form-horizontal .controls {margin-left: 140px;}
+#Configuration {margin-left:10px;margin-right:10px;}

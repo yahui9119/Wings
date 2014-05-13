@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="20e39195-d305-4c48-9842-a0fbfef8918e" name="Wings.ModelCore" linkedPackageId="1ec99368-9212-485e-8c7e-051c97c6d242" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <description>领域模型</description>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="607815b0-506d-402a-a206-4430b7eb457a" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="97520997-9e15-4e05-a50d-56742612b420" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d6f7924e-3673-4114-87c2-dc419a73b4d5">
+          <propertyInstance Id="304f56cf-1259-48b8-a01b-1abefc3b5305" name="BaseName">
+            <elementDefinition Id="fd0eb8d8-fc76-434a-98a4-cefa8e266882" />
+          </propertyInstance>
+          <elementDefinition Id="f1538a19-c0f3-4013-ae0b-53cb5697f17b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a084d42e-4115-4a52-8a3d-3198bf08966b">
+          <propertyInstance Id="be5ff0ff-d9e1-4287-9848-83db839033ad" name="ClrAttributes">
+            <elementDefinition Id="eba17b90-8830-404b-a3c1-46f1564ae2d1" />
+          </propertyInstance>
+          <elementDefinition Id="c275266f-d043-4e4d-b38f-5c39af277e99" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a59612c3-cd15-43eb-93c4-05af36464966">
+          <propertyInstance Id="9a6bba73-14ea-47e7-a280-bdf4cc3999a4" name="Usings">
+            <elementDefinition Id="e5dac21b-c8a7-4637-aa79-f5e60288e707" />
+          </propertyInstance>
+          <elementDefinition Id="ff4ed117-b49f-4194-bd81-71a011c4c832" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="05958759-ad33-461b-94d7-27558cc570cd" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="f1ebdbc4-cd86-4d73-862a-e5f23d36ee8a" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0cee1c54-849a-433b-97ee-2a1f6613b330">
+          <propertyInstance Id="e1e222e7-725f-4aaf-acbd-5394621ddc1c" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="4c4d2a25-55c4-41a8-9a20-42938831fae5" />
+          </propertyInstance>
+          <elementDefinition Id="f2944b1d-66cf-491a-8885-9021404f20b0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="560aff6d-7de9-4b3a-a52e-e11d3f9d535b">
+          <propertyInstance Id="ba903175-5eaa-487d-be71-b375dd1865ab" name="TemplateFilePath" value="ClassTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="cd6bd114-61f1-4f35-b46e-ea67c45a8b61" />
+          </propertyInstance>
+          <elementDefinition Id="dd3916e3-7060-4838-87e5-8fef108827f3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8089124a-c3eb-4d15-831d-518a324593be">
+          <propertyInstance Id="16b14e63-9754-4116-9582-1e6fcbf5a270" name="ProjectPath" value="ClassTemplate=..\Wings.DesignLib\Wings.DesignLib.csproj|EnumTemplate=..\Wings.DesignLib\Wings.DesignLib.csproj|InterfaceTemplate=..\Wings.DesignLib\Wings.DesignLib.csproj|StructTemplate=..\Wings.DesignLib\Wings.DesignLib.csproj">
+            <elementDefinition Id="22152bed-9884-4273-9f85-2fdf62fa0e25" />
+          </propertyInstance>
+          <elementDefinition Id="6e81898c-2c90-44c7-a30f-0449e35845b3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3d1383f9-ed88-4c6b-9f40-829029c93e41">
+          <propertyInstance Id="7ab08be5-15ec-4857-8758-12ece4a7e2bc" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="a92b120b-ed80-4def-bd38-a6a863d81207" />
+          </propertyInstance>
+          <elementDefinition Id="52ecec6a-b833-47fa-acca-4ee32becca4f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c2917ec4-f6b5-4ab0-b1ad-10ad792bf318">
+          <propertyInstance Id="100abb88-4523-4894-96d6-c8aa7befd1f1" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="3296f6c3-bd7e-477f-b3cb-e15910af2978" />
+          </propertyInstance>
+          <elementDefinition Id="a1a1fabc-b9a6-4fae-a8aa-34f80d742d9b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8e409003-8257-407f-9d91-2d8f89536d47">
+          <propertyInstance Id="b181c5d0-af09-4084-9a3d-9a62a5b1a73c" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="5145a999-19d1-43de-8369-2dddf956faae" />
+          </propertyInstance>
+          <elementDefinition Id="73a79c7b-3c41-4a88-b0c2-3ce7f97d6817" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="483f2dc9-1643-40b2-9eed-f0a1f42c099b">
+          <propertyInstance Id="1b91476e-74ba-419a-bba4-1ebc4d330a69" name="Parameters">
+            <elementDefinition Id="80dc4040-072d-4b71-83ad-9ce7cf2aea9f" />
+          </propertyInstance>
+          <elementDefinition Id="c7c90f7d-351e-4ec1-9f13-714204234f75" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="379979e0-5fca-4b41-8b74-42f00e86611d" name="User" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2a58d2bf-4df0-4548-b3a4-2bfa66273fa0" />
+        <generalsInternal>
+          <generalization Id="b856868b-5063-4a62-af87-049942228406" isSubstitutable="false">
+            <classMoniker Id="aa73da97-ba46-4fa9-86d9-843443f5572b" LastKnownName="AggregateRoot" />
+            <elementDefinition Id="c304f9a2-943b-45a0-8e07-034d7f646765" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="dd9d00f7-aef5-4be6-88df-d8117879ab09" name="UserName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>用户名</description>
+            <elementDefinition Id="bc1a414e-6e78-47b8-85da-422ee98eeabe" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1ca2887d-0ce3-492b-8976-4e6138ac8a04" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="a131b952-4ed7-43dd-9907-8dbe9d6bad8e" name="PassWord" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cf5b9b4b-b5f3-4c2b-8d62-264910cf424b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6b815cb6-859d-4aba-b24b-8d36f8ab8081" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="aa8ca6c7-0da1-4dc3-88eb-3753bf525479" name="GroupID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>分组id</description>
+            <elementDefinition Id="4654789f-8d30-4721-b0f2-5da16763fad8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3b7af2e8-6c5a-4026-bf75-b31801c7b663" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="ac949c1f-8b8d-45e5-bc4d-d096d84d5c0e" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>邮箱</description>
+            <elementDefinition Id="fc48419b-79b3-4d9b-ad15-d41b4893eb7b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a301979c-bbfe-45bd-828d-cd57c3c32117" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="9e6fd772-7f8c-4a7b-999f-e1b0cbccff19" name="QQ" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>QQ号</description>
+            <elementDefinition Id="d274ee35-7792-4570-a034-5a7e1baa3f96" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4dab8887-5e48-42df-8ceb-881e47f70f19" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="1f5600c2-6737-4f14-a084-7870047a556f" name="ALiWangWang" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>阿里旺旺账号</description>
+            <elementDefinition Id="59801b19-8812-4db2-be5f-1539baf8a25f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7fce2ba1-be66-4984-8efe-618798954886" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="f1ad7b31-6e57-4645-8ce8-127141ce5635" name="LastLoginDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>最后登录时间</description>
+            <elementDefinition Id="bc86b6d0-e2e1-4d47-9fca-b2ec2736f5e8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7be8ced2-c3f8-44b1-8126-eb2d3267cd60" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="1ca2887d-0ce3-492b-8976-4e6138ac8a04" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6b815cb6-859d-4aba-b24b-8d36f8ab8081" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7be8ced2-c3f8-44b1-8126-eb2d3267cd60" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="0dba5f2c-3c43-4ab1-bbf7-619d2372a37a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7fce2ba1-be66-4984-8efe-618798954886" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a301979c-bbfe-45bd-828d-cd57c3c32117" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3b7af2e8-6c5a-4026-bf75-b31801c7b663" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4dab8887-5e48-42df-8ceb-881e47f70f19" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aa73da97-ba46-4fa9-86d9-843443f5572b" name="AggregateRoot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>聚合根</description>
+        <elementDefinition Id="31d24f11-6503-45c7-b569-f7646e25f0b3" />
+        <ownedAttributesInternal>
+          <property Id="eccdf19c-c5bc-4b6d-b3c2-d38fa966da01" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>标识</description>
+            <elementDefinition Id="be91f2c3-425e-48db-b099-ddb0546b10f7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="527d6c74-6902-4646-be47-fac121ef3360" LastKnownName="Guid" />
+            </type_NamedElement>
+          </property>
+          <property Id="b65efded-2a8b-4cae-b8d2-d91d204263e6" name="CreateTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>创建时间</description>
+            <elementDefinition Id="bc6494ec-8c33-41f8-8acc-637dd5346f38" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7f8a49c1-ca45-4b1f-80d8-183681691fd6" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="618a79b5-62ab-434b-bc39-294f9388d78e" name="EditTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>最后修改时间</description>
+            <elementDefinition Id="28926f87-dc45-4b63-ab06-667e79ad63d6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="950b3fbc-a2e8-4094-a5f6-cfffc5ed6fb6" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="f0b5e8e6-7ef5-489c-89e8-3e0d51b96c2a" name="CreateUserID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dda4d0db-ca50-4ee1-9d2b-8228559ad688" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="184849e3-e546-46e3-a32a-e8bfd7f41fb6" LastKnownName="Guid" />
+            </type_NamedElement>
+          </property>
+          <property Id="7f809786-44d6-4951-849e-12064cf3b10b" name="Version" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="57dfb4b7-556c-4260-95d2-2235ffd23107" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="15471dbe-e422-4c8f-a233-5729d2364612" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="527d6c74-6902-4646-be47-fac121ef3360" name="Guid" isAbstract="false" isLeaf="false" cachedFullName="Guid">
+        <elementDefinition Id="b50b185a-3d76-4ca0-b837-1edbe0c850e3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7f8a49c1-ca45-4b1f-80d8-183681691fd6" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="0dba5f2c-3c43-4ab1-bbf7-619d2372a37a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="950b3fbc-a2e8-4094-a5f6-cfffc5ed6fb6" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="0dba5f2c-3c43-4ab1-bbf7-619d2372a37a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4de81167-70d0-4309-9e78-8e86d12e5b0e" name="Group" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>用户的分组或称部门</description>
+        <elementDefinition Id="829856c2-78eb-4260-8e40-c8cf9f7a624b" />
+        <generalsInternal>
+          <generalization Id="1b1cea34-14a0-499e-a26f-09f1902740f7" isSubstitutable="false">
+            <classMoniker Id="aa73da97-ba46-4fa9-86d9-843443f5572b" LastKnownName="AggregateRoot" />
+            <elementDefinition Id="010accdc-bbe1-4c06-8699-1f03505b3cb7" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="06a1ebc2-620b-4d30-81f2-0e94a41f096a" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>分布名</description>
+            <elementDefinition Id="da34e950-86be-42e8-a458-2372a8f9129b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6391d0c9-7f40-4d8e-9c88-49a016d099ea" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="fe88bf56-9b7b-4d2e-8f4f-b9847fa984fd" name="ParentID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="06f0db6b-2eef-47e7-9e1e-37e5ddc7e835" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7f82c167-9171-4beb-b6ee-86e7d0eddaf7" LastKnownName="Guid" />
+            </type_NamedElement>
+          </property>
+          <property Id="e8f44630-4b41-4bac-898b-779e522155b9" name="HandMan" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>组长标识</description>
+            <elementDefinition Id="a6ada773-0005-4f3a-b610-ece55082754b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6658ca54-f25f-4eb2-9d52-bcdef390f5e3" LastKnownName="Guid" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6391d0c9-7f40-4d8e-9c88-49a016d099ea" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7f82c167-9171-4beb-b6ee-86e7d0eddaf7" name="Guid" isAbstract="false" isLeaf="false" cachedFullName="Guid">
+        <elementDefinition Id="b50b185a-3d76-4ca0-b837-1edbe0c850e3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6658ca54-f25f-4eb2-9d52-bcdef390f5e3" name="Guid" isAbstract="false" isLeaf="false" cachedFullName="Guid">
+        <elementDefinition Id="b50b185a-3d76-4ca0-b837-1edbe0c850e3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1d8b5818-e07f-4f5a-b75d-412654d7cd7c" name="Role" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5164dfd9-2d25-459e-a0fe-585cd1aa8f1a" />
+        <generalsInternal>
+          <generalization Id="d0d86bbe-8b6a-4ab4-b4af-ca4d95c7dd42" isSubstitutable="false">
+            <classMoniker Id="aa73da97-ba46-4fa9-86d9-843443f5572b" LastKnownName="AggregateRoot" />
+            <elementDefinition Id="ad2c8f78-5ae0-469e-92af-ecc2d925c144" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ddcddfbb-3174-428e-af6a-a329ae40fa69" name="MenuItem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="47dbdf44-044a-4bcf-ac89-e2a2d20645e7" />
+        <generalsInternal>
+          <generalization Id="096c4018-4dac-4143-bc69-0513b1b82681" isSubstitutable="false">
+            <classMoniker Id="aa73da97-ba46-4fa9-86d9-843443f5572b" LastKnownName="AggregateRoot" />
+            <elementDefinition Id="3967cfcc-75c4-4aca-895e-a7f85578e2e2" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="2781c13f-e104-4b79-823d-acd052f78cdc" name="Module" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b2c8808a-9d9b-46bf-8daa-026b716e597b" />
+          </property>
+          <property Id="7e2b1e38-0a8c-432f-b3f9-bf914d8a5feb" name="ParentID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cb393ac3-bcbc-4943-8e3e-c7d3a670e6de" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="34ec10c7-6547-4561-a63c-dd0f8d13c5b4" name="Module" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="58e36cbd-8eb0-45b5-b078-b699fdd3981b" />
+        <generalsInternal>
+          <generalization Id="ff8042be-d2dc-4cfb-a37b-fd4413002c2d" isSubstitutable="false">
+            <classMoniker Id="aa73da97-ba46-4fa9-86d9-843443f5572b" LastKnownName="AggregateRoot" />
+            <elementDefinition Id="008011c1-6810-430b-9259-d91d91658376" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cd0ab597-9672-49cb-8495-0c001b004933" name="Permission" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7fc7e893-c53f-4b59-8aa2-25071d512669" />
+        <generalsInternal>
+          <generalization Id="35d3e5e1-25df-48ce-bb9f-c0d75f2c4a20" isSubstitutable="false">
+            <classMoniker Id="aa73da97-ba46-4fa9-86d9-843443f5572b" LastKnownName="AggregateRoot" />
+            <elementDefinition Id="b4a7ab23-20f5-4b96-ac8e-e65da4303557" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="8acd0210-b3a5-42ef-8609-fab87efc66c1" name="Role" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="63a6382d-fad0-42d4-a029-e0e2f3d15da6" />
+          </property>
+          <property Id="3f11fdb2-25ae-4371-bc33-fabea1c800be" name="Module" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ac5956ad-171a-4281-b035-88d8eff96604" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d752ca60-c57d-4d39-b1a4-3313097128ef" name="UserWebRole" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a2c28323-78de-46b6-b78a-f0833271fb6b" />
+        <generalsInternal>
+          <generalization Id="7c893d32-540b-4188-9e7a-45a6df79c9c9" isSubstitutable="false">
+            <classMoniker Id="aa73da97-ba46-4fa9-86d9-843443f5572b" LastKnownName="AggregateRoot" />
+            <elementDefinition Id="a08f8014-7d29-4fc4-ad20-b4605ef12261" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="ddaaf728-80ef-4e31-81b0-71ffdd59ff41" name="Role" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b69780fe-9cc5-42ca-9e69-fefeae525c54" />
+          </property>
+          <property Id="9c492ec5-d748-4374-97fa-535b28d3c390" name="UserWeb" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="86f8fc16-6ab9-40c8-a3c2-a4c090a25dd6" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d68840b6-e54d-4a4d-a28c-7d52434202a4" name="Web" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a95b984d-5b72-44c6-b9d4-422edfd800d8" />
+        <generalsInternal>
+          <generalization Id="b1c0efaa-125b-4593-a3b0-076a28341094" isSubstitutable="false">
+            <classMoniker Id="aa73da97-ba46-4fa9-86d9-843443f5572b" LastKnownName="AggregateRoot" />
+            <elementDefinition Id="676d4e25-dab7-432f-8237-8ee854dd5896" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b5ed5fdc-2f11-4ae8-98c9-f02a5a0b8746" name="UserWeb" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6df9edb1-91c1-4126-9551-81644f2828c9" />
+        <generalsInternal>
+          <generalization Id="7e681e6b-f1bf-4666-aec1-7073c697df7c" isSubstitutable="false">
+            <classMoniker Id="aa73da97-ba46-4fa9-86d9-843443f5572b" LastKnownName="AggregateRoot" />
+            <elementDefinition Id="780bba83-e1d3-4d62-8aa4-e8ccff335ec4" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="184849e3-e546-46e3-a32a-e8bfd7f41fb6" name="Guid" isAbstract="false" isLeaf="false" cachedFullName="Guid">
+        <elementDefinition Id="b50b185a-3d76-4ca0-b837-1edbe0c850e3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="15471dbe-e422-4c8f-a233-5729d2364612" name="Int" isAbstract="false" isLeaf="false" cachedFullName="Int">
+        <elementDefinition Id="2d60a972-89ac-4b3e-9025-ffe2b56ae7dc" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="1ec99368-9212-485e-8c7e-051c97c6d242" name="Wings.Design">
+    <elementDefinition Id="0277b8b6-ce86-4e69-8aec-339dc4bdc6da" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d2263dc8-eec3-4983-a416-39dcbe8b1377">
+        <profileInstance Id="b774c511-6754-40e0-be8c-571bf8299f78" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="86129016-d97c-4b59-aa77-71f984f62df0">
+        <profileInstance Id="253d31d7-b931-432d-bd0d-c36b3d565913" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5ddbf51e-0c77-4b75-bfcc-0c783757983d">
+        <profileInstance Id="02c9acdd-03fc-4f88-98c3-41a82e5295ea" name="CSharpProfile">
+          <elementDefinition Id="1d3bc8b3-51dd-46eb-85f2-704313c72f0c" />
+        </profileInstance>
+        <elementDefinition Id="529203c4-9613-41e1-b95f-222c8a1ab4ec" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e3f392a6-72d8-4515-9987-8af1efe523ba">
+        <profileInstance Id="972b3d02-2e55-4f9c-824b-ff0dd76df419" name="TextTemplateBindings">
+          <elementDefinition Id="dc81ce2c-4817-412d-909c-fdd339da860a" />
+        </profileInstance>
+        <elementDefinition Id="53d4e5cc-be0b-4bb5-adf9-19030cd96c68" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

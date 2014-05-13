@@ -1,0 +1,226 @@
+﻿<div data-options="region:'west',title:'选择站点',split:true" style="width: 125px;">
+    <input id="webtree" type="text" style="width: 120px" />
+    <div class="easyui-panel" title="部门" iconcls="icon-search" collapsible="true" style="padding: 5px; width: 120px; height: 250px;">
+        <ul id="grouptree"></ul>
+    </div>
+    <div class="easyui-panel" title="用户" iconcls="icon-search" collapsible="true" style="padding: 5px; border: 0px; width: 120px;">
+        <ul id="usertree">
+        </ul>
+    </div>
+
+</div>
+<div data-options="region:'center'" style="padding: 0px;">
+    @*使用类似于query的方式实现*@
+    @*查看子菜单*@
+    <div id="treegrid"></div>
+   
+    <div id="toolbar" class="z-toolbar" style="background: #f4f4f4;">
+        模式切换：
+        <select class="easyui-combobox" id="mode">
+            <option value="add">添加权限</option>
+            <option value="remove">禁用权限</option>
+        </select>
+       <a id="btnauthorize" href="javascript:;" class="easyui-linkbutton" title="操作" data-options="iconCls:'icon-remove',plain:true">操作</a>
+        <a href="javascript:;" class="easyui-splitbutton" title="展开" data-options="menu:'#dropdown',iconCls:'icon-collapse',plain:true">展开</a>
+        <a id="btnReload" href="javascript:;" class="easyui-linkbutton" title="刷新" data-options="iconCls:'icon-reload',plain:'true'">刷新</a>
+    </div>
+    <div id="dropdown">
+        <div id="btnCollapseAll" data-options="iconCls:'t-icon t-icon-12-18'">全部折叠</div>
+        <div id="btnExpandAll" data-options="iconCls:'t-icon t-icon-13-18'">全部展开</div>
+    </div>
+    @*@Html.Partial("_AddEdit")*@
+</div>
+@section JS{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var mode = (function () {
+                return $('#mode').combobox('getValue');
+            });
+            $treeGrid = $('#treegrid');
+
+            $("#webtree").combotree(
+                {
+                    url: "@Url.ActionWithPermission("Tree", "Web")",
+                    onSelect: function (node) {
+                        $treeGrid.treegrid('reload', webtreeselect());
+                    }
+                });
+            $("#grouptree").tree(
+               {
+                   url: "@Url.ActionWithPermission("Tree", "Group")",
+                   onSelect: function (node) {
+                       //$treeGrid.treegrid('reload', webtreeselect());
+                       $("#usertree").tree({
+                           url: "@Url.ActionWithPermission("Tree", "User")" + "/" + node.id,
+                           onSelect: function (node) {
+                               $treeGrid.treegrid('reload', webtreeselect());
+                           }
+                       });
+                   }
+               });
+            $('#mode').combobox({
+                onSelect: function (node) {
+                    $treeGrid.treegrid('load');
+                    $treeGrid.treegrid('clearSelections');
+                }
+            });
+            var _rowData;
+            function webtreeselect() {
+                var node = $("#webtree").combotree('tree').tree("getSelected");
+                var webid = 0;
+                if (node) {
+                    return {
+                        webid: node.id
+                    }
+                }
+                return {
+                    webid: webid
+                }
+            }
+            function grouptreeselect() {
+                var node = $("#grouptree").tree("getSelected");
+                var groupid = 0;
+                if (node) {
+                    return {
+                        groupid: node.id
+                    }
+                }
+                return {
+                    groupid: groupid
+                }
+            }
+            function usertreeselect() {
+                var node = $("#usertree").tree("getSelected");
+                var userid = 0;
+                if (node) {
+                    return {
+                        userid: node.id
+                    }
+                }
+                return {
+                    userid: userid
+                }
+            }
+            $treeGrid.treegrid({
+                state: 'open',
+                idField: 'ID',
+                treeField: 'Name',
+                url: '@Url.Action("GetDataGrid", "Module")',
+                border: false,
+                fitColumns: false,
+                title: '选择菜单',
+                iconCls: 't-icon t-icon-15-4',
+                rownumbers: true,
+                animate: true,
+                fit: true,
+                fixed: false,
+                singleSelect: false,
+                toolbar: '#toolbar',
+                columns: [[
+                    { field: 'ID', checkbox: true, align: 'center', width: 20 },
+                    { title: '菜单名称', field: 'Name', width: '200', align: 'left' },
+                    { title: '排序', field: 'Index', width: '50', align: 'center' },
+                      {
+                          title: '图标', field: 'ICON', width: '50', align: 'center', formatter: function (value) {
+                              return '<a  style="width: 18px; height: 18px;" class="t-icon ' + value + '"></a>';
+                          }
+                      },
+                    {
+                        title: '显示', field: 'Status', width: '50', align: 'center',
+                        formatter: function (value) {
+                            return Common.formatBoolean(value == 1);
+                        }
+                    },
+                    {
+                        title: '添加时间', field: 'CreateDate', width: '100', align: 'center',
+                        formatter: function (value) {
+                            return Common.formatDate(value);
+                        }
+                    },
+                    {
+                        title: '更新时间', field: 'EditDate', width: '100', align: 'center',
+                        formatter: function (value) {
+                            return Common.formatDate(value);
+                        }
+                    },
+                    { title: '描述', field: 'Description', width: '220', align: 'center' }
+                ]],
+                onLoadSuccess: function (data) {
+                    var userid = usertreeselect().userid;
+                    var webid = webtreeselect().webid;
+                    var url = mode() == 'add' ? '@Url.ActionWithPermission("GetPermissionAllow", "UserPermission")' : '@Url.ActionWithPermission("GetPermissionBan", "UserPermission")';
+                    $.post(url, {
+                        webid: webid,
+                        userid: userid
+                    }, function (r) {
+                        if (r.success) {
+                            var data = r.data;
+                            $.each(data, function (i, v) {
+                                $('tr[node-id=' + v + ']').addClass("datagrid-row-checked").addClass("datagrid-row-selected");
+                                $('input[value=' + v + ']').attr("checked", "checked");
+                            })
+                        }
+                    })
+                }
+            });
+
+            //全部折叠
+            $('#btnCollapseAll,#treegrid-collapseAll').on('click', function () {
+                $treeGrid.treegrid('collapseAll');
+            });
+            //全部展开
+            $('#btnExpandAll,#treegrid-expandAll').on('click', function () {
+                $treeGrid.treegrid('expandAll');
+            });
+            //刷新
+            $('#btnReload,#treegrid-reload').on('click', function () {
+                $treeGrid.treegrid('load', webtreeselect());
+            });
+            $('#btnauthorize').on("click", function () {
+                var selecteds = $treeGrid.treegrid('getSelections');
+                var message = "是否要操作当前模式设置给选择的用户？"
+                if (Common.isEmptyObject(selecteds)) {
+                    message = "是否要清空选择的用户的当前模式设置?";
+                }
+                {
+                    var userid = usertreeselect().userid;
+                    var webid = webtreeselect().webid;
+
+                    if (!userid) {
+                        $.messager.alert('提示', "请先选择用户!");
+                        return;
+                    }
+                    if (!webid) {
+                        $.messager.alert('提示', "请先选择站点!");
+                        return;
+                    }
+                    $.messager.confirm('确认', message, function (r) {
+                        if (!r) {
+                            return;
+                        }
+                        var moduleids = [];
+                        $.each(selecteds, function (i, v) {
+                            moduleids.push(v.ID);
+                        });
+                        var url = mode() == 'add' ? '@Url.Action("AuthorizationAllow", "UserPermission")' : '@Url.Action("AuthorizationBan", "UserPermission")';
+                        $.post(url, {
+                            moduleids: moduleids.join(','),
+                            webid: webid,
+                            userid: userid
+                        },
+                            function (data) {
+                                if (data.success) {
+                                    $.messager.alert('提示', data.message, 'info');
+                                    $treeGrid.treegrid('load');
+                                    $treeGrid.treegrid('clearSelections');
+                                } else {
+                                    $.messager.alert('错误', data.message, 'error');
+                                }
+                            });
+                    });
+                }
+                return false;
+            });
+        });
+    </script>
+}

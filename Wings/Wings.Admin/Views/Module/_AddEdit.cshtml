@@ -1,0 +1,97 @@
+﻿<div id="AddEdit" class="easyui-window" data-options="modal:true,closed:true,maximizable:false,resizable:true,minimizable:false,collapsible:false" style="padding: 10px; width: 340px;">
+    <form id="frmAddEdit" class="form-horizontal" method="post">
+        <div class="control-group">
+            <label class="control-label" for="_ModuleName">菜单名称</label>
+            <div class="controls">
+                <input name="Name" id="_ModuleName" class="span3 easyui-validatebox" placeholder="菜单名称" maxlength="50" type="text" data-options="required:true" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_ICON">图标</label>
+            <div class="controls">
+                <input name="ICON" id="_ICON" class="span3 easyui-validatebox" placeholder="请选择图标" type="text" data-options="required:true,missingMessage: '此输入项为必输项，请选择图标'" style="width: 180px;" />
+                <span class="help-inline"><a class="t-icon" id="iconshow" style="width: 18px; height: 18px;"></a></span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_ParentID">父菜单</label>
+            <div class="controls">
+                <input name="ParentID" id="_ParentID" class="span3 easyui-validatebox" placeholder="父菜单" maxlength="50" type="text" />
+            </div>
+
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_Action">自动获取配置</label>
+            <div class="controls">
+                <input name="Action" id="_Action" class="span3 easyui-validatebox" placeholder="自动获取" maxlength="50" type="text" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_Url">访问地址</label>
+            <div class="controls">
+                <input name="Url" id="_Url" class="span3 easyui-validatebox" placeholder="绝对路径，权重高" maxlength="50" type="text" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_Target">打开方式</label>
+            <div class="controls">
+                <input name="Target" id="_Target" class="span3 easyui-validatebox" placeholder="target" maxlength="50" type="text" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_Index">排序</label>
+            <div class="controls">
+                <input name="Index" id="_Index" class="span3 easyui-validatebox" placeholder="菜单名称" maxlength="50" type="text" data-options="required:true" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_Controller">Controller</label>
+            <div class="controls">
+                <input name="ControllerName" id="_Controller" class="span3 easyui-validatebox" placeholder="控制器（C），权重中" maxlength="50" type="text" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_ActionName">Action</label>
+            <div class="controls">
+                <input name="ActionName" id="_ActionName" class="span3 easyui-validatebox" placeholder="作用(A)，权重中" maxlength="50" type="text" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_IsMenus">是菜单</label>
+            <div class="controls">
+                <input name="IsMenus" id="_IsMenus" class="span3 easyui-validatebox" onclick="this.value = this.checked ? 'true' : 'false'" type="checkbox" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_IsPost">是POST请求</label>
+            <div class="controls">
+                <input name="IsPost" id="_IsPost" class="span3 easyui-validatebox" onclick="this.value = this.checked ? 'true' : 'false'" type="checkbox" />
+            </div>
+        </div>
+        <div class="input-prepend inline">
+            <label class="control-label" for="_Status">状态</label>
+            <div class="controls">
+                <select name="Status" id="_Status" style="width: 216px;">
+                    <option value="-1">已删除</option>
+                    <option value="0">禁用</option>
+                    <option value="1">正常</option>
+                    <option value="2">未激活</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_Description">菜单描述</label>
+            <div class="controls">
+                <textarea id="_Description" name="Description" class="span3 easyui-validatebox" placeholder="菜单描述" data-options="required:true" rows="4" maxlength="500"></textarea>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <input type="hidden" id="WebID" name="_webid" />
+                <input id="_ID" name="ID" type="hidden" />
+                <a id="btnOK" class="easyui-linkbutton" data-options="iconCls:'icon-ok'">确定</a>
+                <a id="btnRest" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'">重置</a>
+            </div>
+        </div>
+    </form>
+</div>

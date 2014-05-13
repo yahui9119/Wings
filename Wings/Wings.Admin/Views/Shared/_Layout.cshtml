@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="@Url.Content("~/Content/images/favicon.ico")" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/easyui/themes/default/easyui.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/icons.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/e.main.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/bootstrap.revision.css")" rel="stylesheet" />
+    @RenderSection("CSS", required: false)
+    <script src="@Url.Content("~/Content/jquery.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/easyui/jquery.easyui.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/easyui/locale/easyui-lang-zh_CN.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/javascript/e.main.js")" type="text/javascript"></script>
+    @RenderSection("JS", required: false)
+</head>
+<body class="easyui-layout" style="overflow-y: hidden;">
+    @RenderBody()
+
+</body>
+</html>

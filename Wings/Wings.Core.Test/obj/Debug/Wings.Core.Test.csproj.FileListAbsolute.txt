@@ -1,0 +1,10 @@
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\bin\Debug\Wings.Core.Test.dll
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\bin\Debug\Wings.Core.Test.pdb
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\obj\Debug\Wings.Core.Test.csprojResolveAssemblyReference.cache
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\obj\Debug\Wings.Core.Test.dll
+D:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\obj\Debug\Wings.Core.Test.pdb
+G:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\bin\Debug\Wings.Core.Test.dll
+G:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\bin\Debug\Wings.Core.Test.pdb
+G:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\obj\Debug\Wings.Core.Test.csprojResolveAssemblyReference.cache
+G:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\obj\Debug\Wings.Core.Test.dll
+G:\GitHub\WingsCMS\0\WingsCMS\Wings.Core.Test\obj\Debug\Wings.Core.Test.pdb

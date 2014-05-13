@@ -1,0 +1,42 @@
+﻿<div id="AddEdit" class="easyui-window" data-options="modal:true,closed:true,maximizable:false,resizable:false,minimizable:false,collapsible:false" style="padding: 10px; width: 340px;">
+    <form id="frmAddEdit" class="form-horizontal" method="post">
+        <input type="hidden" name="ID" />
+        <div class="control-group">
+            <label class="control-label" for="_WebName">站点名称</label>
+            <div class="controls">
+                <input name="Name" id="_WebName" class="span3 easyui-validatebox" placeholder="站点名称" maxlength="50" type="text" data-options="required:true"/>
+            </div>
+        </div>
+         <div class="control-group">
+            <label class="control-label" for="_Domain">域名</label>
+            <div class="controls">
+                <input name="Domain" id="_Domain" class="span3 easyui-validatebox" placeholder="域名" maxlength="50" type="text" data-options="required:true"/>
+            </div>
+        </div>
+         <div class="input-prepend inline">
+            <label class="control-label" for="_IsDisplay">状态</label>
+            <div class="controls">
+                <select name="Status"   style = "width:216px;">
+                    <option value="-1">已删除</option>
+                    <option value="-1">禁用</option>
+                    <option value="1">正常</option>
+                    <option value="2">未激活</option>
+                </select>
+                @*@Html.DropDownList("Status",(List<SelectListItem>)ViewData["Status"]), new { id = "Status", })*@
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="_Description">站点描述</label>
+            <div class="controls">
+                <textarea id="_Description" name="Description" class="span3 easyui-validatebox" placeholder="角色描述" data-options="required:true" rows="4" maxlength="500"></textarea>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <input id="_ID" name="ID" type="hidden" />
+                <a id="btnOK" class="easyui-linkbutton" data-options="iconCls:'icon-ok'">确定</a>
+                <a id="btnRest" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'">重置</a>
+            </div>
+        </div>
+    </form>
+</div>
