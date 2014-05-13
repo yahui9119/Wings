@@ -45,7 +45,22 @@
     <Reference Include="log4net">
       <HintPath>..\libs\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.1.0.0\lib\net40\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Owin.1.0.0\lib\net45\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.0\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.1.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
@@ -77,6 +92,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Unity.Interception.3.0.1304.0\lib\Net45\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -102,9 +125,6 @@
     <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
       <Private>True</Private>
@@ -206,6 +226,7 @@
     </Compile>
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignalRHub\WebHub.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap\css\bootstrap-responsive.css" />
@@ -225,6 +246,34 @@
     <Content Include="Content\css\login.css" />
     <Content Include="Content\easyui\easyloader.js" />
     <Content Include="Content\easyui\jquery.easyui.min.js" />
+    <Content Include="Content\highcharts\js\adapters\mootools-adapter.js" />
+    <Content Include="Content\highcharts\js\adapters\mootools-adapter.src.js" />
+    <Content Include="Content\highcharts\js\adapters\prototype-adapter.js" />
+    <Content Include="Content\highcharts\js\adapters\prototype-adapter.src.js" />
+    <Content Include="Content\highcharts\js\adapters\standalone-framework.js" />
+    <Content Include="Content\highcharts\js\adapters\standalone-framework.src.js" />
+    <Content Include="Content\highcharts\js\highcharts-all.js" />
+    <Content Include="Content\highcharts\js\highcharts-more.js" />
+    <Content Include="Content\highcharts\js\highcharts-more.src.js" />
+    <Content Include="Content\highcharts\js\highcharts.js" />
+    <Content Include="Content\highcharts\js\highcharts.src.js" />
+    <Content Include="Content\highcharts\js\modules\canvas-tools.js" />
+    <Content Include="Content\highcharts\js\modules\canvas-tools.src.js" />
+    <Content Include="Content\highcharts\js\modules\data.js" />
+    <Content Include="Content\highcharts\js\modules\data.src.js" />
+    <Content Include="Content\highcharts\js\modules\drilldown.js" />
+    <Content Include="Content\highcharts\js\modules\drilldown.src.js" />
+    <Content Include="Content\highcharts\js\modules\exporting.js" />
+    <Content Include="Content\highcharts\js\modules\exporting.src.js" />
+    <Content Include="Content\highcharts\js\modules\funnel.js" />
+    <Content Include="Content\highcharts\js\modules\funnel.src.js" />
+    <Content Include="Content\highcharts\js\modules\no-data-to-display.js" />
+    <Content Include="Content\highcharts\js\modules\no-data-to-display.src.js" />
+    <Content Include="Content\highcharts\js\themes\dark-blue.js" />
+    <Content Include="Content\highcharts\js\themes\dark-green.js" />
+    <Content Include="Content\highcharts\js\themes\gray.js" />
+    <Content Include="Content\highcharts\js\themes\grid.js" />
+    <Content Include="Content\highcharts\js\themes\skies.js" />
     <Content Include="Content\images\bg.gif" />
     <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\head_bg.gif" />
@@ -877,6 +926,7 @@
     <Content Include="Content\kindeditor\asp.net\upload_json.ashx" />
     <Content Include="Content\DatePicker\WdatePicker.js.bak" />
     <Content Include="Content\jquery-1.10.2.min.map" />
+    <Content Include="Content\highcharts\js\excanvas.compiled" />
     <None Include="Properties\PublishProfiles\Admin.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -884,6 +934,8 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />

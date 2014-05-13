@@ -224,3 +224,29 @@
    在 DynamicModule.ns.Wrapped_IWebService_a541c0bf15724f48a45efa6f52e30899.<GetAllWebModules_DelegateImplementation>__10(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
 -----------------------------------------
 
+时间:2014-05-13 16:50:46,372 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [82] 
+ 日志内容:【事件70204a6d-7072-4674-8026-1c04f5ffe73a】用户在线[开始]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+
+时间:2014-05-13 16:50:46,629 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [82] 
+ 日志内容:【事件70204a6d-7072-4674-8026-1c04f5ffe73a】更新用户在线状态为True
+-----------------------------------------
+
+时间:2014-05-13 16:50:47,080 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [82] 
+ 日志内容:【事件70204a6d-7072-4674-8026-1c04f5ffe73a】用户在线[结束]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+

@@ -17,6 +17,7 @@ namespace Wings.Admin
     {
         protected void Application_Start()
         {
+            RouteTable.Routes.MapHubs();//Register Hub URL
             PluginsManger.Init();
             log4net.Config.XmlConfigurator.Configure();//日志初始化
             AreaRegistration.RegisterAllAreas();
@@ -26,6 +27,7 @@ namespace Wings.Admin
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+            
         }
     }
 }

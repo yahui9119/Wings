@@ -353,3 +353,12 @@ G:\GitHub\Wings\Wings\Wings.Admin\bin\zh-Hant\System.Spatial.resources.dll
 G:\GitHub\Wings\Wings\Wings.Admin\obj\Debug\Wings.Admin.csprojResolveAssemblyReference.cache
 G:\GitHub\Wings\Wings\Wings.Admin\obj\Debug\Wings.Admin.dll
 G:\GitHub\Wings\Wings\Wings.Admin\obj\Debug\Wings.Admin.pdb
+G:\GitHub\Wings\Wings\Wings.Admin\bin\Microsoft.AspNet.SignalR.Core.dll
+G:\GitHub\Wings\Wings\Wings.Admin\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+G:\GitHub\Wings\Wings\Wings.Admin\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\GitHub\Wings\Wings\Wings.Admin\bin\Owin.dll
+G:\GitHub\Wings\Wings\Wings.Admin\bin\Microsoft.AspNet.SignalR.Core.xml
+G:\GitHub\Wings\Wings\Wings.Admin\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+G:\GitHub\Wings\Wings\Wings.Admin\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\GitHub\Wings\Wings\Wings.Admin\bin\Microsoft.AspNet.SignalR.Owin.dll
+G:\GitHub\Wings\Wings\Wings.Admin\bin\Microsoft.AspNet.SignalR.Owin.xml
