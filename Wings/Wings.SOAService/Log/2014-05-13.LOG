@@ -24,3 +24,203 @@
 ：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
 -----------------------------------------
 
+时间:2014-05-13 14:01:46,339 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第87行
+ [9] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 MongoDB.Bson.Serialization.Serializers.GuidSerializer.Serialize(BsonWriter bsonWriter, Type nominalType, Object value, IBsonSerializationOptions options)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.Serialize(BsonWriter bsonWriter, Object value)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.SerializeValue(Object value)
+   在 MongoDB.Driver.Linq.Utils.BsonSerializationInfoHelper.SerializeValue(BsonSerializationInfo serializationInfo, Object value)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildComparisonQuery(Expression variableExpression, ExpressionType operatorType, ConstantExpression constantExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildEqualsQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildMethodCallQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryable`1.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 g:\GitHub\Wings\Wings\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 143
+   在 Wings.Domain.Repositories.Repository`1.DoFindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 213
+   在 Wings.Domain.Repositories.Repository`1.FindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 487
+   在 Wings.Core.Implementation.UserServiceImpl.GetGroupParentID(Nullable`1 id) 位置 g:\GitHub\Wings\Wings\Wings.Core\Implementation\UserServiceImpl.cs:行号 865
+   在 DynamicModule.ns.Wrapped_IUserService_cd9079e2ee944b689e640b6adf7642b2.<GetGroupParentID_DelegateImplementation>__26(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-05-13 14:02:08,882 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第87行
+ [25] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 MongoDB.Bson.Serialization.Serializers.GuidSerializer.Serialize(BsonWriter bsonWriter, Type nominalType, Object value, IBsonSerializationOptions options)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.Serialize(BsonWriter bsonWriter, Object value)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.SerializeValue(Object value)
+   在 MongoDB.Driver.Linq.Utils.BsonSerializationInfoHelper.SerializeValue(BsonSerializationInfo serializationInfo, Object value)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildComparisonQuery(Expression variableExpression, ExpressionType operatorType, ConstantExpression constantExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildEqualsQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildMethodCallQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryable`1.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 g:\GitHub\Wings\Wings\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 143
+   在 Wings.Domain.Repositories.Repository`1.DoFindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 213
+   在 Wings.Domain.Repositories.Repository`1.FindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 487
+   在 Wings.Core.Implementation.UserServiceImpl.GetGroupParentID(Nullable`1 id) 位置 g:\GitHub\Wings\Wings\Wings.Core\Implementation\UserServiceImpl.cs:行号 865
+   在 DynamicModule.ns.Wrapped_IUserService_cd9079e2ee944b689e640b6adf7642b2.<GetGroupParentID_DelegateImplementation>__26(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-05-13 14:04:32,243 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第87行
+ [19] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 MongoDB.Bson.Serialization.Serializers.GuidSerializer.Serialize(BsonWriter bsonWriter, Type nominalType, Object value, IBsonSerializationOptions options)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.Serialize(BsonWriter bsonWriter, Object value)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.SerializeValue(Object value)
+   在 MongoDB.Driver.Linq.Utils.BsonSerializationInfoHelper.SerializeValue(BsonSerializationInfo serializationInfo, Object value)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildComparisonQuery(Expression variableExpression, ExpressionType operatorType, ConstantExpression constantExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildEqualsQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildMethodCallQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryable`1.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 g:\GitHub\Wings\Wings\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 143
+   在 Wings.Domain.Repositories.Repository`1.DoFindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 213
+   在 Wings.Domain.Repositories.Repository`1.FindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 487
+   在 Wings.Core.Implementation.UserServiceImpl.GetGroupParentID(Nullable`1 id) 位置 g:\GitHub\Wings\Wings\Wings.Core\Implementation\UserServiceImpl.cs:行号 865
+   在 DynamicModule.ns.Wrapped_IUserService_732a928fecc341c5b0352a6cb9bbf46e.<GetGroupParentID_DelegateImplementation>__26(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-05-13 14:05:27,705 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第87行
+ [23] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 MongoDB.Bson.Serialization.Serializers.GuidSerializer.Serialize(BsonWriter bsonWriter, Type nominalType, Object value, IBsonSerializationOptions options)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.Serialize(BsonWriter bsonWriter, Object value)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.SerializeValue(Object value)
+   在 MongoDB.Driver.Linq.Utils.BsonSerializationInfoHelper.SerializeValue(BsonSerializationInfo serializationInfo, Object value)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildComparisonQuery(Expression variableExpression, ExpressionType operatorType, ConstantExpression constantExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildEqualsQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildMethodCallQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryable`1.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 g:\GitHub\Wings\Wings\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 143
+   在 Wings.Domain.Repositories.Repository`1.DoFindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 213
+   在 Wings.Domain.Repositories.Repository`1.FindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 487
+   在 Wings.Core.Implementation.UserServiceImpl.GetGroupParentID(Nullable`1 id) 位置 g:\GitHub\Wings\Wings\Wings.Core\Implementation\UserServiceImpl.cs:行号 865
+   在 DynamicModule.ns.Wrapped_IUserService_732a928fecc341c5b0352a6cb9bbf46e.<GetGroupParentID_DelegateImplementation>__26(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-05-13 14:06:57,380 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第87行
+ [28] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 MongoDB.Bson.Serialization.Serializers.GuidSerializer.Serialize(BsonWriter bsonWriter, Type nominalType, Object value, IBsonSerializationOptions options)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.Serialize(BsonWriter bsonWriter, Object value)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.SerializeValue(Object value)
+   在 MongoDB.Driver.Linq.Utils.BsonSerializationInfoHelper.SerializeValue(BsonSerializationInfo serializationInfo, Object value)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildComparisonQuery(Expression variableExpression, ExpressionType operatorType, ConstantExpression constantExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildEqualsQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildMethodCallQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryable`1.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 g:\GitHub\Wings\Wings\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 143
+   在 Wings.Domain.Repositories.Repository`1.DoFindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 213
+   在 Wings.Domain.Repositories.Repository`1.FindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 487
+   在 Wings.Core.Implementation.UserServiceImpl.GetGroupParentID(Nullable`1 id) 位置 g:\GitHub\Wings\Wings\Wings.Core\Implementation\UserServiceImpl.cs:行号 865
+   在 DynamicModule.ns.Wrapped_IUserService_732a928fecc341c5b0352a6cb9bbf46e.<GetGroupParentID_DelegateImplementation>__26(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-05-13 14:07:44,430 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第87行
+ [17] 
+ 日志内容:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 MongoDB.Bson.Serialization.Serializers.GuidSerializer.Serialize(BsonWriter bsonWriter, Type nominalType, Object value, IBsonSerializationOptions options)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.Serialize(BsonWriter bsonWriter, Object value)
+   在 MongoDB.Bson.Serialization.BsonSerializationInfo.SerializeValue(Object value)
+   在 MongoDB.Driver.Linq.Utils.BsonSerializationInfoHelper.SerializeValue(BsonSerializationInfo serializationInfo, Object value)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildComparisonQuery(Expression variableExpression, ExpressionType operatorType, ConstantExpression constantExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildEqualsQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildMethodCallQuery(MethodCallExpression methodCallExpression)
+   在 MongoDB.Driver.Linq.PredicateTranslator.BuildQuery(Expression expression)
+   在 MongoDB.Driver.Linq.SelectQuery.BuildQuery()
+   在 MongoDB.Driver.Linq.SelectQuery.Execute()
+   在 MongoDB.Driver.Linq.MongoQueryProvider.Execute(Expression expression)
+   在 MongoDB.Driver.Linq.MongoQueryable`1.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoFindAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 g:\GitHub\Wings\Wings\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 143
+   在 Wings.Domain.Repositories.Repository`1.DoFindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 213
+   在 Wings.Domain.Repositories.Repository`1.FindAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 487
+   在 Wings.Core.Implementation.UserServiceImpl.GetGroupParentID(Nullable`1 id) 位置 g:\GitHub\Wings\Wings\Wings.Core\Implementation\UserServiceImpl.cs:行号 865
+   在 DynamicModule.ns.Wrapped_IUserService_732a928fecc341c5b0352a6cb9bbf46e.<GetGroupParentID_DelegateImplementation>__26(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-05-13 14:09:19,599 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第87行
+ [49] 
+ 日志内容:System.Exception: Cannot get.
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\Wings\Wings\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 83
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder, Int32 pageNumber, Int32 pageSize) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 433
+   在 Wings.Core.Implementation.UserServiceImpl.GetUsersByPage(Pagination pagination) 位置 g:\GitHub\Wings\Wings\Wings.Core\Implementation\UserServiceImpl.cs:行号 356
+   在 DynamicModule.ns.Wrapped_IUserService_732a928fecc341c5b0352a6cb9bbf46e.<GetUsersByPage_DelegateImplementation>__9(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-05-13 14:09:27,352 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第87行
+ [49] 
+ 日志内容:System.Exception: Cannot get.
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 g:\GitHub\Wings\Wings\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 66
+   在 Wings.Domain.Repositories.Repository`1.DoGetAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 87
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 393
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllWebModules(Guid webid, Boolean IsMix) 位置 g:\GitHub\Wings\Wings\Wings.Core\Implementation\WebServiceImpl.cs:行号 249
+   在 DynamicModule.ns.Wrapped_IWebService_a541c0bf15724f48a45efa6f52e30899.<GetAllWebModules_DelegateImplementation>__10(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+
+时间:2014-05-13 14:09:48,225 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第87行
+ [51] 
+ 日志内容:System.Exception: Cannot get.
+   在 Wings.Domain.Repositories.MongoDB.MongoDBRepository`1.DoGetAll(ISpecification`1 specification, Expression`1 sortPredicate, SortOrder sortOrder) 位置 g:\GitHub\Wings\Wings\Wings.Domain.Repositories\MongoDB\BaseRepository\MongoDBRepository.cs:行号 66
+   在 Wings.Domain.Repositories.Repository`1.DoGetAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 87
+   在 Wings.Domain.Repositories.Repository`1.GetAll(ISpecification`1 specification) 位置 g:\GitHub\Wings\Wings\Wings.Domain\Repositories\Repository.cs:行号 393
+   在 Wings.Core.Implementation.WebServiceImpl.GetAllWebModules(Guid webid, Boolean IsMix) 位置 g:\GitHub\Wings\Wings\Wings.Core\Implementation\WebServiceImpl.cs:行号 249
+   在 DynamicModule.ns.Wrapped_IWebService_a541c0bf15724f48a45efa6f52e30899.<GetAllWebModules_DelegateImplementation>__10(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+-----------------------------------------
+

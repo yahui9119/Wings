@@ -1,0 +1,528 @@
+时间:2014-05-13 13:54:54,984 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [7] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 13:56:00,893 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [8] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 13:56:46,430 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [15] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 13:57:25,480 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [31] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 13:57:48,660 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [29] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 13:58:17,145 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [31] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 13:58:44,458 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [8] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 13:59:14,461 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [8] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 13:59:44,484 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [30] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:00:43,692 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [14] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:02:51,205 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [23] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:03:21,221 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [22] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:04:09,339 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [18] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:05:32,456 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [14] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:07:01,809 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [31] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:07:30,411 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [14] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:09:23,828 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [32] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:09:53,372 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [30] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:10:35,611 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [33] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:10:57,780 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [20] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:11:33,640 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [24] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:11:58,551 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [24] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:12:28,844 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [30] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-13 14:12:58,971 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [6] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.FaultException: Cannot get.
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
