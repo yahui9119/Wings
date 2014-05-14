@@ -76,10 +76,10 @@
                                 time = (new Date()).getTime(),
                                 i;
 
-                            for (i = -19; i <= 0; i++) {
+                            for (i = 0; i <= 100; i++) {
                                 data.push({
-                                    x: time + i * 1000,
-                                    y: Math.random()
+                                    x: time,
+                                    y: 0
                                 });
                             }
                             return data;
@@ -107,8 +107,9 @@
         <h2>欢迎来到Wings后台管理系统</h2>
     </div>
     <div class="easyui-panel" title="服务器状态" style="height: 700px; padding: 10px;">
-        <button class="easy-btn" id="test">test</button>
-        <div id="container" style="width: 980px; height: 450px"></div> 
+      @*  <button class="easy-btn" id="test">test</button>*@
+        <div id="container" style="width: 980px; height: 450px"></div> 
+
     </div>
 </body>
 </html>
