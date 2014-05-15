@@ -19,14 +19,14 @@ namespace Wings.Admin.SignalRHub
             // to send to its connected clients
             _hubContext = GlobalHost.ConnectionManager.GetHubContext<WebHub>();
         }
-        public void Hello1(string message)
-        {
-            Clients.All.hello(message);
-        }
-        public void send(string message)
-        {
-            Clients.All.hello(message);
-        }
+        //public void Hello1(string message)
+        //{
+        //    Clients.All.hello(message);
+        //}
+        //public void send(string message)
+        //{
+        //    Clients.All.hello(message);
+        //}
         public void GetMemoryAll()
         {
 
