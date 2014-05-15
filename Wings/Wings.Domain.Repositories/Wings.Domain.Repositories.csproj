@@ -59,8 +59,10 @@
     <Compile Include="EntityFramework\BaseRepository\EntityFrameworkRepository.cs" />
     <Compile Include="EntityFramework\BaseRepository\EntityFrameworkRepositoryContext.cs" />
     <Compile Include="EntityFramework\BaseRepository\IEntityFrameworkRepositoryContext.cs" />
+    <Compile Include="EntityFramework\ConnectionRepository.cs" />
     <Compile Include="EntityFramework\GroupRepository.cs" />
     <Compile Include="EntityFramework\ModelConfig\BaseConfig.cs" />
+    <Compile Include="EntityFramework\ModelConfig\ConnectionConfig.cs" />
     <Compile Include="EntityFramework\ModelConfig\GroupConfig.cs" />
     <Compile Include="EntityFramework\ModelConfig\ModuleConfig.cs" />
     <Compile Include="EntityFramework\ModelConfig\RoleConfig.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="MongoDB\BaseRepository\GuidIDGeneratorConvention.cs" />
     <Compile Include="MongoDB\BaseRepository\IMongoDBRepositoryContext.cs" />
     <Compile Include="MongoDB\BaseRepository\IMongoDBRepositoryContextSettings.cs" />
+    <Compile Include="MongoDB\ConnectionRepository.cs" />
     <Compile Include="MongoDB\ModelConfig\MongoDBBootstrapper.cs" />
     <Compile Include="MongoDB\BaseRepository\MongoDBRepository.cs" />
     <Compile Include="MongoDB\BaseRepository\MongoDBRepositoryContext.cs" />

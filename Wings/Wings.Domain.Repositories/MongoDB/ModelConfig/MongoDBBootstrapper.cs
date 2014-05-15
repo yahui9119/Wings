@@ -56,6 +56,12 @@ namespace Wings.Domain.Repositories.MongoDB
                 s.SetIgnoreExtraElements(true);
               
             });
+            BsonClassMap.RegisterClassMap<Connection>(s =>
+            {
+                s.AutoMap();
+                s.SetIgnoreExtraElements(true);
+
+            });
 
         }
     }

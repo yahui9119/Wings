@@ -19,10 +19,6 @@ namespace Wings.Domain.Repositories.EntityFramework
 
         }
 
-        //public DbSet<Wings.Domain.Model.Action> Actions
-        //{
-        //    get { return Set<Wings.Domain.Model.Action>(); }
-        //}
 
         public DbSet<User> Users
         {
@@ -37,10 +33,7 @@ namespace Wings.Domain.Repositories.EntityFramework
         {
             get { return Set<Module>(); }
         }
-        //public DbSet<Permission> Permissions
-        //{
-        //    get { return Set<Permission>(); }
-        //}
+
         public DbSet<Role> Roles
         {
             get { return Set<Role>(); }
@@ -54,20 +47,27 @@ namespace Wings.Domain.Repositories.EntityFramework
         {
             get { return Set<Web>(); }
         }
+        //public DbSet<Connection> Connections
+        //{
+        //    get
+        //    {
+        //        return Set<Connection>();
+        //    }
+        //}
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelBuilder.Configurations.Add(new ActionConfig());
+       
 
             modelBuilder.Configurations.Add(new UserConfig());
 
             modelBuilder.Configurations.Add(new GroupConfig());
 
             modelBuilder.Configurations.Add(new ModuleConfig());
-            //modelBuilder.Configurations.Add(new PermissionConfig());
+       
             modelBuilder.Configurations.Add(new RoleConfig());
             modelBuilder.Configurations.Add(new UserOnlineConfig());
             modelBuilder.Configurations.Add(new WebConfig());
-
+            //modelBuilder.Configurations.Add(new ConnectionConfig());
             base.OnModelCreating(modelBuilder);
         }
     }
