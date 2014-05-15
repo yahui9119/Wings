@@ -18,8 +18,9 @@
                         useUTC: false
                     }
                 });
-
                 var chart;
+                var cpu = 0.0;
+                var mem = 0.0;
                 $('#container').highcharts({
                     chart: {
                         type: 'spline',
@@ -27,13 +28,16 @@
                         marginRight: 10,
                         events: {
                             load: function () {
-
                                 // set up the updating of the chart each second             
-                                var series = this.series[0];
+                                var seriescpu = this.series[0];
+                                var seriesmem = this.series[1];
                                 setInterval(function () {
+                                    webhub.server.getCPUMemoryNow();
                                     var x = (new Date()).getTime(), // current time         
-                                        y = Math.random()*100;
-                                    series.addPoint([x, y], true, true);
+                                        ycpu = parseFloat(cpu),
+                                        ymem = parseFloat(mem);
+                                    seriescpu.addPoint([x, ycpu], true, true);
+                                    seriesmem.addPoint([x, ymem], true, true);
                                 }, 1000);
                             }
                         }
@@ -84,18 +88,41 @@
                             }
                             return data;
                         })()
+                    }, {
+                        name: 'Memery',
+                        data: (function () {
+                            // generate an array of random data                             
+                            var data = [],
+                                time = (new Date()).getTime(),
+                                i;
+
+                            for (i = 0; i <= 100; i++) {
+                                data.push({
+                                    x: time,
+                                    y: 0
+                                });
+                            }
+                            return data;
+                        })()
                     }]
                 });
                 webhub = $.connection.webHub;
-                webhub.client.hello = function (message) {
-                    alert(message + "//");
-                };
-
+                //webhub.client.setmemery = function (value) {
+                //    $('#memvalue').val(value);
+                //};
+                webhub.client.setcpumemvalue = function (value) {
+                    if (value) {
+                        var values = value.split(',');
+                        cpu = values[0];
+                        mem = values[1];
+                    }
+                }
                 $.connection.hub.start().done(function () {
-                    $("#test").click(function () {
-                        webhub.server.send('sdfsdf');
-                    })
+
+
+
                 })
+
             })
 
 
@@ -105,10 +132,14 @@
 <body>
     <div class="easyui-panel" title="欢迎" style="height: 150px; padding: 10px;">
         <h2>欢迎来到Wings后台管理系统</h2>
+     @*   <h3>服务器信息：</h3>
+        <h5>内存大小：<label id="memvalue"></label></h5>
+        window *@
+
     </div>
     <div class="easyui-panel" title="服务器状态" style="height: 700px; padding: 10px;">
-      @*  <button class="easy-btn" id="test">test</button>*@
-        <div id="container" style="width: 980px; height: 450px"></div> 
+        @*  <button class="easy-btn" id="test">test</button>*@
+        <div id="container" style="width: 980px; height: 450px"></div>
 
     </div>
 </body>
