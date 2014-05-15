@@ -17,14 +17,17 @@ namespace Wings.Admin
     {
         protected void Application_Start()
         {
-            RouteTable.Routes.MapHubs();//Register Hub URL
+            
             PluginsManger.Init();
             log4net.Config.XmlConfigurator.Configure();//日志初始化
+            RouteTable.Routes.MapHubs();//Register Hub URL
             AreaRegistration.RegisterAllAreas();
-
+            
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+          
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+           
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
             

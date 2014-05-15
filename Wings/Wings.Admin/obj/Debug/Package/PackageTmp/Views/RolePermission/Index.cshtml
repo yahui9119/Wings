@@ -120,10 +120,8 @@
                     }, function (r) {
                         if (r.success) {
                             var data = r.data
-                            console.log(data);
+                            
                             $.each(data, function (i, v) {
-
-                                console.log(v);
                                 $('input[value=' + v + ']').click();
                             })
 

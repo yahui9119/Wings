@@ -79,7 +79,7 @@
                     { title: '排序', field: 'Index', width: '50', align: 'center' },
                       {
                           title: '图标', field: 'ICON', width: '50', align: 'center', formatter: function (value) {
-                              return '<a  style="width: 18px; height: 18px;" class="t-icon '+value+'"></a>';
+                              return '<a  style="width: 18px; height: 18px;" class="t-icon ' + value + '"></a>';
                           }
                       },
                     {
@@ -108,7 +108,7 @@
             $('#btnAdd,#treegrid-add').on('click', function () {
                 ininaction();
                 var selected = $treeGrid.treegrid('getSelected');
-                var parentid=selected?selected.ID:null;
+                var parentid = selected ? selected.ID : null;
                 $('#frmAddEdit')[0].reset();
                 $('#_ID').val('0');
                 $('#WebID').val(webtreeselect().webid);
@@ -153,24 +153,23 @@
                     top: e.pageY
                 });
             }
-            function ininaction()
-            {
+            function ininaction() {
                 $('#_Action').combotree({
                     url: '@Url.Action("Tree", "Action")' + "/" + webtreeselect().webid, onSelect: function (node) {
-                     var id = node.id;
-                     var values = id.split('/');
-                     $("#_Controller").val(values[0]);
-                     $("#_ActionName").val(values[1]);
-                     if (values[2] == "True") {
-                         $("#_IsPost").attr('checked', "checked")
-                     }
-                     else {
-                         $("#_IsPost").removeAttr("checked");
-                     }
-                     $("#_IsPost").val(values[2]);
-                 }
-             }).combotree('setValue', null);
-         }
+                        var id = node.id;
+                        var values = id.split('/');
+                        $("#_Controller").val(values[0]);
+                        $("#_ActionName").val(values[1]);
+                        if (values[2] == "True") {
+                            $("#_IsPost").attr('checked', "checked")
+                        }
+                        else {
+                            $("#_IsPost").removeAttr("checked");
+                        }
+                        $("#_IsPost").val(values[2]);
+                    }
+                }).combotree('setValue', null);
+                }
             //编辑
             function Edit(id) {
                 $('#_ParentID').combotree({ url: '@Url.Action("Tree", "Module")' + "?WebId=" + webtreeselect().webid }).combotree('setValue', null);
@@ -181,6 +180,9 @@
                     $('#frmAddEdit').form('load', data);
                     $('#iconshow').addClass("t-icon");
                     $('#iconshow').addClass(data.ICON);
+                    $('#_IsPost').val(data.IsPost).get(0).checked = data.IsPost;
+                    $('#_IsMenus').val(data.IsMenus).get(0).checked = data.IsMenus;;
+                    
                     var isDisplay = data.IsDisplay ? 'True' : 'False';
                     $('#_IsDisplay').val(isDisplay);
                 });

@@ -1,4 +1,4 @@
-﻿<div id="AddEdit" class="easyui-window" data-options="modal:true,closed:true,maximizable:false,resizable:false,minimizable:false,collapsible:false" style="padding: 10px; width: 340px;">
+﻿<div id="AddEdit" class="easyui-window" data-options="modal:true,closed:true,maximizable:false,resizable:true,minimizable:false,collapsible:false" style="padding: 10px; width: 340px;">
     <form id="frmAddEdit" class="form-horizontal" method="post">
         <div class="control-group">
             <label class="control-label" for="_ModuleName">菜单名称</label>
@@ -20,7 +20,7 @@
             </div>
 
         </div>
-          <div class="control-group">
+        <div class="control-group">
             <label class="control-label" for="_Action">自动获取配置</label>
             <div class="controls">
                 <input name="Action" id="_Action" class="span3 easyui-validatebox" placeholder="自动获取" maxlength="50" type="text" />
@@ -59,13 +59,13 @@
         <div class="control-group">
             <label class="control-label" for="_IsMenus">是菜单</label>
             <div class="controls">
-                <input name="IsMenus" id="_IsMenus" class="span3 easyui-validatebox" onclick="this.value=this.checked?'true':'false'" type="checkbox" />
+                <input name="IsMenus" id="_IsMenus" class="span3 easyui-validatebox" onclick="this.value = this.checked ? 'true' : 'false'" type="checkbox" />
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="_IsPost">是POST请求</label>
             <div class="controls">
-                <input name="IsPost" id="_IsPost" class="span3 easyui-validatebox" onclick="this.value = this.checked ? 'true' : 'false'"  type="checkbox" />
+                <input name="IsPost" id="_IsPost" class="span3 easyui-validatebox" onclick="this.value = this.checked ? 'true' : 'false'" type="checkbox" />
             </div>
         </div>
         <div class="input-prepend inline">

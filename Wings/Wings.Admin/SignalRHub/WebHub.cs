@@ -13,6 +13,12 @@ namespace Wings.Admin.SignalRHub
 
     public class WebHub : Hub
     {
+        private readonly IHubContext _hubContext;
+        public WebHub()
+        {
+            // to send to its connected clients
+            _hubContext = GlobalHost.ConnectionManager.GetHubContext<WebHub>();
+        }
         public void Hello1(string message)
         {
             Clients.All.hello(message);
@@ -24,7 +30,7 @@ namespace Wings.Admin.SignalRHub
         public void GetMemoryAll()
         {
 
-            Clients.Caller.setmemery(string.Format("{1}", SystemInfo.Instance.PhysicalMemory));
+            _hubContext.Clients.Client(this.Context.ConnectionId).setmemery(string.Format("{1}", SystemInfo.Instance.PhysicalMemory));
         }
         /// <summary>
         /// 获取cpu使用率
@@ -34,7 +40,8 @@ namespace Wings.Admin.SignalRHub
         {
              float mem = 0;
             mem = (1 - SystemInfo.Instance.MemoryAvailable / (float)SystemInfo.Instance.PhysicalMemory);
-            Clients.Caller.setcpumemvalue(string.Format("{0},{1}", SystemInfo.Instance.CpuLoad, mem*100));
+            //Clients.Caller.setcpumemvalue(string.Format("{0},{1}", SystemInfo.Instance.CpuLoad, mem*100));
+            _hubContext.Clients.Client(this.Context.ConnectionId).setcpumemvalue(string.Format("{0},{1}", SystemInfo.Instance.CpuLoad, mem * 100));
         }
 
         

@@ -35,8 +35,14 @@
     <div id="datagrid-reload" data-options="iconCls:'icon-reload'" title="刷新">刷新</div>
 </div>
 @Html.Partial("_AddEdit")
+@section CSS
+{
+    <link href="~/Content/DatePicker/skin/default/datepicker.css" rel="stylesheet" />
+}
 @section JS
 {
+    <script src="~/Content/DatePicker/WdatePicker.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function () {
             var rowData, $dg = $('#datagrid');

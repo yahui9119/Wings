@@ -64,7 +64,7 @@
                                 @Html.TextBoxFor(m => m.CheckCode)
                             </span>
                             <span class="yzm">
-                                <img id="vdimgck" align="absmiddle" style="cursor: pointer;" src="http://core.ferrygame.com/get/valimg.aspx?max=5" alt="看不清？点击更换" /></span>
+                                <img id="vdimgck" align="absmiddle" style="cursor: pointer;" onclick="this.src='@Url.Action("GetVerifyCode")'+'?'+Date()" src="@Url.Action("GetVerifyCode")" alt="看不清？点击更换" /></span>
                             @Html.ValidationMessageFor(m => m.CheckCode)
                         </dd>
 
