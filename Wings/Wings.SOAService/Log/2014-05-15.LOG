@@ -1,0 +1,78 @@
+时间:2014-05-15 10:14:57,893 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [8] 
+ 日志内容:【事件ccc2c8c8-1e94-4f0d-87cc-a84d5431ca80】用户在线[开始]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+
+时间:2014-05-15 10:14:58,257 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [8] 
+ 日志内容:【事件ccc2c8c8-1e94-4f0d-87cc-a84d5431ca80】更新用户在线状态为True
+-----------------------------------------
+
+时间:2014-05-15 10:14:58,435 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [8] 
+ 日志内容:【事件ccc2c8c8-1e94-4f0d-87cc-a84d5431ca80】用户在线[结束]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+
+时间:2014-05-15 11:14:53,503 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [23] 
+ 日志内容:【事件0d6f6c61-55b7-40bc-99cf-c0663e8d2e09】用户在线[开始]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+
+时间:2014-05-15 11:14:53,722 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [23] 
+ 日志内容:【事件0d6f6c61-55b7-40bc-99cf-c0663e8d2e09】更新用户在线状态为True
+-----------------------------------------
+
+时间:2014-05-15 11:14:54,014 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [23] 
+ 日志内容:【事件0d6f6c61-55b7-40bc-99cf-c0663e8d2e09】用户在线[结束]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+
+时间:2014-05-15 14:11:27,873 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [31] 
+ 日志内容:【事件72ae268d-e6b9-48ac-a12b-01a4bb2f1813】用户在线[开始]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+
+时间:2014-05-15 14:11:27,957 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [31] 
+ 日志内容:【事件72ae268d-e6b9-48ac-a12b-01a4bb2f1813】更新用户在线状态为True
+-----------------------------------------
+
+时间:2014-05-15 14:11:28,061 
+级别:INFO 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第119行
+ [31] 
+ 日志内容:【事件72ae268d-e6b9-48ac-a12b-01a4bb2f1813】用户在线[结束]
+：用户：f745a2a9-dfc9-e311-8265-c2fafb022587,站点:2d7337bb-cec9-e311-8265-74d43588c16c
+-----------------------------------------
+

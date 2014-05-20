@@ -1,0 +1,2068 @@
+时间:2014-05-15 12:55:22,312 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [52] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 12:55:51,644 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [59] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 12:56:21,645 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [58] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 12:56:51,661 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [34] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 12:57:21,675 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [42] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 12:57:51,691 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [34] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 12:58:21,705 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [21] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 12:58:51,706 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [5] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 12:59:21,721 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [58] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 12:59:51,721 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [47] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:00:21,722 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [19] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:00:51,738 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [5] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:01:21,752 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [66] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:01:51,768 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [47] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:02:21,769 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [19] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:02:51,785 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [63] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:03:21,815 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [5] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:03:51,816 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [63] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:04:21,831 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [14] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:04:51,848 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [66] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:05:21,862 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [14] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:05:51,877 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [63] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:06:21,878 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [21] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:06:51,894 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [66] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:07:21,897 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [21] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:07:51,911 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [63] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:08:21,926 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [24] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:08:51,943 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [5] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:09:21,955 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [68] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:09:51,972 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [21] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:10:21,989 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [65] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:10:52,020 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [65] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:11:22,049 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [21] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:11:52,066 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [68] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:12:22,080 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [19] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:12:52,096 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [9] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:13:22,098 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [19] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:13:52,114 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [47] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:14:22,128 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [68] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:14:52,128 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [21] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:15:22,129 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [59] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:15:52,159 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [19] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:16:22,174 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [59] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:16:52,190 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [59] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:17:22,207 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [18] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:17:52,223 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [24] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:18:22,237 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [66] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:18:52,253 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [5] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:19:22,267 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [56] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:19:52,269 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [65] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:20:22,299 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [60] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:20:52,312 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [64] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:21:22,331 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [65] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:21:52,331 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [19] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:22:22,362 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [18] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:22:52,363 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [69] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:23:22,395 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [64] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:23:52,409 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [68] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:24:22,424 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [63] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:24:52,442 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [38] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:25:22,473 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [5] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:25:52,503 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [18] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:26:22,519 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [52] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:26:52,533 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [52] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:27:22,551 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [38] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:27:52,565 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [44] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:28:22,565 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [64] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:28:52,581 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [44] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:29:22,613 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [40] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:29:52,628 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [44] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:30:22,645 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [50] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:30:52,660 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [52] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:31:22,674 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [64] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:31:52,690 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [30] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:32:22,692 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [22] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:32:52,707 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [50] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:33:22,725 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [63] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:33:52,753 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [66] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:34:22,755 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [50] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:34:52,784 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [38] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:35:22,801 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [34] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:35:52,830 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [64] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:36:22,847 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [68] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:36:52,878 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [64] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:37:22,893 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [26] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:37:52,909 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [64] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:38:22,926 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [38] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:38:52,940 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [52] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:39:22,955 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [34] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:39:52,982 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [49] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:40:23,002 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [26] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:40:53,004 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [48] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:41:23,034 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [48] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24
+时间:2014-05-15 13:41:53,036 
+级别:ERROR 
+类名:Wings.Logger
+文件:g:\GitHub\Wings\Wings\Wings.Framework\Log\Log.cs 第95行
+ [34] 
+ 日志内容:【心跳】异常
+
+-----------------------------------------
+
+System.ServiceModel.CommunicationObjectFaultedException: 通信对象 System.ServiceModel.Channels.ServiceChannel 无法用于通信，因为其处于“出错”状态。
+
+Server stack trace: 
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Wings.Framework.Plugin.Contracts.IPluginService.OnlineHeartbeat(Guid accountid, Guid webid)
+   在 Wings.Framework.Plugin.PluginsManger.<.cctor>b__0(Object t) 位置 g:\GitHub\Wings\Wings\Wings.Framework\Plugin\PluginsManger.cs:行号 24

@@ -11,5 +11,6 @@ namespace Wings.Framework.IBatisNet
 {
     public class MyBatisNet
     {
+
     }
 }

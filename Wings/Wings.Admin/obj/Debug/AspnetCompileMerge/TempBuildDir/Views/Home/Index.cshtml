@@ -1,0 +1,385 @@
+﻿@{
+    Layout = null;
+    string _Versions = "1";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="@Url.Content("~/Content/images/favicon.ico")" />
+    <title>通用权限管理系统</title>
+    <link href="@Url.Content("~/Content/easyui/themes/default/easyui.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/icons.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/home.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Content/jquery.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/easyui/jquery.easyui.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/easyui/locale/easyui-lang-zh_CN.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function ($) {
+
+            
+            var setting = {
+
+            }
+            $.fn.leftMenu = function (options, params) {
+                defaults = $.fn.leftMenu.defaults;
+                if (typeof options == "string") {
+                    return $.fn.leftMenu.methods[options](this, params);
+                }
+                setting = $.extend($.fn.leftMenu.defaults, options || {});
+                tabActionEvent();
+                return this.each(function () {
+                    var target = $(this);
+                  
+                    if (setting.data) {
+                        parse(target, setting.data);
+                    }
+                    else if (setting.url) {
+                        $.ajax({
+                            type: setting.type,
+                            url: setting.url,
+                            data: setting.params,
+                            dataType: "json",
+                            success: function (data) {
+                                parse(target, data);
+                            }
+                        });
+                    }
+                })
+
+            }
+            $.fn.leftMenu.methods = {
+                reload: function (target, params) {
+
+                },
+                click: function (target, callback) {
+                    target.click(callback);
+                }
+            }
+            function parse(target, data) {
+                $.each(data, function (i, v) {
+                    var tree = $('<ul></ul>').tree({
+                        data: v.children,
+                        onSelect: function (n) {
+                            if (n.attributes) {
+                                showTab(n.attributes.rel, n.text, n.iconCls);
+                            }
+                        }
+                        , formatter: function (n) {
+                            return n.text;
+                        }
+                    });
+                    var content = $('<div style="padding:10px"></div>').append(tree);
+                    target.accordion('add', {
+                        title: v.text,
+                        iconCls: v.iconCls,
+                        content: content
+                    });
+                });
+            }
+
+            //像浏览器一样显示tab
+            function showTab(url, title, icon) {
+                var tab = $(setting.tab);
+                if (tab.tabs('exists', title)) {
+                    tab.tabs('select', title);
+                } else {
+                    tab.tabs('add', {
+                        title: title,
+                        content: createFrame(url),
+                        iconCls: icon,
+                        closable: true
+                    });
+                }
+                tabActionOpearte();
+            }
+            //创建iframe
+            function createFrame(url) {
+                var s = '<iframe name="sysMain" scrolling="yes" frameborder="0"  src="' + url + '" style="width:100%;height:100%;"></iframe>';
+                return s;
+            }
+
+            function tabActionOpearte() {
+                /*双击关闭TAB选项卡*/
+                $('.tabs-inner').dblclick(function () {
+                    var subtitle = $(this).children(".tabs-closable").text();
+                   $(setting.tab).tabs('close', subtitle);
+                })
+                /*为选项卡绑定右键*/
+                $(".tabs-inner").bind('contextmenu', function (e) {
+                   $(setting.tabmenu).menu('show', {
+                        left: e.pageX,
+                        top: e.pageY
+                    });
+                    var subtitle = $(this).children(".tabs-title").text();
+                    var currentTab =$(setting.tab).tabs('getSelected');
+                    var alltabs =$(setting.tab).tabs('tabs');
+                    var tabIndex =$(setting.tab).tabs('getTabIndex', currentTab);
+                    //点击首页
+                    if (subtitle == setting.maintitle) {
+                        $("#close,#close-left").css('color', "#ccc");
+                        //只有一个首页
+                        if (alltabs.length == 1) {
+                            $("#close-right,#close-other,#close-all").css('color', '#ccc');
+                        } else if (alltabs.length > 1) {
+                            $("#close-right,#close-other,#close-all").css('color', '#000');
+                        }
+                    } else {
+                        if (alltabs.length == 2) {
+                            $("#close,#close-all").css('color', '#000');
+                            $("#close-left,#close-right,#close-other").css('color', '#ccc');
+                        } else if (alltabs.length > 2) {
+                            if (tabIndex == alltabs.length - 1) {
+                                $("#close,#close-all,#close-other,#close-left").css('color', '#000');
+                                $("#close-right").css('color', '#ccc');
+                            } else {
+                                if (tabIndex != 1) {
+                                    $("#close,#close-all,#close-other,#close-left,#close-right").css('color', '#000');
+                                } else {
+                                    $("#close,#close-all,#close-other,#close-right").css('color', '#000');
+                                    $("#close-left").css('color', '#ccc');
+                                }
+                            }
+                        }
+                    }
+                   $(setting.tabmenu).data("currtab", subtitle);
+                   $(setting.tab).tabs('select', subtitle);
+                    return false;
+                });
+            }
+           
+            //tab动作的操作
+            function tabActionEvent() {
+               $(setting.tabmenu).menu({
+                    onClick: function (item) {
+                        actionTab(item.id);
+                    }
+                });
+            }
+            //tab动作的操作
+            function actionTab(action) {
+                var alltabs = $(setting.tab).tabs('tabs');
+                var currentTab = $(setting.tab).tabs('getSelected');
+                var allTabtitle = [];
+                $.each(alltabs, function (i, n) {
+                    allTabtitle.push($(n).panel('options').title);
+                });
+                switch (action) {
+                    case 'refresh':
+                        var iframe = $(currentTab.panel('options').content);
+                        var src = iframe.attr('src');
+                        if (currentTab.panel('options').title == setting.maintitle)//如果是我的首页
+                        {
+                            src = setting.mainurl;
+                        }
+                        $(setting.tab).tabs('update', {
+                            tab: currentTab,
+                            options: {
+                                content: createFrame(src)
+                            }
+                        })
+                        break;
+                    case 'close':
+                        var currtab_title = currentTab.panel('options').title;
+                        if (currtab_title != setting.maintitle) {//首页无法关闭
+                            $(setting.tab).tabs('close', currtab_title);
+                        }
+                        break;
+                    case 'close-all':
+                        $.each(allTabtitle, function (i, n) {
+                            if (n != setting.maintitle) {
+                                $(setting.tab).tabs('close', n);
+                            }
+                        });
+                        break;
+                    case 'close-other':
+                        var currtab_title = currentTab.panel('options').title;
+                        $.each(allTabtitle, function (i, n) {
+                            if (n != currtab_title && n != setting.maintitle) {
+                                $(setting.tab).tabs('close', n);
+                            }
+                        });
+                        break;
+                    case 'close-right':
+                        var tabIndex = $(setting.tab).tabs('getTabIndex', currentTab);
+                        if (tabIndex == alltabs.length - 1) {
+                            $.messager.alert('提示', '右边没有可关闭的tab项', 'info');
+                            return false;
+                        }
+                        $.each(allTabtitle, function (i, n) {
+                            if (i > tabIndex) {
+                                if (n != setting.maintitle) {
+                                    $(setting.tab).tabs('close', n);
+                                }
+                            }
+                        });
+                        break;
+                    case 'close-left':
+                        var tabIndex = $(setting.tab).tabs('getTabIndex', currentTab);
+                        if (tabIndex == 1) {
+                            $.messager.alert('提示', '左边边没有可关闭的tab项', 'info');
+                            return false;
+                        }
+                        $.each(allTabtitle, function (i, n) {
+                            if (i < tabIndex) {
+                                if (n != setting.maintitle) {
+                                    $(setting.tab).tabs('close', n);
+                                }
+                            }
+                        });
+                        break;
+                    case 'exit':
+                        $(setting.tabmenu).menu('hide');
+                        break;
+                }
+            }
+            $.fn.leftMenu.defaults = {
+                url: null,
+                type: "POST",
+                params: {},
+                data: null,
+                tab: "#tabs",
+                maintitle: "我的首页"
+               , mainurl: "Home/Main"
+                ,tabmenu:"#gwkm-tab-menu"
+            };
+            $.parser.plugins.push('leftMenu');
+        })(jQuery)
+    </script>
+</head>
+<body class="easyui-layout">
+    <div id="system-north" data-options="region:'north',border:'false'" style="overflow: hidden; border-width: 0px;">
+        <div id="system-menu-top">
+            <div class="left">
+                <img alt="Wings" src="/Content/images/logo.png" />
+            </div>
+
+        </div>
+        <div id="system-info-bar">
+            <div class="left">
+                <a id="test" href="/Account" target="sysMain" title="进入个人中心"><strong>@User.Identity.Name</strong></a> 您好，欢迎光临。
+            <i class="b-icon-time"></i><span id="nowDate"></span>
+            </div>
+            <div class="right">
+                <a id="personal-state" href="javascript:;" target="_self" title="状态签名"><i class="b-icon-user"></i>状态签名</a> |
+            <a id="personal-memo" href="javascript:;" target="_self" title="个人便笺"><i class="b-icon-edit"></i>个人便笺</a> | 
+            <a id="logging-out" href="@Url.Action("Logout", "Account")" target="_self" title="安全退出"><i class="b-icon-off"></i>安全退出</a>
+            </div>
+        </div>
+    </div>
+    <div id="system-south" data-options="region:'south',border:'false'">
+        <a href="http://www.wings.com" target="_blank" title="Wings">Wings</a>
+        Copyright © 2014-<script type="text/javascript">document.write(new Date().getFullYear());</script>
+        <span>www.wings.com All Rights Reserved.</span>
+    </div>
+    <div id="system-west" data-options="region:'west',title:'导航菜单',split:'true',iconCls:'t-icon t-icon-nav'">
+        <div id="leftMenu" class="easyui-accordion" border="false" fit="true">
+
+            @*            <div data-options="title:'系统设置',iconCls:'t-icon t-icon-1-5'" style="padding: 10px;">
+                <ul class="easyui-tree">
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a href="javascript:;" rel="/Module" title="菜单管理">菜单管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a href="javascript:;" rel="/Department" title="部门管理">部门管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a href="javascript:;" rel="/Unit" title="单位管理">单位管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a href="javascript:;" rel="/User" title="用户管理">用户管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a href="javascript:;" rel="/Role" title="角色管理">角色管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a href="javascript:;" rel="eeeeeeee" title="系统日志">系统日志</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a href="javascript:;" rel="/RoleGroups" title="角色组管理">角色组管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a href="javascript:;" rel="/DictType" title="字典管理">字典管理</a>
+                    </li>
+                    <li iconcls="t-icon t-icon-11-3">
+                        <a href="javascript:;" rel="/Configuration" title="配置文件设置">配置文件设置</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div data-options="title:'个人中心',iconCls:'t-icon t-icon-5-24'" style="padding: 10px;">
+                <ul class="easyui-tree">
+                    <li iconcls="t-icon t-icon-10-3">
+                        <span>我的信箱</span>
+                        <ul>
+                            <li iconcls="t-icon t-icon-11-3">
+                                <a href="javascript:;" rel="aaa" title="发送消息">发送消息</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li iconcls="t-icon t-icon-10-3">
+                        <span>手机短信</span>
+                        <ul>
+                            <li iconcls="t-icon t-icon-11-3">
+                                <a href="javascript:;" rel="http://www.baidu.com" title="发送短信">发送短信</a>
+                            </li>
+                            <li iconcls="t-icon t-icon-11-3">
+                                <a href="javascript:;" rel="http://www.baidu.com" title="已发短信">已发短信</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li iconcls="t-icon t-icon-10-3">
+                        <span>工作日程</span>
+                        <ul>
+                        </ul>
+                    </li>
+                    <li iconcls="t-icon t-icon-10-3">
+                        <span>我的HR</span>
+                        <ul>
+                        </ul>
+                    </li>
+                    <li iconcls="t-icon t-icon-10-3">
+                        <span>个人设置</span>
+                        <ul>
+                            <li iconcls="t-icon t-icon-4-21">
+                                <a href="javascript:;" rel="/Account" title="个人信息">个人信息</a>
+                            </li>
+                            <li iconcls="t-icon t-icon-19-11">
+                                <a href="javascript:;" rel="/Account/ChangePassword" title="修改密码">修改密码</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>*@
+        </div>
+    </div>
+    <div id="system-center" region="center">
+        <div id="tabs" fit="true" class="easyui-tabs" border="false">
+            <div title="我的首页" style="padding: 10px;" iconcls="t-icon t-icon-5-14">
+                <iframe name="sysMain" scrolling="yes" frameborder="0" src="@Url.Action("Main", "Home")" style="width: 100%; height: 100%;"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="gwkm-tab-menu" class="easyui-menu">
+        <div iconcls="icon-reload" id="refresh">刷新</div>
+        <div class="menu-sep"></div>
+        <div id="close">关闭</div>
+        <div id="close-all">全部关闭</div>
+        <div id="close-other">除此之外全部关闭</div>
+        <div class="menu-sep"></div>
+        <div id="close-right">当前页右侧全部关闭</div>
+        <div id="close-left">当前页左侧全部关闭</div>
+        <div class="menu-sep"></div>
+        <div iconcls="icon-undo" id="exit">退出</div>
+    </div>
+    <script>
+        $('#leftMenu').leftMenu({
+            url: "@Url.Action("LoadMenus", "Home")"
+        })
+    </script>
+     <script src="@Url.Content("~/Content/javascript/home.js?v=" + @_Versions)" type="text/javascript"></script>
+</body>
+</html>
