@@ -12,7 +12,7 @@ namespace Wings.Admin.SignalRHub
 {
 
     public class WebHub : Hub
-    {
+    { 
         private readonly IHubContext _hubContext;
         public WebHub()
         {
