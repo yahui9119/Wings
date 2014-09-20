@@ -13,7 +13,7 @@ namespace Wings.Domain.Repositories.MongoDB
         public WebRepository(IRepositoryContext context) : base(context) { }
         /// <summary>
         /// 站点名字是否已经存在
-        /// </summary>
+        /// </summary> 
         /// <param name="webname"></param>
         /// <returns></returns>
         public bool WebNameExists(string webname)
